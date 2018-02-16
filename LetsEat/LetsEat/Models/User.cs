@@ -20,5 +20,13 @@ namespace LetsEat.Models
             this.UserName = UserName;
             this.Password = Password;
         }
+
+        public bool UserCheckInfo()
+        {
+            if (!this.UserName.Equals("") && !this.Password.Equals(""))
+                return true;
+            else
+                return false;
+        }
     }
 }

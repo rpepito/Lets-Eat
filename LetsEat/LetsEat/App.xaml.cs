@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LetsEat.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ namespace LetsEat
 		{
 			InitializeComponent();
 
-			MainPage = new LetsEat.MainPage();
+			MainPage = new Login();
 		}
 
 		protected override void OnStart ()
