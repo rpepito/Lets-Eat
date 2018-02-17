@@ -24,7 +24,7 @@ namespace LetsEat.Views
             if (user.UserCheckInfo())
                 DisplayAlert("Sign In", "Sign In Successful.", "Okay");                                         //If sign in successful, display message
             else
-                DisplayAlert("Sign In", message: "Error: Empty Username and/or Password.", cancel: "Okay");     //If user enters a blank on either fields (or both) display error
+                DisplayAlert("Sign In", message: "Error: Empty or Invalid Username and/or Password.", cancel: "Okay");     //If user enters a blank on either fields (or both) display error
         }
 	}
 }
