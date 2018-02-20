@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LetsEat.Models
 {
-    pubic class MasterPageItem
+    public class MasterPageItem
     {
         //Sets title of master page item
         public string Title { get; set; }
