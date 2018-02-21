@@ -15,6 +15,30 @@ namespace LetsEat.Views.Customer_Side
 		public RestaurantList ()
 		{
 			InitializeComponent ();
+
+            MainListView.ItemsSource = new List<Restaurant>
+            {
+                new Restaurant
+                {
+                    Name = "King and I Thai Restaurant" 
+                },
+
+                new Restaurant
+                {
+                    Name = "Pizza Hut"
+                },
+
+                new Restaurant
+                {
+                    Name = "Soho Sushi Burrito"
+                },
+
+                new Restaurant
+                {
+                    Name = "Panda Express"
+                }    
+
+            };
 		}
 	}
 }

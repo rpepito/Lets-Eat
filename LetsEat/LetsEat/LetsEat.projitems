@@ -23,6 +23,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\MasterPageItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\Tokens.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Customer Side\Restaurant.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Customer Side\RestaurantList.xaml.cs">
       <DependentUpon>RestaurantList.xaml</DependentUpon>
       <SubType>Code</SubType>
