@@ -21,6 +21,7 @@ namespace LetsEat.Models
             this.Password = Password;
         }
 
+        
         public bool UserCheckInfo()
         {
             if (!this.UserName.Equals("") && !this.Password.Equals("") && (this.Password.Length >= 8))

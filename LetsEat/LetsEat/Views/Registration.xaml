@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LetsEat.Views.Registration">
+    <StackLayout>
+        <Label Text="Are you an owner or a customer?"/>
+        <Button x:Name="CustomerBtn" Text="I'm a customer!" />
+        <Button x:Name="OwnerBtn" Text="I'm a restaurant owner!" />
+    </StackLayout>
+</ContentPage>
