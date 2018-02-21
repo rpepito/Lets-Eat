@@ -20,22 +20,26 @@ namespace LetsEat.Views.Customer_Side
             {
                 new Restaurant
                 {
-                    Name = "King and I Thai Restaurant" 
+                    Name = "King and I Thai Restaurant", 
+                    Cuisine = "Thai"
                 },
 
                 new Restaurant
                 {
-                    Name = "Pizza Hut"
+                    Name = "Sushi Samba Las Vegas",
+                    Cuisine = "Japanese"
                 },
 
                 new Restaurant
                 {
-                    Name = "Soho Sushi Burrito"
+                    Name = "Rich Moonen's RM Seafood",
+                    Cuisine = "Seafood"
                 },
 
                 new Restaurant
                 {
-                    Name = "Panda Express"
+                    Name = "Cheesecake Factory",
+                    Cuisine = "American"
                 }    
 
             };

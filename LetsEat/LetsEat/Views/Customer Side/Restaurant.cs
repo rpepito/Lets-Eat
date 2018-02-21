@@ -7,6 +7,7 @@ namespace LetsEat.Views.Customer_Side
     public class Restaurant
     {
         public string Name { get; set; }
+        public string Cuisine { get; set; }
 
     }
 }
