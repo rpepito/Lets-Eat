@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:app="http://schemas.android.com/apk/res-auto" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res-auto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:annotation>
+    <xs:documentation>v25</xs:documentation>
+    <xs:documentation>3/28/2018 3:06:36 PM</xs:documentation>
+  </xs:annotation>
+  <xs:attribute name="buttonSize">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="icon_only" />
+            <xs:enumeration value="standard" />
+            <xs:enumeration value="wide" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="colorScheme">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="auto" />
+            <xs:enumeration value="dark" />
+            <xs:enumeration value="light" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:attribute name="scopeUris">
+    <xs:annotation>
+      <xs:documentation></xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:union memberTypes="xs:string">
+        <xs:simpleType>
+          <xs:restriction base="xs:string" />
+        </xs:simpleType>
+      </xs:union>
+    </xs:simpleType>
+  </xs:attribute>
+</xs:schema>

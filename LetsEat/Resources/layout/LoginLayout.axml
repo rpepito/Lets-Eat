@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -11,8 +12,8 @@
         android:orientation="vertical">
   
         <EditText
-          android:id="@+id/userName"
-          android:hint="Username"
+          android:id="@+id/email"
+          android:hint="Email"
           android:layout_width="fill_parent"
           android:layout_height="45dp"
           android:padding="5dp" />
