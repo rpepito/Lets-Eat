@@ -85,6 +85,7 @@ namespace LetsEat.Views.Log_In
             if (task.IsSuccessful)
             {
                 Snackbar.Make(activity_main, "Login Success", Snackbar.LengthShort).Show();
+                //Adrian 03/28/18 TODO: Add code/function call to update UI
             }
             else
             {

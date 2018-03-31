@@ -20,8 +20,9 @@ namespace LetsEat.Views.Log_In
     public class Registration : Activity, IOnClickListener, IOnCompleteListener 
     {
         FirebaseAuth auth;
-        private Button btn_register;
+        private Button btn_register;//, btn_customer, btn_owner;
         private EditText input_email, input_password;
+        private Switch switch_type;
         private RelativeLayout activity_register;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -36,6 +37,9 @@ namespace LetsEat.Views.Log_In
 
             //Initialize layout views
             btn_register = FindViewById<Button>(Resource.Id.btn_register);
+            //btn_customer = FindViewById<ToggleButton>(Resource.Id.btn_customer);
+            //btn_owner = FindViewById<ToggleButton>(Resource.Id.btn_owner);
+            switch_type = FindViewById<Switch>(Resource.Id.switch_type);
             input_email = FindViewById<EditText>(Resource.Id.register_email);
             input_password = FindViewById<EditText>(Resource.Id.register_password);
             activity_register = FindViewById<RelativeLayout>(Resource.Id.activity_register);
@@ -47,6 +51,18 @@ namespace LetsEat.Views.Log_In
             if (v.Id == Resource.Id.btn_register)
             {
                 RegisterUser(input_email.Text, input_password.Text);
+            }
+            /*else if (v.Id == Resource.Id.btn_customer)
+            {
+                //btn_owner.Selected = false;
+            }
+            else if (v.Id == Resource.Id.btn_owner)
+            {
+                //btn_customer.Selected = false;
+            }*/
+            else if(v.Id == Resource.Id.switch_type)
+            {
+
             }
         }
 
@@ -60,6 +76,7 @@ namespace LetsEat.Views.Log_In
             if (task.IsSuccessful == true)
             {
                 Snackbar.Make(activity_register, "Registration Successful", Snackbar.LengthLong).Show();
+                //Adrian 03/28/18 TODO: Add code/function call to update UI for new user
             }
             else
             {

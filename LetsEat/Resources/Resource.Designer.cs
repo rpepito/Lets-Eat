@@ -2543,8 +2543,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int btn_register = 2131361978;
+			// aapt resource value: 0x7f0a00bb
+			public const int btn_register = 2131361979;
 			
 			// aapt resource value: 0x7f0a0069
 			public const int buttonPanel = 2131361897;
@@ -2717,14 +2717,14 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00a2
 			public const int loginButton = 2131361954;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int masked = 2131361981;
+			// aapt resource value: 0x7f0a00be
+			public const int masked = 2131361982;
 			
 			// aapt resource value: 0x7f0a00aa
 			public const int media_actions = 2131361962;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int message = 2131361979;
+			// aapt resource value: 0x7f0a00bc
+			public const int message = 2131361980;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int middle = 2131361848;
@@ -2912,6 +2912,9 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a008d
 			public const int submit_area = 2131361933;
 			
+			// aapt resource value: 0x7f0a00ba
+			public const int switch_type = 2131361978;
+			
 			// aapt resource value: 0x7f0a0027
 			public const int tabMode = 2131361831;
 			
@@ -2984,8 +2987,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0016
 			public const int view_offset_helper = 2131361814;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int visible = 2131361980;
+			// aapt resource value: 0x7f0a00bd
+			public const int visible = 2131361981;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int wide = 2131361825;

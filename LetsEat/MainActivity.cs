@@ -14,7 +14,8 @@ namespace LetsEat
     public class MainActivity : Activity
     {
         public static FirebaseApp app;
-        FirebaseAuth auth;
+        private FirebaseAuth auth;
+        private FirebaseUser currentUser;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -29,6 +30,16 @@ namespace LetsEat
             //Adrian 03/28/2018 TODO: Remove below later after editing MainActivity.cs to work with LoginActivity.cs
             StartActivity(new Intent(this, typeof(Views.Log_In.LoginActivity)));    
         }
+
+        /*protected override void OnStart()
+        {
+            //Check if user is signed in (non-null) and update UI accordingly
+            if (auth.CurrentUser != null)
+            {
+                currentUser = auth.CurrentUser;
+                //Adrian 03/28/18 TODO: Add code/function call to update UI
+            }
+        }*/
 
         private void InitFirebaseAuth()
         {

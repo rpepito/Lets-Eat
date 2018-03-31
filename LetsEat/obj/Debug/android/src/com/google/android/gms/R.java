@@ -3071,7 +3071,7 @@ containing a value of this type.
         public static int beginning=0x7f0a0036;
         public static int blocking=0x7f0a005d;
         public static int bottom=0x7f0a0044;
-        public static int btn_register=0x7f0a00ba;
+        public static int btn_register=0x7f0a00bb;
         public static int buttonPanel=0x7f0a0069;
         public static int cancel_action=0x7f0a00a8;
         public static int center=0x7f0a004b;
@@ -3129,9 +3129,9 @@ containing a value of this type.
         public static int listMode=0x7f0a0025;
         public static int list_item=0x7f0a0067;
         public static int loginButton=0x7f0a00a2;
-        public static int masked=0x7f0a00bd;
+        public static int masked=0x7f0a00be;
         public static int media_actions=0x7f0a00aa;
-        public static int message=0x7f0a00bb;
+        public static int message=0x7f0a00bc;
         public static int middle=0x7f0a0038;
         public static int mini=0x7f0a0059;
         public static int multiply=0x7f0a002e;
@@ -3194,6 +3194,7 @@ containing a value of this type.
         public static int status_bar_latest_event_content=0x7f0a00a9;
         public static int submenuarrow=0x7f0a007c;
         public static int submit_area=0x7f0a008d;
+        public static int switch_type=0x7f0a00ba;
         public static int tabMode=0x7f0a0027;
         public static int text=0x7f0a0019;
         public static int text2=0x7f0a001a;
@@ -3218,7 +3219,7 @@ containing a value of this type.
         public static int up=0x7f0a0009;
         public static int useLogo=0x7f0a002d;
         public static int view_offset_helper=0x7f0a0016;
-        public static int visible=0x7f0a00bc;
+        public static int visible=0x7f0a00bd;
         public static int wide=0x7f0a0021;
         public static int withText=0x7f0a0043;
         public static int wrap_content=0x7f0a0035;

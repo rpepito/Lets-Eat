@@ -3071,7 +3071,7 @@ containing a value of this type.
         public static final int beginning=0x7f0a0036;
         public static final int blocking=0x7f0a005d;
         public static final int bottom=0x7f0a0044;
-        public static final int btn_register=0x7f0a00ba;
+        public static final int btn_register=0x7f0a00bb;
         public static final int buttonPanel=0x7f0a0069;
         public static final int cancel_action=0x7f0a00a8;
         public static final int center=0x7f0a004b;
@@ -3129,9 +3129,9 @@ containing a value of this type.
         public static final int listMode=0x7f0a0025;
         public static final int list_item=0x7f0a0067;
         public static final int loginButton=0x7f0a00a2;
-        public static final int masked=0x7f0a00bd;
+        public static final int masked=0x7f0a00be;
         public static final int media_actions=0x7f0a00aa;
-        public static final int message=0x7f0a00bb;
+        public static final int message=0x7f0a00bc;
         public static final int middle=0x7f0a0038;
         public static final int mini=0x7f0a0059;
         public static final int multiply=0x7f0a002e;
@@ -3194,6 +3194,7 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0a00a9;
         public static final int submenuarrow=0x7f0a007c;
         public static final int submit_area=0x7f0a008d;
+        public static final int switch_type=0x7f0a00ba;
         public static final int tabMode=0x7f0a0027;
         public static final int text=0x7f0a0019;
         public static final int text2=0x7f0a001a;
@@ -3218,7 +3219,7 @@ containing a value of this type.
         public static final int up=0x7f0a0009;
         public static final int useLogo=0x7f0a002d;
         public static final int view_offset_helper=0x7f0a0016;
-        public static final int visible=0x7f0a00bc;
+        public static final int visible=0x7f0a00bd;
         public static final int wide=0x7f0a0021;
         public static final int withText=0x7f0a0043;
         public static final int wrap_content=0x7f0a0035;
