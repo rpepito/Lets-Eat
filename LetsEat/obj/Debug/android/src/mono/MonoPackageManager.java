@@ -124,6 +124,8 @@ class MonoPackageManager_Resources {
 		"Xamarin.Android.Support.Vector.Drawable.dll",
 		"Xamarin.Firebase.Auth.dll",
 		"Xamarin.Firebase.Common.dll",
+		"Xamarin.Firebase.Database.Connection.dll",
+		"Xamarin.Firebase.Database.dll",
 		"Xamarin.GooglePlayServices.Base.dll",
 		"Xamarin.GooglePlayServices.Basement.dll",
 		"Xamarin.GooglePlayServices.Tasks.dll",

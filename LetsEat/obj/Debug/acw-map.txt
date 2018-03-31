@@ -234,6 +234,18 @@ Firebase.Auth.FirebaseAuth/IIdTokenListenerImplementor, Xamarin.Firebase.Auth;mo
 Firebase.Auth.FirebaseAuth+IIdTokenListenerImplementor, Xamarin.Firebase.Auth, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
 Firebase.Auth.FirebaseAuth.IIdTokenListenerImplementor;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
 mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor;mono.com.google.firebase.auth.FirebaseAuth_IdTokenListenerImplementor
+Firebase.Database.DatabaseReference/ICompletionListenerImplementor, Xamarin.Firebase.Database;mono.com.google.firebase.database.DatabaseReference_CompletionListenerImplementor
+Firebase.Database.DatabaseReference+ICompletionListenerImplementor, Xamarin.Firebase.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.database.DatabaseReference_CompletionListenerImplementor
+Firebase.Database.DatabaseReference.ICompletionListenerImplementor;mono.com.google.firebase.database.DatabaseReference_CompletionListenerImplementor
+mono.com.google.firebase.database.DatabaseReference_CompletionListenerImplementor;mono.com.google.firebase.database.DatabaseReference_CompletionListenerImplementor
+Firebase.Database.IChildEventListenerImplementor, Xamarin.Firebase.Database;mono.com.google.firebase.database.ChildEventListenerImplementor
+Firebase.Database.IChildEventListenerImplementor, Xamarin.Firebase.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.database.ChildEventListenerImplementor
+Firebase.Database.IChildEventListenerImplementor;mono.com.google.firebase.database.ChildEventListenerImplementor
+mono.com.google.firebase.database.ChildEventListenerImplementor;mono.com.google.firebase.database.ChildEventListenerImplementor
+Firebase.Database.IValueEventListenerImplementor, Xamarin.Firebase.Database;mono.com.google.firebase.database.ValueEventListenerImplementor
+Firebase.Database.IValueEventListenerImplementor, Xamarin.Firebase.Database, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.firebase.database.ValueEventListenerImplementor
+Firebase.Database.IValueEventListenerImplementor;mono.com.google.firebase.database.ValueEventListenerImplementor
+mono.com.google.firebase.database.ValueEventListenerImplementor;mono.com.google.firebase.database.ValueEventListenerImplementor
 Android.Gms.Common.Images.ImageManager/IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
 Android.Gms.Common.Images.ImageManager+IOnImageLoadedListenerImplementor, Xamarin.GooglePlayServices.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor
 Android.Gms.Common.Images.ImageManager.IOnImageLoadedListenerImplementor;mono.com.google.android.gms.common.images.ImageManager_OnImageLoadedListenerImplementor

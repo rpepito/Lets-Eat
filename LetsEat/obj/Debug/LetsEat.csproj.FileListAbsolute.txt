@@ -107,6 +107,12 @@ C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\res\values\strin
 C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\R.cs.flag
 C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\uploadflags.txt
 C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\LetsEat.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\bin\Debug\Xamarin.Firebase.Database.Connection.dll
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\bin\Debug\Xamarin.Firebase.Database.dll
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\Xamarin.Firebase.Database.Connection.dll.stamp
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\Xamarin.Firebase.Database.dll.stamp
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\e5bf1881.proguard.stamp
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\c756521f.proguard.stamp
 C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\bin\Debug\LetsEat.dll
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb

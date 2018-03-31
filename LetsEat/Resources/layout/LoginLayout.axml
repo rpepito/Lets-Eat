@@ -15,7 +15,8 @@
             android:hint="Email"
             android:layout_width="fill_parent"
             android:layout_height="45dp"
-            android:padding="5dp" />
+            android:padding="5dp" 
+            android:inputType="textEmailAddress"/>
         <View
             android:layout_width="fill_parent"
             android:layout_height="2dp" />
