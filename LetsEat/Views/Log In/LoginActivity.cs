@@ -56,7 +56,6 @@ namespace LetsEat.Views.Log_In
             else if (v.Id == Resource.Id.registerButton)
             {
                 StartActivity(new Intent(this, typeof(Registration)));
-                Finish();
             }
         }
         /*private void SignIn_Click(object sender, System.EventArgs e)
@@ -84,12 +83,12 @@ namespace LetsEat.Views.Log_In
         {
             if (task.IsSuccessful)
             {
-                Snackbar.Make(activity_main, "Login Success", Snackbar.LengthShort).Show();
+                Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
                 //Adrian 03/28/18 TODO: Add code/function call to update UI
             }
             else
             {
-                Snackbar.Make(activity_main, "Login Failed ", Snackbar.LengthShort).Show();
+                Toast.MakeText(this, "Login Failed", ToastLength.Long).Show();
             }
         }
     }

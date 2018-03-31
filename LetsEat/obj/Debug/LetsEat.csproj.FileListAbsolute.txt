@@ -106,9 +106,8 @@ C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\res\layout\main.
 C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\res\values\strings.xml
 C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\R.cs.flag
 C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\uploadflags.txt
-C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\LetsEat.csprojResolveAssemblyReference.cache
-C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\bin\Debug\LetsEat.dll.mdb
-C:\Users\Adrian\Source\Repos\letseat\Lets-Eat\LetsEat\obj\Debug\android\assets\LetsEat.dll.mdb
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\obj\Debug\LetsEat.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\source\repos\letseat\Lets-Eat\LetsEat\bin\Debug\LetsEat.dll
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb

@@ -50,6 +50,19 @@ namespace LetsEat
             if (app == null)
                 app = FirebaseApp.InitializeApp(this, options);
             auth = FirebaseAuth.GetInstance(app);
+            auth.AuthState += (sender, e) =>
+            {
+                currentUser = e?.Auth?.CurrentUser;
+                
+                if(currentUser != null)
+                {
+
+                }
+                else
+                {
+
+                }
+            };
         }
     }
 }

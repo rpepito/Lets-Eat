@@ -29,6 +29,9 @@ public final class R {
     public static final class animator {
         public static final int design_appbar_state_list_animator=0x7f050000;
     }
+    public static final class array {
+        public static final int user_types=0x7f0d0000;
+    }
     public static final class attr {
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -3185,6 +3188,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0a0097;
         public static final int snap=0x7f0a004a;
         public static final int spacer=0x7f0a006a;
+        public static final int spinner_type=0x7f0a00ba;
         public static final int split_action_bar=0x7f0a0008;
         public static final int src_atop=0x7f0a0030;
         public static final int src_in=0x7f0a0031;
@@ -3194,7 +3198,6 @@ containing a value of this type.
         public static final int status_bar_latest_event_content=0x7f0a00a9;
         public static final int submenuarrow=0x7f0a007c;
         public static final int submit_area=0x7f0a008d;
-        public static final int switch_type=0x7f0a00ba;
         public static final int tabMode=0x7f0a0027;
         public static final int text=0x7f0a0019;
         public static final int text2=0x7f0a001a;

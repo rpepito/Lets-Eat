@@ -28,14 +28,10 @@
             android:text="Are you a Customer or Restaurant Owner?"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
-        <Switch
-            android:id="@+id/switch_type"
-            android:textOff="Customer"
-            android:textOn="Owner"
-            android:background="#307FC1"
-            android:textColor="@android:color/white"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_type" />
         <Button
             android:id="@+id/btn_register"
             android:text="Register"

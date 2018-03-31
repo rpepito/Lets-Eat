@@ -105,6 +105,22 @@ namespace LetsEat
 			}
 		}
 		
+		public partial class Array
+		{
+			
+			// aapt resource value: 0x7f0d0000
+			public const int user_types = 2131558400;
+			
+			static Array()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Array()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -2885,6 +2901,9 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a006a
 			public const int spacer = 2131361898;
 			
+			// aapt resource value: 0x7f0a00ba
+			public const int spinner_type = 2131361978;
+			
 			// aapt resource value: 0x7f0a0008
 			public const int split_action_bar = 2131361800;
 			
@@ -2911,9 +2930,6 @@ namespace LetsEat
 			
 			// aapt resource value: 0x7f0a008d
 			public const int submit_area = 2131361933;
-			
-			// aapt resource value: 0x7f0a00ba
-			public const int switch_type = 2131361978;
 			
 			// aapt resource value: 0x7f0a0027
 			public const int tabMode = 2131361831;
