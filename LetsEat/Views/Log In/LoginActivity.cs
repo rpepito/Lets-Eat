@@ -58,22 +58,7 @@ namespace LetsEat.Views.Log_In
                 StartActivity(new Intent(this, typeof(Registration)));
             }
         }
-        /*private void SignIn_Click(object sender, System.EventArgs e)
-        {
-            // Find the edit text boxes defined in LoginLayout, turn into strings
-            // EditText usrName = FindViewById<EditText>(Resource.Id.userName);
-            // EditText pwd = FindViewById<EditText>(Resource.Id.password);
-
-            //            String UsrName_Entry = usrName.Text;
-            //            String Pwd_Entry = pwd.Text;
-
-            // Pass values to User class, check info if correct
-            // using UserCheckInfo
-            //           User user = new User(UsrName_Entry, Pwd_Entry);\
-            // test
-            Toast.MakeText(this, "You clicked Login", ToastLength.Short).Show();
-
-        }*/
+   
         private void LoginUser(string email, string password)
         {
             auth.SignInWithEmailAndPassword(email, password).AddOnCompleteListener(this);
