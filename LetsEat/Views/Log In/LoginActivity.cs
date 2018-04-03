@@ -55,6 +55,10 @@ namespace LetsEat.Views.Log_In
             }
             else if (v.Id == Resource.Id.registerButton)
             {
+                if (auth.CurrentUser != null)
+                {
+                    auth.SignOut();
+                }
                 StartActivity(new Intent(this, typeof(Registration)));
             }
         }

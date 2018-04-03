@@ -68,7 +68,6 @@ namespace LetsEat
                 }
             };
 
-            //database = FirebaseDatabase.GetInstance(app);
         }
     }
 }

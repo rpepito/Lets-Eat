@@ -46,12 +46,16 @@ namespace LetsEat.Views.Log_In
             activity_register = FindViewById<RelativeLayout>(Resource.Id.activity_register);
             SpinnerInit();
             btn_register.SetOnClickListener(this);
+            SetEditing(true);
         }
 
         public void OnClick(View v)
         {
             if (v.Id == Resource.Id.btn_register)
             {
+                Console.WriteLine("Register button pressed.");
+                Toast.MakeText(this, "Registering new user...", ToastLength.Long).Show();
+                SetEditing(false);
                 RegisterUser(input_email.Text, input_password.Text);
             }
         }
@@ -63,19 +67,20 @@ namespace LetsEat.Views.Log_In
 
         public void OnComplete(Task task)   //Adrian 03/28/18 TODO: Change functionality of success and failure
         {
+            FirebaseUser currentUser;
+
             if (task.IsSuccessful == true)
             {
-                FirebaseUser currentUser;
-
-                Toast.MakeText(this, "Register Success", ToastLength.Long).Show();
-                //TODO: Add function to add name to firebase database
                 currentUser = auth.CurrentUser;
+                Console.WriteLine("Created User: " + currentUser.Email);
                 Add_AdditionalUserProperties(currentUser);
-                //Adrian 03/28/18 TODO: Add code/function call to update UI for new user
+                Toast.MakeText(this, "Register Success", ToastLength.Long).Show();
+                Finish();
             }
             else
             {   
                 Toast.MakeText(this, "Register Failed", ToastLength.Long).Show();
+                SetEditing(true);
                 //TODO: Error Checking of registration
             }
         }
@@ -93,13 +98,31 @@ namespace LetsEat.Views.Log_In
         {
             Spinner spinner = (Spinner)sender;
             this.selected_Type = spinner.GetItemAtPosition(e.Position).ToString().ToLower();
+            Console.WriteLine("Current Spinner Item Selected: " + this.selected_Type);
         }
 
         private void Add_AdditionalUserProperties(FirebaseUser user)
         {
-            DatabaseReference mDatabase = database.GetReference("users");
+            DatabaseReference reference = database.GetReference("users");
+            Console.WriteLine("Connected to database reference: " + reference.ToString());
 
-            mDatabase.Child(user.Uid).Child("user_type").SetValue(selected_Type);
+            reference.Child(user.Uid).Child("user_type").SetValue(selected_Type);
+            Console.WriteLine("Added user_type to database for userID: " + user.Uid);
+        }
+
+        private void SetEditing(bool enabled)
+        {
+            input_email.Enabled = enabled;
+            input_password.Enabled = enabled;
+            spinner_type.Enabled = enabled;
+            if (enabled)
+            {
+                btn_register.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                btn_register.Visibility = ViewStates.Gone;
+            }
         }
     }
 }
