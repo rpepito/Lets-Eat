@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">LetsEat</string>
+  <string-array name="user_types">
+    <item>Customer</item>
+    <item>Owner</item>
+  </string-array>
 </resources>
