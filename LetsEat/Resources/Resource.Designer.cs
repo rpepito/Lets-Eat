@@ -2559,8 +2559,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int btn_register = 2131361979;
+			// aapt resource value: 0x7f0a00bc
+			public const int btn_register = 2131361980;
 			
 			// aapt resource value: 0x7f0a0069
 			public const int buttonPanel = 2131361897;
@@ -2733,14 +2733,14 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00a2
 			public const int loginButton = 2131361954;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int masked = 2131361982;
+			// aapt resource value: 0x7f0a00bf
+			public const int masked = 2131361983;
 			
 			// aapt resource value: 0x7f0a00aa
 			public const int media_actions = 2131361962;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int message = 2131361980;
+			// aapt resource value: 0x7f0a00bd
+			public const int message = 2131361981;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int middle = 2131361848;
@@ -2799,11 +2799,14 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00a3
 			public const int registerButton = 2131361955;
 			
-			// aapt resource value: 0x7f0a00b8
-			public const int register_email = 2131361976;
-			
 			// aapt resource value: 0x7f0a00b9
-			public const int register_password = 2131361977;
+			public const int register_email = 2131361977;
+			
+			// aapt resource value: 0x7f0a00b8
+			public const int register_name = 2131361976;
+			
+			// aapt resource value: 0x7f0a00ba
+			public const int register_password = 2131361978;
 			
 			// aapt resource value: 0x7f0a0050
 			public const int right = 2131361872;
@@ -2901,8 +2904,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a006a
 			public const int spacer = 2131361898;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int spinner_type = 2131361978;
+			// aapt resource value: 0x7f0a00bb
+			public const int spinner_type = 2131361979;
 			
 			// aapt resource value: 0x7f0a0008
 			public const int split_action_bar = 2131361800;
@@ -3003,8 +3006,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0016
 			public const int view_offset_helper = 2131361814;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int visible = 2131361981;
+			// aapt resource value: 0x7f0a00be
+			public const int visible = 2131361982;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int wide = 2131361825;

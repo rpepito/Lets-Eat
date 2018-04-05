@@ -23,7 +23,7 @@ namespace LetsEat.Views.Log_In
         private FirebaseAuth auth;
         private FirebaseDatabase database;
         private Button btn_register;
-        private EditText input_email, input_password;
+        private EditText input_email, input_password, input_name;
         private Spinner spinner_type;
         private RelativeLayout activity_register;
         private String selected_Type;
@@ -43,6 +43,7 @@ namespace LetsEat.Views.Log_In
             btn_register = FindViewById<Button>(Resource.Id.btn_register);
             input_email = FindViewById<EditText>(Resource.Id.register_email);
             input_password = FindViewById<EditText>(Resource.Id.register_password);
+            input_name = FindViewById<EditText>(Resource.Id.register_name);
             activity_register = FindViewById<RelativeLayout>(Resource.Id.activity_register);
             SpinnerInit();
             btn_register.SetOnClickListener(this);
@@ -108,12 +109,15 @@ namespace LetsEat.Views.Log_In
 
             reference.Child(user.Uid).Child("user_type").SetValue(selected_Type);
             Console.WriteLine("Added user_type to database for userID: " + user.Uid);
+            reference.Child(user.Uid).Child("name").SetValue(input_name.Text);
+            Console.WriteLine("Added name to database for userID: " + user.Uid);
         }
 
         private void SetEditing(bool enabled)
         {
             input_email.Enabled = enabled;
             input_password.Enabled = enabled;
+            input_name.Enabled = enabled;
             spinner_type.Enabled = enabled;
             if (enabled)
             {
