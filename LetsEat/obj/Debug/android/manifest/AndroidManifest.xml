@@ -12,6 +12,7 @@
       </intent-filter>
     </activity>
     <activity android:label="LoginActivity" android:name="md5cce693907115afaff50af31afdc20eb5.LoginActivity" />
+    <activity android:label="Registration" android:name="md5cce693907115afaff50af31afdc20eb5.Registration" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LetsEat.LetsEat.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
@@ -20,5 +21,10 @@
         <category android:name="mono.android.intent.category.SEPPUKU.LetsEat.LetsEat" />
       </intent-filter>
     </receiver>
+    <meta-data android:name="android.support.VERSION" android:value="26.1.0" />
+    <provider android:authorities="LetsEat.LetsEat.firebaseinitprovider" android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:initOrder="100" />
+    <activity android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:exported="false" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT" />
   </application>
 </manifest>
