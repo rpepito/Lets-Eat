@@ -3074,7 +3074,7 @@ containing a value of this type.
         public static int beginning=0x7f0a0036;
         public static int blocking=0x7f0a005d;
         public static int bottom=0x7f0a0044;
-        public static int btn_register=0x7f0a00bb;
+        public static int btn_register=0x7f0a00bc;
         public static int buttonPanel=0x7f0a0069;
         public static int cancel_action=0x7f0a00a8;
         public static int center=0x7f0a004b;
@@ -3132,9 +3132,9 @@ containing a value of this type.
         public static int listMode=0x7f0a0025;
         public static int list_item=0x7f0a0067;
         public static int loginButton=0x7f0a00a2;
-        public static int masked=0x7f0a00be;
+        public static int masked=0x7f0a00bf;
         public static int media_actions=0x7f0a00aa;
-        public static int message=0x7f0a00bc;
+        public static int message=0x7f0a00bd;
         public static int middle=0x7f0a0038;
         public static int mini=0x7f0a0059;
         public static int multiply=0x7f0a002e;
@@ -3154,8 +3154,9 @@ containing a value of this type.
         public static int progress_horizontal=0x7f0a0007;
         public static int radio=0x7f0a007b;
         public static int registerButton=0x7f0a00a3;
-        public static int register_email=0x7f0a00b8;
-        public static int register_password=0x7f0a00b9;
+        public static int register_email=0x7f0a00b9;
+        public static int register_name=0x7f0a00b8;
+        public static int register_password=0x7f0a00ba;
         public static int right=0x7f0a0050;
         public static int right_icon=0x7f0a00b2;
         public static int right_side=0x7f0a00ae;
@@ -3188,7 +3189,7 @@ containing a value of this type.
         public static int snackbar_text=0x7f0a0097;
         public static int snap=0x7f0a004a;
         public static int spacer=0x7f0a006a;
-        public static int spinner_type=0x7f0a00ba;
+        public static int spinner_type=0x7f0a00bb;
         public static int split_action_bar=0x7f0a0008;
         public static int src_atop=0x7f0a0030;
         public static int src_in=0x7f0a0031;
@@ -3222,7 +3223,7 @@ containing a value of this type.
         public static int up=0x7f0a0009;
         public static int useLogo=0x7f0a002d;
         public static int view_offset_helper=0x7f0a0016;
-        public static int visible=0x7f0a00bd;
+        public static int visible=0x7f0a00be;
         public static int wide=0x7f0a0021;
         public static int withText=0x7f0a0043;
         public static int wrap_content=0x7f0a0035;
