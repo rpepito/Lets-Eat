@@ -27,7 +27,7 @@ namespace LetsEat
             InitFirebaseAuth();
 
             //Adrian 03/28/2018 TODO: Remove below later after editing MainActivity.cs to work with LoginActivity.cs
-            StartActivity(typeof(Views.Owner_Side.OwnerPage));    
+            StartActivity(typeof(Views.Log_In.LoginActivity));    
         }
 
         private void InitFirebaseAuth()

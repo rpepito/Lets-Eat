@@ -17,6 +17,7 @@ using Android.Gms.Tasks;
 using Firebase;
 using Firebase.Auth;
 using static Android.Views.View;
+using LetsEat.Views.Owner_Side;
 
 namespace LetsEat.Views.Log_In
 {
@@ -76,6 +77,7 @@ namespace LetsEat.Views.Log_In
             {
                 Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
                 //Adrian 03/28/18 TODO: Add code/function call to update UI
+                StartActivity(typeof(OwnerPage));
             }
             else
             {
