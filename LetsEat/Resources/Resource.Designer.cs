@@ -44,29 +44,29 @@ namespace LetsEat
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f040005
-			public const int loginButton = 2130968581;
-			
 			// aapt resource value: 0x7f040007
-			public const int myListView = 2130968583;
+			public const int cuisineTextView = 2130968583;
 			
 			// aapt resource value: 0x7f040004
-			public const int password = 2130968580;
-			
-			// aapt resource value: 0x7f040006
-			public const int registerButton = 2130968582;
-			
-			// aapt resource value: 0x7f040001
-			public const int txtCuisine = 2130968577;
-			
-			// aapt resource value: 0x7f040000
-			public const int txtName = 2130968576;
+			public const int listView = 2130968580;
 			
 			// aapt resource value: 0x7f040002
-			public const int txtPrice = 2130968578;
+			public const int loginButton = 2130968578;
+			
+			// aapt resource value: 0x7f040006
+			public const int nameTextView = 2130968582;
+			
+			// aapt resource value: 0x7f040001
+			public const int password = 2130968577;
+			
+			// aapt resource value: 0x7f040005
+			public const int photoImageView = 2130968581;
 			
 			// aapt resource value: 0x7f040003
-			public const int userName = 2130968579;
+			public const int registerButton = 2130968579;
+			
+			// aapt resource value: 0x7f040000
+			public const int userName = 2130968576;
 			
 			static Id()
 			{
@@ -82,13 +82,13 @@ namespace LetsEat
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int listview_row = 2130837504;
+			public const int LoginLayout = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int LoginLayout = 2130837505;
+			public const int Main = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int Main = 2130837506;
+			public const int userRow = 2130837506;
 			
 			static Layout()
 			{

@@ -1,7 +1,7 @@
 package md5112e1ce544e292e139446fe091803014;
 
 
-public class MyListViewAdapter
+public class MyCustomListAdapter
 	extends android.widget.BaseAdapter
 	implements
 		mono.android.IGCUserPeer
@@ -10,21 +10,29 @@ public class MyListViewAdapter
 	public static final String __md_methods;
 	static {
 		__md_methods = 
+			"n_getItem:(I)Ljava/lang/Object;:GetGetItem_IHandler\n" +
 			"n_getCount:()I:GetGetCountHandler\n" +
 			"n_getItemId:(I)J:GetGetItemId_IHandler\n" +
-			"n_getItem:(I)Ljava/lang/Object;:GetGetItem_IHandler\n" +
 			"n_getView:(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;:GetGetView_ILandroid_view_View_Landroid_view_ViewGroup_Handler\n" +
 			"";
-		mono.android.Runtime.register ("LetsEat.MyListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MyListViewAdapter.class, __md_methods);
+		mono.android.Runtime.register ("LetsEat.MyCustomListAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", MyCustomListAdapter.class, __md_methods);
 	}
 
 
-	public MyListViewAdapter ()
+	public MyCustomListAdapter ()
 	{
 		super ();
-		if (getClass () == MyListViewAdapter.class)
-			mono.android.TypeManager.Activate ("LetsEat.MyListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+		if (getClass () == MyCustomListAdapter.class)
+			mono.android.TypeManager.Activate ("LetsEat.MyCustomListAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
+
+
+	public java.lang.Object getItem (int p0)
+	{
+		return n_getItem (p0);
+	}
+
+	private native java.lang.Object n_getItem (int p0);
 
 
 	public int getCount ()
@@ -41,14 +49,6 @@ public class MyListViewAdapter
 	}
 
 	private native long n_getItemId (int p0);
-
-
-	public java.lang.Object getItem (int p0)
-	{
-		return n_getItem (p0);
-	}
-
-	private native java.lang.Object n_getItem (int p0);
 
 
 	public android.view.View getView (int p0, android.view.View p1, android.view.ViewGroup p2)

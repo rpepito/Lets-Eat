@@ -2,10 +2,14 @@ LetsEat.MainActivity, LetsEat;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
 letseat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
-LetsEat.MyListViewAdapter, LetsEat;md5112e1ce544e292e139446fe091803014.MyListViewAdapter
-LetsEat.MyListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MyListViewAdapter
-LetsEat.MyListViewAdapter;md5112e1ce544e292e139446fe091803014.MyListViewAdapter
-letseat.MyListViewAdapter;md5112e1ce544e292e139446fe091803014.MyListViewAdapter
+LetsEat.MyCustomListAdapter, LetsEat;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
+LetsEat.MyCustomListAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
+LetsEat.MyCustomListAdapter;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
+letseat.MyCustomListAdapter;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
+LetsEat.ViewHolder, LetsEat;md5112e1ce544e292e139446fe091803014.ViewHolder
+LetsEat.ViewHolder, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.ViewHolder
+LetsEat.ViewHolder;md5112e1ce544e292e139446fe091803014.ViewHolder
+letseat.ViewHolder;md5112e1ce544e292e139446fe091803014.ViewHolder
 LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity

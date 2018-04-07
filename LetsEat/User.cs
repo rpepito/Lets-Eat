@@ -12,10 +12,16 @@ using Android.Widget;
 
 namespace LetsEat
 {
-    class Restaurant
+    public class User
     {
         public string Name { get; set; }
+        public string ImageUrl { get; set; }
         public string Cuisine { get; set; }
         public string Price { get; set; }
+
+        public override string ToString()
+        {
+            return Name + " " + Cuisine;
+        }
     }
 }

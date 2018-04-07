@@ -7,11 +7,10 @@ using System.Collections.Generic;
 
 namespace LetsEat
 {
-    [Activity(Label = "LetsEat", MainLauncher = true)]
+    [Activity(Label = "Let's Eat", MainLauncher = true)]
     public class MainActivity : Activity
     {
-        private List<Restaurant> mItems;
-        private ListView mListView;
+        ListView myList;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -20,15 +19,9 @@ namespace LetsEat
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            mListView = FindViewById<ListView>(Resource.Id.myListView);
+            myList = FindViewById<ListView>(Resource.Id.listView);
 
-            mItems = new List<Restaurant>();
-            mItems.Add(new Restaurant() { Name = "King and I Thai Restaurant", Cuisine = "Thai", Price = "$$" });
-            mItems.Add(new Restaurant() { Name = "Hot and Juicy Seafood", Cuisine = "Seafood", Price = "$$$" });
-            mItems.Add(new Restaurant() { Name = "I Love Sushi", Cuisine = "Japanese", Price = "$$$" });
-
-            MyListViewAdapter adapter = new MyListViewAdapter(this, mItems);
-            mListView.Adapter = adapter;
+            myList.Adapter = new MyCustomListAdapter(UserData.Users);
         }
     }
 }
