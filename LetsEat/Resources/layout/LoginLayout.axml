@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,47 +10,39 @@
         android:layout_centerInParent="true"
         android:layout_margin="10dp"
         android:orientation="vertical">
-  
         <EditText
-          android:id="@+id/userName"
-          android:hint="Username"
-          android:layout_width="fill_parent"
-          android:layout_height="45dp"
-          android:padding="5dp" />
-        
+            android:id="@+id/email"
+            android:hint="Email"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:padding="5dp" />
         <View
-          android:layout_width="fill_parent"
-          android:layout_height="2dp" />
-
+            android:layout_width="fill_parent"
+            android:layout_height="2dp" />
         <EditText
-          android:id="@+id/password"
-          android:hint="Password"
-          android:layout_width="fill_parent"
-          android:layout_height="45dp"
-          android:padding="5dp" 
-          android:inputType="textPassword" />
-      
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:inputType="textPassword" />
         <Button
-          android:id="@+id/loginButton"
-          android:text="Login"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:layout_below="@id/password"
-          android:layout_marginTop="10dp"
-          android:background="#307FC1"
-          android:textColor="@android:color/white" />
-      
+            android:id="@+id/loginButton"
+            android:text="Login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:background="#307FC1"
+            android:textColor="@android:color/white" />
         <Button
-          android:id="@+id/registerButton"
-          android:text="Register"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content"
-          android:layout_below="@id/loginButton"
-          android:layout_marginTop="10dp"
-          android:background="#307FC1"
-          android:textColor="@android:color/white" />
-         
-    
-  </LinearLayout>
-
+            android:id="@+id/registerButton"
+            android:text="Register"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/loginButton"
+            android:layout_marginTop="10dp"
+            android:background="#307FC1"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 </RelativeLayout>
