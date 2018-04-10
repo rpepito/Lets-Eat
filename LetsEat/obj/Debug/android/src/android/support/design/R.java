@@ -3039,9 +3039,13 @@ containing a value of this type.
     public static final class id {
         public static int ALT=0x7f0a0039;
         public static int CTRL=0x7f0a003a;
+        public static int Description=0x7f0a0097;
+        public static int DishName=0x7f0a0093;
         public static int FUNCTION=0x7f0a003b;
+        public static int Ingredients=0x7f0a0095;
         public static int META=0x7f0a003c;
         public static int Menubutton=0x7f0a00c3;
+        public static int Price=0x7f0a0099;
         public static int Queuebutton=0x7f0a00c5;
         public static int Reservationbutton=0x7f0a00c6;
         public static int SHIFT=0x7f0a003d;
@@ -3060,7 +3064,6 @@ containing a value of this type.
         public static int action_context_bar=0x7f0a0083;
         public static int action_divider=0x7f0a00b7;
         public static int action_image=0x7f0a00b1;
-        public static int action_logout=0x7f0a00d1;
         public static int action_menu_divider=0x7f0a0003;
         public static int action_menu_presenter=0x7f0a0004;
         public static int action_mode_bar=0x7f0a007f;
@@ -3107,10 +3110,6 @@ containing a value of this type.
         public static int design_menu_item_text=0x7f0a00a5;
         public static int design_navigation_view=0x7f0a00a4;
         public static int disableHome=0x7f0a0028;
-        public static int editText1=0x7f0a0093;
-        public static int editText2=0x7f0a0095;
-        public static int editText3=0x7f0a0097;
-        public static int editText4=0x7f0a0099;
         public static int edit_query=0x7f0a0084;
         public static int email=0x7f0a00aa;
         public static int end=0x7f0a0037;

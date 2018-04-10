@@ -29,7 +29,7 @@
                 android:inputType="textPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText1"
+                android:id="@+id/DishName"
                 android:background="@android:color/white"
                 android:gravity="center" />
             <TextView
@@ -45,7 +45,7 @@
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
                 android:layout_height="95.0dp"
-                android:id="@+id/editText2"
+                android:id="@+id/Ingredients"
                 android:layout_marginBottom="13.5dp"
                 android:background="@android:color/white"
                 android:gravity="center_horizontal" />
@@ -62,7 +62,7 @@
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
                 android:layout_height="111.5dp"
-                android:id="@+id/editText3"
+                android:id="@+id/Description"
                 android:layout_marginBottom="6.0dp"
                 android:background="@android:color/white"
                 android:gravity="center_horizontal" />
@@ -76,19 +76,15 @@
                 android:layout_marginBottom="8.5dp" />
             <EditText
                 android:inputType="numberDecimal"
-                android:layout_width="136.5dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/editText4"
-                android:layout_marginLeft="131.5dp"
-                android:layout_marginRight="131.5dp"
                 android:background="@android:color/white"
-                android:gravity="center" />
+                android:id="@+id/Price"
+                android:layout_height="34.0dp" />
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="48.0dp"
                 android:id="@+id/savebtn"
-                android:layout_marginTop="21.0dp"
-                android:text="Save" />
+                android:text="Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18.5dp" />
         </TableLayout>
     </ScrollView>
 </LinearLayout>

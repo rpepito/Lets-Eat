@@ -2454,14 +2454,26 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a003a
 			public const int CTRL = 2131361850;
 			
+			// aapt resource value: 0x7f0a0097
+			public const int Description = 2131361943;
+			
+			// aapt resource value: 0x7f0a0093
+			public const int DishName = 2131361939;
+			
 			// aapt resource value: 0x7f0a003b
 			public const int FUNCTION = 2131361851;
+			
+			// aapt resource value: 0x7f0a0095
+			public const int Ingredients = 2131361941;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int META = 2131361852;
 			
 			// aapt resource value: 0x7f0a00c3
 			public const int Menubutton = 2131361987;
+			
+			// aapt resource value: 0x7f0a0099
+			public const int Price = 2131361945;
 			
 			// aapt resource value: 0x7f0a00c5
 			public const int Queuebutton = 2131361989;
@@ -2654,18 +2666,6 @@ namespace LetsEat
 			
 			// aapt resource value: 0x7f0a0028
 			public const int disableHome = 2131361832;
-			
-			// aapt resource value: 0x7f0a0093
-			public const int editText1 = 2131361939;
-			
-			// aapt resource value: 0x7f0a0095
-			public const int editText2 = 2131361941;
-			
-			// aapt resource value: 0x7f0a0097
-			public const int editText3 = 2131361943;
-			
-			// aapt resource value: 0x7f0a0099
-			public const int editText4 = 2131361945;
 			
 			// aapt resource value: 0x7f0a0084
 			public const int edit_query = 2131361924;

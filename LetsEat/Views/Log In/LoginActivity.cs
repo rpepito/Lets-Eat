@@ -55,7 +55,7 @@ namespace LetsEat.Views.Log_In
             {
                 if (input_email.Text == "" || input_password.Text == "")
                 {
-                    Toast.MakeText(this, "E-mail or password was incorrect", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Please enter your E-mail & Password", ToastLength.Long).Show();
                 }
                 else
                 {
