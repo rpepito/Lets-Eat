@@ -2,6 +2,30 @@ LetsEat.MainActivity, LetsEat;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
 letseat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
+LetsEat.Menu, LetsEat;md5112e1ce544e292e139446fe091803014.Menu
+LetsEat.Menu, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Menu
+LetsEat.Menu;md5112e1ce544e292e139446fe091803014.Menu
+letseat.Menu;md5112e1ce544e292e139446fe091803014.Menu
+LetsEat.Queue, LetsEat;md5112e1ce544e292e139446fe091803014.Queue
+LetsEat.Queue, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Queue
+LetsEat.Queue;md5112e1ce544e292e139446fe091803014.Queue
+letseat.Queue;md5112e1ce544e292e139446fe091803014.Queue
+LetsEat.Reservations, LetsEat;md5112e1ce544e292e139446fe091803014.Reservations
+LetsEat.Reservations, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Reservations
+LetsEat.Reservations;md5112e1ce544e292e139446fe091803014.Reservations
+letseat.Reservations;md5112e1ce544e292e139446fe091803014.Reservations
+LetsEat.TableList, LetsEat;md5112e1ce544e292e139446fe091803014.TableList
+LetsEat.TableList, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.TableList
+LetsEat.TableList;md5112e1ce544e292e139446fe091803014.TableList
+letseat.TableList;md5112e1ce544e292e139446fe091803014.TableList
+LetsEat.Views.Owner_Side.OwnerPage, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.Owner_Side.OwnerPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.Owner_Side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+letseat.views.owner_side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.OwnerSide.AddDish, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
+LetsEat.Views.OwnerSide.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
+LetsEat.Views.OwnerSide.AddDish;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
+letseat.views.ownerside.AddDish;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
 LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity

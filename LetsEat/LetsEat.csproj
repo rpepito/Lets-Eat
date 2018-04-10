@@ -132,6 +132,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Log In\LoginActivity.cs" />
     <Compile Include="Views\Log In\Registration.cs" />
+    <Compile Include="Views\Owner Side\AddDish.cs" />
+    <Compile Include="Views\Owner Side\Dish.cs" />
+    <Compile Include="Views\Owner Side\Menu.cs" />
+    <Compile Include="Views\Owner Side\OwnerPage.cs" />
+    <Compile Include="Views\Owner Side\Queue.cs" />
+    <Compile Include="Views\Owner Side\Reservations.cs" />
+    <Compile Include="Views\Owner Side\TableList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -145,6 +152,16 @@
     <AndroidResource Include="Resources\layout\Registration.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddDishLayout.axml" />
+    <AndroidResource Include="Resources\layout\DishList.axml" />
+    <AndroidResource Include="Resources\layout\MenuLayout.axml" />
+    <AndroidResource Include="Resources\layout\OwnerPage.axml" />
+    <AndroidResource Include="Resources\layout\QueueLayout.axml" />
+    <AndroidResource Include="Resources\layout\ReservationLayout.axml" />
+    <AndroidResource Include="Resources\layout\TableLayout.axml" />
+    <AndroidResource Include="Resources\drawable\add_icon.png" />
+    <AndroidResource Include="Resources\menu\dishes.xml" />
+    <AndroidResource Include="Resources\drawable\logout_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

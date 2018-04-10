@@ -30,7 +30,7 @@ namespace LetsEat
             InitFirebase();
 
             //Adrian 03/28/2018 TODO: Remove below later after editing MainActivity.cs to work with LoginActivity.cs
-            StartActivity(new Intent(this, typeof(Views.Log_In.LoginActivity)));    
+            StartActivity(new Intent(this, typeof(Views.Log_In.LoginActivity)));
         }
 
         /*protected override void OnStart()
@@ -57,8 +57,8 @@ namespace LetsEat
             auth.AuthState += (sender, e) =>
             {
                 currentUser = e?.Auth?.CurrentUser;
-                
-                if(currentUser != null)
+
+                if (currentUser != null)
                 {
 
                 }

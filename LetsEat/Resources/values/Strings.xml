@@ -5,4 +5,9 @@
     <item>Customer</item>
     <item>Owner</item>
   </string-array>
+
+  <style name="Mytheme" parent="android:Theme.Material.Light">
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowActionBar">false</item>
+  </style>
 </resources>
