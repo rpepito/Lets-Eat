@@ -3,14 +3,14 @@
     <Files>
       <File FileName="LetsEat/Views/Owner Side/Reservations.cs" Line="1" Column="1" />
       <File FileName="LetsEat/Views/Owner Side/ReservePageActivity.cs" Line="20" Column="15" />
-      <File FileName="LetsEat/Resources/values/Strings.xml" Line="13" Column="13" />
+      <File FileName="LetsEat/Resources/values/Strings.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
+  <MonoDevelop.Ide.ItemProperties.LetsEat PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
