@@ -161,6 +161,7 @@
     <AndroidResource Include="Resources\layout\TableLayout.axml" />
     <AndroidResource Include="Resources\drawable\add_icon.png" />
     <AndroidResource Include="Resources\menu\dishes.xml" />
+    <AndroidResource Include="Resources\drawable\logout_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

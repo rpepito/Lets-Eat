@@ -53,8 +53,15 @@ namespace LetsEat.Views.Log_In
         {
             if (v.Id == Resource.Id.loginButton)
             {
-                LoginUser(input_email.Text, input_password.Text);
-                SetEditing(false);
+                if (input_email.Text == "" || input_password.Text == "")
+                {
+                    Toast.MakeText(this, "E-mail or password was incorrect", ToastLength.Long).Show();
+                }
+                else
+                {
+                    LoginUser(input_email.Text, input_password.Text);
+                    SetEditing(false);
+                }
             }
             else if (v.Id == Resource.Id.registerButton)
             {

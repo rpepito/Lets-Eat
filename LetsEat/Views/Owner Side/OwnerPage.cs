@@ -15,6 +15,7 @@ using Android.Widget;
 using Android.Support.Design.Widget;
 using Android.Gms.Tasks;
 using static Android.Views.View;
+using LetsEat.Views.OwnerSide;
 
 namespace LetsEat.Views.Owner_Side
 {
@@ -23,7 +24,7 @@ namespace LetsEat.Views.Owner_Side
     {
         private Button btn_Menu, btn_Table, btn_Queue, btn_Reservation;
         private RelativeLayout activity_main;
-
+        //Toolbar toolbar;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -36,6 +37,11 @@ namespace LetsEat.Views.Owner_Side
             btn_Queue = FindViewById<Button>(Resource.Id.Queuebutton);
             btn_Reservation = FindViewById<Button>(Resource.Id.Reservationbutton);
             activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
+            //toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
+
+
+            //SetActionBar(toolbar);
+            //ActionBar.Title = "Resturant Name";
 
             btn_Menu.SetOnClickListener(this);
             btn_Queue.SetOnClickListener(this);
@@ -64,6 +70,7 @@ namespace LetsEat.Views.Owner_Side
             {
                 StartActivity(typeof(Reservations));
             }
-        }                
+        }
+
     }
 }
