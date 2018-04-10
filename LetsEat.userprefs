@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Resources/values/Strings.xml">
     <Files>
       <File FileName="LetsEat/Views/Owner Side/Reservations.cs" Line="1" Column="1" />
-      <File FileName="LetsEat/Views/Owner Side/ReservePageActivity.cs" Line="10" Column="23" />
+      <File FileName="LetsEat/Views/Owner Side/ReservePageActivity.cs" Line="20" Column="15" />
+      <File FileName="LetsEat/Resources/values/Strings.xml" Line="13" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

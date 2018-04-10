@@ -114,6 +114,7 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/R.cs.flag
 C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/uploadflags.txt
 C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/bin/Debug/LetsEat.dll.mdb
 C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/LetsEat.dll.mdb
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.csprojResolveAssemblyReference.cache
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Basement.dll.stamp
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Tasks.dll.stamp
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.Firebase.Common.dll.stamp

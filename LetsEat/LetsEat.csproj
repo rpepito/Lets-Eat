@@ -162,6 +162,7 @@
     <AndroidResource Include="Resources\menu\dishes.xml" />
     <AndroidResource Include="Resources\drawable\logout_icon.png" />
     <AndroidResource Include="Resources\layout\ResListItem.xml" />
+    <AndroidResource Include="Resources\layout\ReservePage.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
