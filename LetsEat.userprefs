@@ -1,9 +1,17 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/Reservations.cs">
+    <Files>
+      <File FileName="LetsEat/Views/Log In/Registration.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/AddDish.cs" Line="28" Column="13" />
+      <File FileName="LetsEat/Views/Owner Side/Menu.cs" Line="35" Column="13" />
+      <File FileName="LetsEat/Views/Owner Side/Reservations.cs" Line="28" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LetsEat PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

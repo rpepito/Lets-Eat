@@ -2,7 +2,7 @@ package md5112e1ce544e292e139446fe091803014;
 
 
 public class Reservations
-	extends android.app.Activity
+	extends android.app.ListActivity
 	implements
 		mono.android.IGCUserPeer
 {

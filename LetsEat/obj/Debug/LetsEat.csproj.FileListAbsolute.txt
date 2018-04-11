@@ -172,6 +172,8 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/add_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/menu/dishes.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/logout_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/reslistitem.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/reservepage.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/main.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/values/strings.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag

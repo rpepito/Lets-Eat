@@ -3047,12 +3047,16 @@ containing a value of this type.
         public static int Menubutton=0x7f0a00c3;
         public static int Price=0x7f0a0099;
         public static int Queuebutton=0x7f0a00c5;
+        public static int ReservationButton=0x7f0a00d0;
+        public static int ReservationText=0x7f0a00cf;
         public static int Reservationbutton=0x7f0a00c6;
+        public static int ReserveList=0x7f0a00ce;
+        public static int ReservePageButton=0x7f0a00cd;
         public static int SHIFT=0x7f0a003d;
         public static int SYM=0x7f0a003e;
         public static int Tablebutton=0x7f0a00c4;
         public static int action0=0x7f0a00b3;
-        public static int action_add=0x7f0a00d0;
+        public static int action_add=0x7f0a00d4;
         public static int action_bar=0x7f0a0082;
         public static int action_bar_activity_content=0x7f0a0001;
         public static int action_bar_container=0x7f0a0081;
@@ -3143,11 +3147,11 @@ containing a value of this type.
         public static int listMode=0x7f0a0025;
         public static int list_item=0x7f0a0067;
         public static int loginButton=0x7f0a00ac;
-        public static int masked=0x7f0a00cf;
+        public static int masked=0x7f0a00d3;
         public static int media_actions=0x7f0a00b6;
         public static int menulistView=0x7f0a00af;
         public static int menutoolbar=0x7f0a00ae;
-        public static int message=0x7f0a00cd;
+        public static int message=0x7f0a00d1;
         public static int middle=0x7f0a0038;
         public static int mini=0x7f0a0059;
         public static int multiply=0x7f0a002e;
@@ -3242,7 +3246,7 @@ containing a value of this type.
         public static int up=0x7f0a0009;
         public static int useLogo=0x7f0a002d;
         public static int view_offset_helper=0x7f0a0016;
-        public static int visible=0x7f0a00ce;
+        public static int visible=0x7f0a00d2;
         public static int wide=0x7f0a0021;
         public static int withText=0x7f0a0043;
         public static int wrap_content=0x7f0a0035;
@@ -3326,12 +3330,14 @@ containing a value of this type.
         public static int queuelayout=0x7f03003e;
         public static int registration=0x7f03003f;
         public static int reservationlayout=0x7f030040;
-        public static int select_dialog_item_material=0x7f030041;
-        public static int select_dialog_multichoice_material=0x7f030042;
-        public static int select_dialog_singlechoice_material=0x7f030043;
-        public static int support_simple_spinner_dropdown_item=0x7f030044;
-        public static int tablelayout=0x7f030045;
-        public static int tooltip=0x7f030046;
+        public static int reservepage=0x7f030041;
+        public static int reslistitem=0x7f030042;
+        public static int select_dialog_item_material=0x7f030043;
+        public static int select_dialog_multichoice_material=0x7f030044;
+        public static int select_dialog_singlechoice_material=0x7f030045;
+        public static int support_simple_spinner_dropdown_item=0x7f030046;
+        public static int tablelayout=0x7f030047;
+        public static int tooltip=0x7f030048;
     }
     public static final class menu {
         public static int dishes=0x7f0e0000;
@@ -3394,6 +3400,7 @@ containing a value of this type.
         public static int path_password_eye_mask_strike_through=0x7f070037;
         public static int path_password_eye_mask_visible=0x7f070038;
         public static int path_password_strike_through=0x7f070039;
+        public static int reservePage=0x7f07003b;
         public static int search_menu_title=0x7f070024;
         public static int status_bar_notification_info_overflow=0x7f070025;
     }
