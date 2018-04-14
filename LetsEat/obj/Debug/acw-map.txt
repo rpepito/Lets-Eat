@@ -6,6 +6,10 @@ LetsEat.MyCustomListAdapter, LetsEat;md5112e1ce544e292e139446fe091803014.MyCusto
 LetsEat.MyCustomListAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
 LetsEat.MyCustomListAdapter;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
 letseat.MyCustomListAdapter;md5112e1ce544e292e139446fe091803014.MyCustomListAdapter
+LetsEat.RestaurantPage, LetsEat;md5112e1ce544e292e139446fe091803014.RestaurantPage
+LetsEat.RestaurantPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.RestaurantPage
+LetsEat.RestaurantPage;md5112e1ce544e292e139446fe091803014.RestaurantPage
+letseat.RestaurantPage;md5112e1ce544e292e139446fe091803014.RestaurantPage
 LetsEat.ViewHolder, LetsEat;md5112e1ce544e292e139446fe091803014.ViewHolder
 LetsEat.ViewHolder, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.ViewHolder
 LetsEat.ViewHolder;md5112e1ce544e292e139446fe091803014.ViewHolder

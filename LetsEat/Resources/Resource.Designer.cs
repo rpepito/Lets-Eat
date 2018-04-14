@@ -65,6 +65,18 @@ namespace LetsEat
 			// aapt resource value: 0x7f040003
 			public const int registerButton = 2130968579;
 			
+			// aapt resource value: 0x7f040008
+			public const int timeButton1 = 2130968584;
+			
+			// aapt resource value: 0x7f040009
+			public const int timeButton2 = 2130968585;
+			
+			// aapt resource value: 0x7f04000a
+			public const int timeButton3 = 2130968586;
+			
+			// aapt resource value: 0x7f04000b
+			public const int timeButton4 = 2130968587;
+			
 			// aapt resource value: 0x7f040000
 			public const int userName = 2130968576;
 			
@@ -88,7 +100,10 @@ namespace LetsEat
 			public const int Main = 2130837505;
 			
 			// aapt resource value: 0x7f020002
-			public const int userRow = 2130837506;
+			public const int RestaurantPage_Layout = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int userRow = 2130837507;
 			
 			static Layout()
 			{

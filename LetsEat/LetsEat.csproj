@@ -61,6 +61,7 @@
     <Compile Include="Models\Tokens.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="MyCustomListAdapter.cs" />
+    <Compile Include="RestaurantPage.cs" />
     <Compile Include="User.cs" />
     <Compile Include="UserData.cs" />
     <Compile Include="ViewHolder.cs" />
@@ -76,7 +77,12 @@
     <AndroidResource Include="Resources\layout\LoginLayout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\userRow.axml" />
+    <AndroidResource Include="Resources\layout\userRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\RestaurantPage_Layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

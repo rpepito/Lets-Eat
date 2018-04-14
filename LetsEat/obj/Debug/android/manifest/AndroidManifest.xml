@@ -11,6 +11,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="Resturant's Info" android:name="md5112e1ce544e292e139446fe091803014.RestaurantPage" />
     <activity android:label="LoginActivity" android:name="md5cce693907115afaff50af31afdc20eb5.LoginActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LetsEat.LetsEat.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

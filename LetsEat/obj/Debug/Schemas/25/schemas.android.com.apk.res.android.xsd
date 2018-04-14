@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/6/2018 9:55:53 PM</xs:documentation>
+    <xs:documentation>4/14/2018 3:44:56 PM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16893,6 +16893,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -19757,6 +19761,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -19843,6 +19851,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -19929,6 +19941,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20015,6 +20031,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20101,6 +20121,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20427,6 +20451,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20513,6 +20541,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20599,6 +20631,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -20725,6 +20761,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -21253,6 +21293,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -21339,6 +21383,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -21425,6 +21473,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
@@ -21511,6 +21563,10 @@
             <xs:enumeration value="@id/password" />
             <xs:enumeration value="@id/photoImageView" />
             <xs:enumeration value="@id/registerButton" />
+            <xs:enumeration value="@id/timeButton1" />
+            <xs:enumeration value="@id/timeButton2" />
+            <xs:enumeration value="@id/timeButton3" />
+            <xs:enumeration value="@id/timeButton4" />
             <xs:enumeration value="@id/userName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
