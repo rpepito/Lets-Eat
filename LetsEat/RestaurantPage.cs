@@ -80,6 +80,46 @@ namespace LetsEat
                 mphone.Text = "(702) 590-8670";
                 mdescription.Text = "Serving a modern interpretation of Thai cuisine, Lemongrass offers a wide variety of authentic dishes filled with flavor. Our Satay Bar offers charcoal-grilled beef, poultry, pork and seafood skewers served with a variety of sauces and seasonings. Or enjoy inspired Asian cocktails at the expanded bar and lounge located near the entrance. The casual, modern atmosphere also offers two private dining rooms for a more exclusive ";
             }
+
+            if(Intent.GetStringExtra("Name") == "Aloha Kitchen")
+            {
+                madress.Text = "4745 S Maryland Pkwy, Las Vegas, NV 89119";
+                mhours.Text = "Mon-Sun: 8AM-10PM";
+                mphone.Text = "(702) 895-9444";
+                mdescription.Text = "";
+            }
+
+            if (Intent.GetStringExtra("Name") == "Pho Thanh Huong")
+            {
+                madress.Text = "131 E Tropicana Ave D, Las Vegas, NV 89119";
+                mhours.Text = "Mon-Sun: 10AM-10PM";
+                mphone.Text = "(702) 739-8703";
+                mdescription.Text = "";
+            }
+
+            if (Intent.GetStringExtra("Name") == "Olive Garden")
+            {
+                madress.Text = "1545 E Flamingo Rd, Las Vegas, NV 89119";
+                mhours.Text = "Mon-Thur:11AM-10PM\nFri-Sat:11AM-11PM\nSunday: 11AM-10PM";
+                mphone.Text = "(702) 735-0082";
+                mdescription.Text = "";
+            }
+
+            if (Intent.GetStringExtra("Name") == "Roberto's Taco Shop")
+            {
+                madress.Text = "1220 E Harmon Ave A-2, Las Vegas, NV 89119";
+                mhours.Text = "24 Hours";
+                mphone.Text = "(702) 792-3611";
+                mdescription.Text = "";
+            }
+
+            if (Intent.GetStringExtra("Name") == "Sweet Poke")
+            {
+                madress.Text = "4680 S Maryland Pkwy, Las Vegas, NV 89119";
+                mhours.Text = "Mon-Sun: 11AM-9PM";
+                mphone.Text = "(702) 202-2180";
+                mdescription.Text = "";
+            }
         }
     }
 }

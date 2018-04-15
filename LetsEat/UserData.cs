@@ -66,6 +66,46 @@ namespace LetsEat
                 ImageUrl = "images/italian.png",
                 Price = "$$$"
             });
+
+            users.Add(new User()
+            {
+                Name = "Aloha Kitchen",
+                Cuisine = "Hawaiian",
+                ImageUrl = "images/hawaiian.png",
+                Price = "$$"
+            });
+
+            users.Add(new User()
+            {
+                Name = "Pho Thanh Huong",
+                Cuisine = "Vietnamese",
+                ImageUrl = "images/vietnamese.png",
+                Price = "$$"
+            });
+
+            users.Add(new User()
+            {
+                Name = "Olive Garden",
+                Cuisine = "Italian",
+                ImageUrl = "images/italian2.png",
+                Price = "$$"
+            });
+
+            users.Add(new User()
+            {
+                Name = "Sweet Poke",
+                Cuisine = "Sushi",
+                ImageUrl = "images/sushi.png",
+                Price = "$$"
+            });
+
+            users.Add(new User()
+            {
+                Name = "Roberto's Taco Shop",
+                Cuisine = "Mexican",
+                ImageUrl = "images/mexican.png",
+                Price = "$$"
+            });
         }
     }
 }
