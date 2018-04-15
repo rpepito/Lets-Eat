@@ -37,21 +37,22 @@ namespace LetsEat
 
         private void MyList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            if(e.Position == 0)
+
+            if (e.Position == 0)
             {
                 Intent intent = new Intent(this, typeof(RestaurantPage));
-                intent.PutExtra("Name", "King and I");
-                intent.PutExtra("Cuisine", "Thai");
-                intent.PutExtra("Photo", "images/thai.png");
+                intent.PutExtra("Name", "Lago - Bellagio");
+                intent.PutExtra("Cuisine", "Italian");
+                intent.PutExtra("Photo", "images/italian.png");
                 StartActivity(intent);
             }
 
             if (e.Position == 1)
             {
                 Intent intent = new Intent(this, typeof(RestaurantPage));
-                intent.PutExtra("Name", "Lago - Bellagio");
-                intent.PutExtra("Cuisine", "Italian");
-                intent.PutExtra("Photo", "images/italian.png");
+                intent.PutExtra("Name", "Lemongrass - Aria");
+                intent.PutExtra("Cuisine", "Thai & Chinese");
+                intent.PutExtra("Photo", "images/thai.png");
                 StartActivity(intent);
             }
 

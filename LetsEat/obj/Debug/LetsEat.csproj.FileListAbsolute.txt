@@ -32,6 +32,7 @@ C:\Users\Owner\Source\Repos\Lets-Eat5\LetsEat\obj\Debug\uploadflags.txt
 C:\Users\Owner\Source\Repos\Lets-Eat5\LetsEat\obj\Debug\LetsEat.csprojResolveAssemblyReference.cache
 C:\Users\Owner\Source\Repos\Lets-Eat5\LetsEat\bin\Debug\LetsEat.dll.mdb
 C:\Users\Owner\Source\Repos\Lets-Eat5\LetsEat\obj\Debug\android\assets\LetsEat.dll.mdb
+C:\Users\Owner\Source\Repos\Lets-Eat5\LetsEat\bin\Debug\LetsEat.dll
 bin\Debug\Mono.Android.pdb
 bin\Debug\mscorlib.pdb
 bin\Debug\System.Core.pdb

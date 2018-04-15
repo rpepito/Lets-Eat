@@ -44,8 +44,29 @@ namespace LetsEat
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f040011
+			public const int addressdetail = 2130968593;
+			
+			// aapt resource value: 0x7f040010
+			public const int addressheader = 2130968592;
+			
 			// aapt resource value: 0x7f040007
 			public const int cuisineTextView = 2130968583;
+			
+			// aapt resource value: 0x7f040017
+			public const int description = 2130968599;
+			
+			// aapt resource value: 0x7f040018
+			public const int descriptiondetail = 2130968600;
+			
+			// aapt resource value: 0x7f040012
+			public const int detail = 2130968594;
+			
+			// aapt resource value: 0x7f040015
+			public const int hours = 2130968597;
+			
+			// aapt resource value: 0x7f040016
+			public const int hoursdetail = 2130968598;
 			
 			// aapt resource value: 0x7f040004
 			public const int listView = 2130968580;
@@ -58,6 +79,12 @@ namespace LetsEat
 			
 			// aapt resource value: 0x7f040001
 			public const int password = 2130968577;
+			
+			// aapt resource value: 0x7f040013
+			public const int phone = 2130968595;
+			
+			// aapt resource value: 0x7f040014
+			public const int phonedetail = 2130968596;
 			
 			// aapt resource value: 0x7f040005
 			public const int photoImageView = 2130968581;
@@ -76,6 +103,18 @@ namespace LetsEat
 			
 			// aapt resource value: 0x7f04000b
 			public const int timeButton4 = 2130968587;
+			
+			// aapt resource value: 0x7f04000c
+			public const int timeButton5 = 2130968588;
+			
+			// aapt resource value: 0x7f04000d
+			public const int timeButton6 = 2130968589;
+			
+			// aapt resource value: 0x7f04000e
+			public const int timeButton7 = 2130968590;
+			
+			// aapt resource value: 0x7f04000f
+			public const int timeButton8 = 2130968591;
 			
 			// aapt resource value: 0x7f040000
 			public const int userName = 2130968576;

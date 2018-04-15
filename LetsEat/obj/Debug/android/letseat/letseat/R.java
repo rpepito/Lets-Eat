@@ -11,17 +11,30 @@ public final class R {
     public static final class attr {
     }
     public static final class id {
+        public static final int addressdetail=0x7f040011;
+        public static final int addressheader=0x7f040010;
         public static final int cuisineTextView=0x7f040007;
+        public static final int description=0x7f040017;
+        public static final int descriptiondetail=0x7f040018;
+        public static final int detail=0x7f040012;
+        public static final int hours=0x7f040015;
+        public static final int hoursdetail=0x7f040016;
         public static final int listView=0x7f040004;
         public static final int loginButton=0x7f040002;
         public static final int nameTextView=0x7f040006;
         public static final int password=0x7f040001;
+        public static final int phone=0x7f040013;
+        public static final int phonedetail=0x7f040014;
         public static final int photoImageView=0x7f040005;
         public static final int registerButton=0x7f040003;
         public static final int timeButton1=0x7f040008;
         public static final int timeButton2=0x7f040009;
         public static final int timeButton3=0x7f04000a;
         public static final int timeButton4=0x7f04000b;
+        public static final int timeButton5=0x7f04000c;
+        public static final int timeButton6=0x7f04000d;
+        public static final int timeButton7=0x7f04000e;
+        public static final int timeButton8=0x7f04000f;
         public static final int userName=0x7f040000;
     }
     public static final class layout {

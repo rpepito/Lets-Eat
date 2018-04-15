@@ -29,8 +29,8 @@ namespace LetsEat
         {
             users.Add(new User()
             {
-                Name = "King and I Thai",
-                Cuisine = "Thai",
+                Name = "Lemongrass - Aria",
+                Cuisine = "Thai & Chinese",
                 ImageUrl = "images/thai.png",
                 Price = "$$"
             });
