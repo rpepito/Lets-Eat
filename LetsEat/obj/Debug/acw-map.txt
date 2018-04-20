@@ -10,6 +10,10 @@ LetsEat.Menu, LetsEat;md5112e1ce544e292e139446fe091803014.Menu
 LetsEat.Menu, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Menu
 LetsEat.Menu;md5112e1ce544e292e139446fe091803014.Menu
 letseat.Menu;md5112e1ce544e292e139446fe091803014.Menu
+LetsEat.Menu/MyValueEventListener, LetsEat;md5112e1ce544e292e139446fe091803014.Menu_MyValueEventListener
+LetsEat.Menu+MyValueEventListener, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Menu_MyValueEventListener
+LetsEat.Menu.MyValueEventListener;md5112e1ce544e292e139446fe091803014.Menu_MyValueEventListener
+letseat.Menu_MyValueEventListener;md5112e1ce544e292e139446fe091803014.Menu_MyValueEventListener
 LetsEat.Queue, LetsEat;md5112e1ce544e292e139446fe091803014.Queue
 LetsEat.Queue, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Queue
 LetsEat.Queue;md5112e1ce544e292e139446fe091803014.Queue

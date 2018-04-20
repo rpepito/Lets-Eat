@@ -11,6 +11,11 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using LetsEat.Views.OwnerSide;
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
+
+using Java.Util;
 
 namespace LetsEat
 {
@@ -23,9 +28,13 @@ namespace LetsEat
         };
 
 
-
+        String resturant_name = "Resturant Name";
         Toolbar toolbar;
         ListView menulistView;
+
+  
+
+        private FirebaseDatabase database;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -34,13 +43,17 @@ namespace LetsEat
             SetContentView(Resource.Layout.MenuLayout);
             // Create your application here
 
+            FirebaseUser user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            database = FirebaseDatabase.GetInstance(MainActivity.app);
+            DatabaseReference reference = database.GetReference("users");
+
+            reference.Child(user.Uid).AddListenerForSingleValueEvent(new MyValueEventListener());
 
             toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
             menulistView = FindViewById<ListView>(Resource.Id.menulistView);
 
             SetActionBar(toolbar);
-            ActionBar.Title = "Resturant Name";
-
+            ActionBar.Title = resturant_name;
 
             var ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.DishList, dishes);
             menulistView.Adapter = ListAdapter;
@@ -53,6 +66,35 @@ namespace LetsEat
 
 
         }
+
+        public class MyValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
+        {
+
+            public void OnCancelled(DatabaseError error)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnDataChange(DataSnapshot snapshot)
+            {
+                //throw new NotImplementedException();
+
+                var resturant_info = snapshot.Children;
+
+                foreach (DataSnapshot datasnapshot in resturant_info.ToEnumerable())
+                {
+                    //if (datasnapshot.GetValue(true) == null) continue;
+
+                    //string info = datasnapshot.Child("name").GetValue(true).ToString();
+                    //Console.WriteLine(info);
+
+                }
+
+            }
+
+        }
+
+
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
@@ -73,4 +115,5 @@ namespace LetsEat
 
 
     }
+
 }
