@@ -45,6 +45,7 @@ namespace LetsEat.Views.Log_In
             activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
             btn_register.SetOnClickListener(this);
             btn_signIn.SetOnClickListener(this);
+            SetEditing(true);
         }
 
         public void OnClick(View v)
@@ -52,6 +53,7 @@ namespace LetsEat.Views.Log_In
             if (v.Id == Resource.Id.loginButton)
             {
                 LoginUser(input_email.Text, input_password.Text);
+                SetEditing(false);
             }
             else if (v.Id == Resource.Id.registerButton)
             {
@@ -78,6 +80,23 @@ namespace LetsEat.Views.Log_In
             else
             {
                 Toast.MakeText(this, "Login Failed", ToastLength.Long).Show();
+                SetEditing(true);
+            }
+        }
+
+        private void SetEditing(bool enabled)
+        {
+            input_email.Enabled = enabled;
+            input_password.Enabled = enabled;
+            if (enabled)
+            {
+                btn_signIn.Visibility = ViewStates.Visible;
+                btn_register.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                btn_signIn.Visibility = ViewStates.Gone;
+                btn_register.Visibility = ViewStates.Gone;
             }
         }
     }
