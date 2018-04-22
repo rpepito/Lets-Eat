@@ -27,12 +27,9 @@ namespace LetsEat
             "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
         };
 
-
-        String resturant_name = "Resturant Name";
         Toolbar toolbar;
         ListView menulistView;
-
-  
+        public static String resturant_name;            //Global Variable for restaurant name
 
         private FirebaseDatabase database;
 
@@ -69,7 +66,7 @@ namespace LetsEat
 
         public class MyValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
         {
-
+            
             public void OnCancelled(DatabaseError error)
             {
                 throw new NotImplementedException();
@@ -79,16 +76,11 @@ namespace LetsEat
             {
                 //throw new NotImplementedException();
 
-                var resturant_info = snapshot.Children;
+                //Grab Single Item from child name of the user branch
+                resturant_name = snapshot.Child("name").Value.ToString();
 
-                foreach (DataSnapshot datasnapshot in resturant_info.ToEnumerable())
-                {
-                    //if (datasnapshot.GetValue(true) == null) continue;
+                Console.WriteLine(resturant_name);
 
-                    //string info = datasnapshot.Child("name").GetValue(true).ToString();
-                    //Console.WriteLine(info);
-
-                }
 
             }
 
