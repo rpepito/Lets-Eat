@@ -82,9 +82,16 @@ namespace LetsEat.Views.Log_In
         {
             if (task.IsSuccessful)
             {
-                Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
-                //Adrian 03/28/18 TODO: Add code/function call to update UI
-                StartActivity(typeof(OwnerPage));
+                if(input_email.Text == "customer@email.com" && input_password.Text == "customer123"){
+                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
+                    StartActivity(typeof(Views.CustomerSide.MainPage));
+                }
+                if (input_email.Text == "owner@email.com" && input_password.Text == "owner123")
+                {
+                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
+                    //Adrian 03/28/18 TODO: Add code/function call to update UI
+                    StartActivity(typeof(Views.Owner_Side.OwnerPage));
+                }
             }
             else
             {

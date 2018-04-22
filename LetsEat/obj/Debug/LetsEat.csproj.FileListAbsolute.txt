@@ -173,6 +173,12 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/logout_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/reslistitem.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/reservepage.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/cover.jpg
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/cover2.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/restaurantpage_layout.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/userrow.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/mainpagelayout.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/main.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/values/strings.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag

@@ -138,6 +138,13 @@
     <Compile Include="Views\Owner Side\Queue.cs" />
     <Compile Include="Views\Owner Side\TableList.cs" />
     <Compile Include="Views\Owner Side\ReservePageActivity.cs" />
+    <Compile Include="ImageManager.cs" />
+    <Compile Include="MyCustomListAdapter.cs" />
+    <Compile Include="RestaurantPage.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserData.cs" />
+    <Compile Include="ViewHolder.cs" />
+    <Compile Include="Views\Customer Side\MainPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -163,6 +170,12 @@
     <AndroidResource Include="Resources\drawable\logout_icon.png" />
     <AndroidResource Include="Resources\layout\ResListItem.xml" />
     <AndroidResource Include="Resources\layout\ReservePage.axml" />
+    <AndroidResource Include="Resources\drawable\cover.jpg" />
+    <AndroidResource Include="Resources\drawable\cover2.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\layout\RestaurantPage_Layout.axml" />
+    <AndroidResource Include="Resources\layout\userRow.axml" />
+    <AndroidResource Include="Resources\layout\MainPageLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -180,6 +193,18 @@
     <Folder Include="Resources\mipmap-xxxhdpi\" />
     <Folder Include="Views\Customer Side\" />
     <Folder Include="Views\Owner Side\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\images\french.png" />
+    <AndroidAsset Include="Assets\images\hawaiian.png" />
+    <AndroidAsset Include="Assets\images\italian.png" />
+    <AndroidAsset Include="Assets\images\italian2.png" />
+    <AndroidAsset Include="Assets\images\japanese.png" />
+    <AndroidAsset Include="Assets\images\mexican.png" />
+    <AndroidAsset Include="Assets\images\steak.png" />
+    <AndroidAsset Include="Assets\images\sushi.png" />
+    <AndroidAsset Include="Assets\images\thai.png" />
+    <AndroidAsset Include="Assets\images\vietnamese.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

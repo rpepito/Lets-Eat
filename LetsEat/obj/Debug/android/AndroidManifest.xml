@@ -4,8 +4,8 @@
   <uses-sdk android:minSdkVersion="21" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-  <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/Mytheme" android:name="android.app.Application" android:debuggable="true">
-    <activity android:label="LetsEat" android:name="md5112e1ce544e292e139446fe091803014.MainActivity">
+  <application android:allowBackup="true" android:label="@string/app_name" android:theme="@style/Mytheme" android:name="android.app.Application" android:icon="@drawable/icon" android:debuggable="true">
+    <activity android:icon="@drawable/icon" android:label="LetsEat" android:name="md5112e1ce544e292e139446fe091803014.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -16,6 +16,8 @@
     <activity android:label="Queue" android:name="md5112e1ce544e292e139446fe091803014.Queue" />
     <activity android:label="TableList" android:name="md5112e1ce544e292e139446fe091803014.TableList" />
     <activity android:label="@string/reservePage" android:name="md5112e1ce544e292e139446fe091803014.ReservePageActivity" />
+    <activity android:label="Resturant's Info" android:name="md5112e1ce544e292e139446fe091803014.RestaurantPage" />
+    <activity android:label="MainPage" android:name="md53a37a337742bdff3602f8b1fcefff30b.MainPage" />
     <activity android:label="OwnerPage" android:name="md5069bc4214247c4a2843b4ba7547c8517.OwnerPage" />
     <activity android:label="AddDish" android:name="md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish" />
     <activity android:label="LoginActivity" android:name="md5cce693907115afaff50af31afdc20eb5.LoginActivity" />

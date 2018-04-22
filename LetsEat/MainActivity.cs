@@ -11,13 +11,14 @@ using Android.Content;
 
 namespace LetsEat
 {
-    [Activity(Label = "LetsEat", MainLauncher = true)]
+    [Activity(Label = "LetsEat", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         public static FirebaseApp app;     //Used to get the Firebase instance of our application; Very Important Do Not Delete
         private FirebaseAuth auth;
         private FirebaseUser currentUser;
         //private FirebaseDatabase database;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,6 +29,7 @@ namespace LetsEat
 
             //Init Firebase  
             InitFirebase();
+
 
             //Adrian 03/28/2018 TODO: Remove below later after editing MainActivity.cs to work with LoginActivity.cs
             StartActivity(new Intent(this, typeof(Views.Log_In.LoginActivity)));
@@ -69,6 +71,8 @@ namespace LetsEat
             };
 
         }
+
+
     }
 }
 
