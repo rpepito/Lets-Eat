@@ -11,7 +11,7 @@ using Android.Content;
 
 namespace LetsEat
 {
-    [Activity(Label = "LetsEat", MainLauncher = true)]
+    [Activity(Label = "LetsEat", MainLauncher = true, Icon = "@drawable/icon" )]
     public class MainActivity : Activity
     {
         public static FirebaseApp app;     //Used to get the Firebase instance of our application; Very Important Do Not Delete
