@@ -1,6 +1,1 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/action_add" android:showAsAction="ifRoom" android:title="New Dish" android:icon="@drawable/add_icon" /><!--
-    <item android:id="@+id/action_logout"
-        android:showAsAction="ifRoom"
-        android:title="Logout"
-        android:icon="@drawable/logout_icon" />
-    --></menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/action_add" android:showAsAction="ifRoom" android:title="New Dish" android:icon="@drawable/add_icon" /></menu>

@@ -10,21 +10,42 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Android.Support.V7.App;
+using Android.Support.V4.Widget;
+using Android.Support.Design.Widget;
+using Toolbar = Android.Support.V7.Widget.Toolbar;
 
-
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
 
 namespace LetsEat.Views.CustomerSide
 {
-    [Activity(Label = "MainPage")]
-    public class MainPage : Activity
+    [Activity(Label = "MainPage", Theme = "@style/Theme.DesignDemo")]
+    public class MainPage : AppCompatActivity
     {
         ListView myList;
+        DrawerLayout drawerLayout;  
+        NavigationView navigationView_user;
+
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.MainPageLayout);
+
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+
+            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);
+            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+
+            SupportActionBar.SetDisplayShowTitleEnabled(false);
+            SupportActionBar.SetHomeButtonEnabled(true);
+            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
+   
+            setupUser_Nav();
 
             myList = FindViewById<ListView>(Resource.Id.listView);
 
@@ -35,6 +56,51 @@ namespace LetsEat.Views.CustomerSide
 
             // Create your application here
         }
+
+        public void setupUser_Nav()
+        {
+
+            navigationView_user = FindViewById<NavigationView>(Resource.Id.nav_view_user);
+
+            navigationView_user.NavigationItemSelected += (sender, e) => {
+
+                e.MenuItem.SetChecked(true);
+
+                switch (e.MenuItem.ItemId)
+                {
+                    case Resource.Id.action_login:
+                        StartActivity(typeof(Views.Log_In.LoginActivity));
+                        Finish();
+                        break;
+
+                    case Resource.Id.action_home:
+                        StartActivity(typeof(Views.CustomerSide.MainPage));
+                        Finish();
+                        break;
+
+                    default:
+                        break;
+                }
+                drawerLayout.CloseDrawers();
+            };
+
+        }
+
+
+        public override bool OnOptionsItemSelected(IMenuItem item)   
+        {  
+            switch (item.ItemId)   
+            {  
+                
+                case Android.Resource.Id.Home:
+                    drawerLayout.OpenDrawer((int)GravityFlags.Left);
+
+                    return true;
+
+            }
+            return base.OnOptionsItemSelected(item);  
+        }
+
 
         private void MyList_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {

@@ -30,7 +30,8 @@ namespace LetsEat
             InitFirebase();
 
             //Adrian 03/28/2018 TODO: Remove below later after editing MainActivity.cs to work with LoginActivity.cs
-            StartActivity(new Intent(this, typeof(Views.Log_In.LoginActivity)));
+            StartActivity(new Intent(this, typeof(Views.CustomerSide.MainPage)));
+            Finish();
         }
 
         /*protected override void OnStart()

@@ -15,8 +15,8 @@
             android:hint="Email"
             android:layout_width="fill_parent"
             android:layout_height="45dp"
-            android:padding="5dp" 
-            android:inputType="textEmailAddress"/>
+            android:padding="5dp"
+            android:inputType="textEmailAddress" />
         <View
             android:layout_width="fill_parent"
             android:layout_height="2dp" />
@@ -44,6 +44,17 @@
             android:layout_below="@id/loginButton"
             android:layout_marginTop="10dp"
             android:background="#307FC1"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/HomePage"
+            android:text="Home Page"
+            android:layout_width="73.5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/registerButton"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:includeFontPadding="false"
             android:textColor="@android:color/white" />
     </LinearLayout>
 </RelativeLayout>

@@ -27,9 +27,9 @@ namespace LetsEat
             "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
         };
 
-        Toolbar toolbar;
-        ListView menulistView;
-        public static String resturant_name;            //Global Variable for restaurant name
+        private static Toolbar toolbar;
+        private static ListView menulistView;
+        private static String resturant_name;            //Global Variable for restaurant name
 
         private FirebaseDatabase database;
 
@@ -37,21 +37,24 @@ namespace LetsEat
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.MenuLayout);
-            // Create your application here
-
             FirebaseUser user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
             database = FirebaseDatabase.GetInstance(MainActivity.app);
-            DatabaseReference reference = database.GetReference("users");
+            DatabaseReference user_reference = database.GetReference("users");
+            DatabaseReference menu_reference = database.GetReference("menus");
 
-            reference.Child(user.Uid).AddListenerForSingleValueEvent(new MyValueEventListener());
+            SetContentView(Resource.Layout.MenuLayout);
+            // Create your application here
 
             toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
             menulistView = FindViewById<ListView>(Resource.Id.menulistView);
 
-            SetActionBar(toolbar);
-            ActionBar.Title = resturant_name;
+            setElements();
 
+            user_reference.Child(user.Uid).AddValueEventListener(new User_ValueEventListener());
+
+            //menu_reference.Child(user.Uid).AddChildEventListener(new Menu_ChildEventListener());
+            menu_reference.Child(user.Uid).AddValueEventListener(new Menu_ValueEventListener());
+            /*
             var ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.DishList, dishes);
             menulistView.Adapter = ListAdapter;
 
@@ -60,13 +63,20 @@ namespace LetsEat
             {
                 Toast.MakeText(Application, ((TextView)args.View).Text, ToastLength.Short).Show();
             };
-
+            */
 
         }
 
-        public class MyValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
+        public void setElements(){
+
+            SetActionBar(toolbar);
+            ActionBar.Title = resturant_name;
+
+        }
+
+        public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
         {
-            
+
             public void OnCancelled(DatabaseError error)
             {
                 throw new NotImplementedException();
@@ -77,16 +87,63 @@ namespace LetsEat
                 //throw new NotImplementedException();
 
                 //Grab Single Item from child name of the user branch
+
                 resturant_name = snapshot.Child("name").Value.ToString();
 
-                Console.WriteLine(resturant_name);
+                //Console.WriteLine(resturant_name);
 
 
             }
 
         }
+      
+        public class Menu_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
+        {
 
+            public void OnCancelled(DatabaseError error)
+            {
+                throw new NotImplementedException();
+            }
 
+            public void OnDataChange(DataSnapshot snapshot)
+            {
+                throw new NotImplementedException();
+
+               
+            }
+
+        }
+
+        /*
+        public class Menu_ChildEventListener : Java.Lang.Object, Firebase.Database.IChildEventListener
+        {
+            public void OnCancelled(DatabaseError error)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnChildAdded(DataSnapshot snapshot, string previousChildName)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnChildChanged(DataSnapshot snapshot, string previousChildName)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnChildMoved(DataSnapshot snapshot, string previousChildName)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnChildRemoved(DataSnapshot snapshot)
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+    */
 
         public override bool OnCreateOptionsMenu(IMenu menu)
         {

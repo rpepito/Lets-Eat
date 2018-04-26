@@ -79,7 +79,7 @@ namespace LetsEat.Views.Log_In
                 Finish();
             }
             else
-            {   
+            {
                 Toast.MakeText(this, "Register Failed", ToastLength.Long).Show();
                 SetEditing(true);
                 //TODO: Error Checking of registration
@@ -91,7 +91,7 @@ namespace LetsEat.Views.Log_In
             spinner_type = FindViewById<Spinner>(Resource.Id.spinner_type);
             ArrayAdapter adapter = ArrayAdapter.CreateFromResource(this, Resource.Array.user_types, Android.Resource.Layout.SimpleSpinnerItem);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            spinner_type.Adapter= adapter;
+            spinner_type.Adapter = adapter;
             spinner_type.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(Spinner_ItemSelect);
         }
 
