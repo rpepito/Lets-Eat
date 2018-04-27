@@ -15,6 +15,9 @@ using Android.Widget;
 using Android.Support.V7.App;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
+using Firebase;
+using Firebase.Auth;
+using Firebase.Database;
 
 namespace LetsEat.Views.OwnerSide
 {
@@ -28,12 +31,21 @@ namespace LetsEat.Views.OwnerSide
 
         ListView menulistView;
         Toolbar toolbar;
+        FirebaseDatabase database;
+        DatabaseReference user_reference;
+        private static String restaurant_name;
 
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your fragment here
+
+            FirebaseUser user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            database = FirebaseDatabase.GetInstance(MainActivity.app);
+            user_reference = database.GetReference("users");
+
+            user_reference.Child(user.Uid).AddValueEventListener(new User_ValueEventListener());
         }
 
 
@@ -55,7 +67,7 @@ namespace LetsEat.Views.OwnerSide
             menulistView = view.FindViewById<ListView>(Resource.Id.menulistView);
 
             ((AppCompatActivity)this.Activity).SetActionBar(toolbar);
-            ((AppCompatActivity)this.Activity).ActionBar.Title = "Menu Configuration";
+            ((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
 
             var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, dishes);
             menulistView.Adapter = ListAdapter;
@@ -71,6 +83,31 @@ namespace LetsEat.Views.OwnerSide
 
             return view;
 
+
+        }
+
+        public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
+        {
+
+            public void OnCancelled(DatabaseError error)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnDataChange(DataSnapshot snapshot)
+            {
+                //throw new NotImplementedException();
+
+                //Grab Single Item from child name of the user branch
+                if (snapshot == null)
+                    return;
+                else
+                    restaurant_name = snapshot.Child("name").Value.ToString();
+
+                //Console.WriteLine(resturant_name);
+
+
+            }
 
         }
 

@@ -191,6 +191,10 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/queue_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/table_list_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/menu_config_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/menu_colored_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/queue_colored_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/reservation_colored_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/table_colored_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/main.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/values/strings.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag

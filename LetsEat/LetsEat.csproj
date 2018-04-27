@@ -194,6 +194,10 @@
     <AndroidResource Include="Resources\drawable\queue_icon.png" />
     <AndroidResource Include="Resources\drawable\table_list_icon.png" />
     <AndroidResource Include="Resources\drawable\menu_config_icon.png" />
+    <AndroidResource Include="Resources\drawable\menu_colored_icon.png" />
+    <AndroidResource Include="Resources\drawable\queue_colored_icon.png" />
+    <AndroidResource Include="Resources\drawable\reservation_colored_icon.png" />
+    <AndroidResource Include="Resources\drawable\table_colored_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

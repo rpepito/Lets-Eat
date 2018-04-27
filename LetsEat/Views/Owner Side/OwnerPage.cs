@@ -51,7 +51,8 @@ namespace LetsEat.Views.Owner_Side
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
             //SetSupportActionBar(toolbar);
 
-            if(toolbar != null){
+            if(toolbar != null)
+            {
                 SetSupportActionBar(toolbar);
                 SupportActionBar.SetDisplayHomeAsUpEnabled(true);
                 SupportActionBar.SetHomeButtonEnabled(true);
@@ -59,6 +60,8 @@ namespace LetsEat.Views.Owner_Side
 
             bottom_navigationView = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
             bottom_navigationView.NavigationItemSelected += BottomNavigation_NavigationItemSelected;
+
+
 
             LoadFragment(Resource.Id.bottom_menu_config);
             //SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);

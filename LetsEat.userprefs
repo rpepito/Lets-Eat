@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/menu_config_frag.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Resources/menu/bottom_nav.xml">
     <Files>
-      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="50" Column="13" />
-      <File FileName="LetsEat/Resources/menu/bottom_nav.xml" Line="18" Column="2" />
-      <File FileName="LetsEat/Resources/values/Strings.xml" Line="18" Column="13" />
-      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="24" Column="10" />
-      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="79" Column="1" />
+      <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="142" Column="9" />
+      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="59" Column="14" />
+      <File FileName="LetsEat/Resources/values/Strings.xml" Line="9" Column="35" />
+      <File FileName="LetsEat/Resources/values/Styles.xml" Line="7" Column="41" />
+      <File FileName="LetsEat/Resources/menu/bottom_nav.xml" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

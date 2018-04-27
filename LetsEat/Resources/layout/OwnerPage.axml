@@ -15,7 +15,7 @@
         android:layout_height="56dp"
         android:layout_gravity="start"
         android:layout_alignParentBottom="true"
-        android:background="@android:color/holo_blue_light"
+        android:background="@color/Creamy_Orange"
         app:elevation="16dp"
         app:menu="@menu/bottom_nav" />
 <!-- Note: background color is required to get elevation -->

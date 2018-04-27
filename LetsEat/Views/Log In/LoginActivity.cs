@@ -31,7 +31,7 @@ namespace LetsEat.Views.Log_In
         private RelativeLayout activity_main;
         private FirebaseDatabase database;
         private DatabaseReference user_reference;
-        private static string user_type = "nothing right now";
+        private static string user_type = null;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,8 +39,10 @@ namespace LetsEat.Views.Log_In
 
             SetContentView(Resource.Layout.LoginLayout);
 
-            database = FirebaseDatabase.GetInstance(MainActivity.app);
+            database =  FirebaseDatabase.GetInstance(MainActivity.app);
             user_reference = database.GetReference("users");
+
+
 
             //Initialize Firebase
             auth = FirebaseAuth.GetInstance(MainActivity.app);
@@ -68,7 +70,6 @@ namespace LetsEat.Views.Log_In
 
         public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
         {
-
             public void OnCancelled(DatabaseError error)
             {
                 throw new NotImplementedException();
@@ -77,13 +78,8 @@ namespace LetsEat.Views.Log_In
             public void OnDataChange(DataSnapshot snapshot)
             {
                 //throw new NotImplementedException();
-
-                //Grab Single Item from child name of the user branch
-
+                Console.WriteLine("OnDataChange Called");
                 user_type = snapshot.Child("user_type").Value.ToString();
-
-                Console.WriteLine(user_type);
-
             }
 
         }
@@ -121,9 +117,10 @@ namespace LetsEat.Views.Log_In
         {
             if (task.IsSuccessful)
             {
-        
-                user_reference.Child(auth.CurrentUser.Uid).AddListenerForSingleValueEvent(new User_ValueEventListener());
-                Console.WriteLine(user_type);
+                Console.WriteLine("Before EventListener");
+                user_reference.Child(auth.CurrentUser.Uid).AddValueEventListener(new User_ValueEventListener());
+                Console.WriteLine("After EventListener");
+
                 if (user_type == "customer")
                 {
                     Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
@@ -145,6 +142,7 @@ namespace LetsEat.Views.Log_In
             }
         }
 
+
         private void SetEditing(bool enabled)
         {
             input_email.Enabled = enabled;
@@ -160,5 +158,6 @@ namespace LetsEat.Views.Log_In
                 btn_register.Visibility = ViewStates.Gone;
             }
         }
+
     }
 }

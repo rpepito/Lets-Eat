@@ -1222,43 +1222,46 @@ namespace LetsEat
 		{
 			
 			// aapt resource value: 0x7f08004f
-			public const int abc_background_cache_hint_selector_material_dark = 2131230799;
+			public const int Creamy_Orange = 2131230799;
 			
 			// aapt resource value: 0x7f080050
-			public const int abc_background_cache_hint_selector_material_light = 2131230800;
+			public const int abc_background_cache_hint_selector_material_dark = 2131230800;
 			
 			// aapt resource value: 0x7f080051
-			public const int abc_btn_colored_borderless_text_material = 2131230801;
+			public const int abc_background_cache_hint_selector_material_light = 2131230801;
 			
 			// aapt resource value: 0x7f080052
-			public const int abc_btn_colored_text_material = 2131230802;
+			public const int abc_btn_colored_borderless_text_material = 2131230802;
 			
 			// aapt resource value: 0x7f080053
-			public const int abc_color_highlight_material = 2131230803;
+			public const int abc_btn_colored_text_material = 2131230803;
 			
 			// aapt resource value: 0x7f080054
-			public const int abc_hint_foreground_material_dark = 2131230804;
+			public const int abc_color_highlight_material = 2131230804;
 			
 			// aapt resource value: 0x7f080055
-			public const int abc_hint_foreground_material_light = 2131230805;
+			public const int abc_hint_foreground_material_dark = 2131230805;
+			
+			// aapt resource value: 0x7f080056
+			public const int abc_hint_foreground_material_light = 2131230806;
 			
 			// aapt resource value: 0x7f080008
 			public const int abc_input_method_navigation_guard = 2131230728;
 			
-			// aapt resource value: 0x7f080056
-			public const int abc_primary_text_disable_only_material_dark = 2131230806;
-			
 			// aapt resource value: 0x7f080057
-			public const int abc_primary_text_disable_only_material_light = 2131230807;
+			public const int abc_primary_text_disable_only_material_dark = 2131230807;
 			
 			// aapt resource value: 0x7f080058
-			public const int abc_primary_text_material_dark = 2131230808;
+			public const int abc_primary_text_disable_only_material_light = 2131230808;
 			
 			// aapt resource value: 0x7f080059
-			public const int abc_primary_text_material_light = 2131230809;
+			public const int abc_primary_text_material_dark = 2131230809;
 			
 			// aapt resource value: 0x7f08005a
-			public const int abc_search_url_text = 2131230810;
+			public const int abc_primary_text_material_light = 2131230810;
+			
+			// aapt resource value: 0x7f08005b
+			public const int abc_search_url_text = 2131230811;
 			
 			// aapt resource value: 0x7f080009
 			public const int abc_search_url_text_normal = 2131230729;
@@ -1269,29 +1272,29 @@ namespace LetsEat
 			// aapt resource value: 0x7f08000b
 			public const int abc_search_url_text_selected = 2131230731;
 			
-			// aapt resource value: 0x7f08005b
-			public const int abc_secondary_text_material_dark = 2131230811;
-			
 			// aapt resource value: 0x7f08005c
-			public const int abc_secondary_text_material_light = 2131230812;
+			public const int abc_secondary_text_material_dark = 2131230812;
 			
 			// aapt resource value: 0x7f08005d
-			public const int abc_tint_btn_checkable = 2131230813;
+			public const int abc_secondary_text_material_light = 2131230813;
 			
 			// aapt resource value: 0x7f08005e
-			public const int abc_tint_default = 2131230814;
+			public const int abc_tint_btn_checkable = 2131230814;
 			
 			// aapt resource value: 0x7f08005f
-			public const int abc_tint_edittext = 2131230815;
+			public const int abc_tint_default = 2131230815;
 			
 			// aapt resource value: 0x7f080060
-			public const int abc_tint_seek_thumb = 2131230816;
+			public const int abc_tint_edittext = 2131230816;
 			
 			// aapt resource value: 0x7f080061
-			public const int abc_tint_spinner = 2131230817;
+			public const int abc_tint_seek_thumb = 2131230817;
 			
 			// aapt resource value: 0x7f080062
-			public const int abc_tint_switch_track = 2131230818;
+			public const int abc_tint_spinner = 2131230818;
+			
+			// aapt resource value: 0x7f080063
+			public const int abc_tint_switch_track = 2131230819;
 			
 			// aapt resource value: 0x7f08000c
 			public const int accent_material_dark = 2131230732;
@@ -1335,8 +1338,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f080019
 			public const int button_material_light = 2131230745;
 			
-			// aapt resource value: 0x7f080063
-			public const int common_google_signin_btn_text_dark = 2131230819;
+			// aapt resource value: 0x7f080064
+			public const int common_google_signin_btn_text_dark = 2131230820;
 			
 			// aapt resource value: 0x7f080000
 			public const int common_google_signin_btn_text_dark_default = 2131230720;
@@ -1350,8 +1353,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f080003
 			public const int common_google_signin_btn_text_dark_pressed = 2131230723;
 			
-			// aapt resource value: 0x7f080064
-			public const int common_google_signin_btn_text_light = 2131230820;
+			// aapt resource value: 0x7f080065
+			public const int common_google_signin_btn_text_light = 2131230821;
 			
 			// aapt resource value: 0x7f080004
 			public const int common_google_signin_btn_text_light_default = 2131230724;
@@ -1365,14 +1368,14 @@ namespace LetsEat
 			// aapt resource value: 0x7f080007
 			public const int common_google_signin_btn_text_light_pressed = 2131230727;
 			
-			// aapt resource value: 0x7f080065
-			public const int common_google_signin_btn_tint = 2131230821;
+			// aapt resource value: 0x7f080066
+			public const int common_google_signin_btn_tint = 2131230822;
 			
 			// aapt resource value: 0x7f080044
 			public const int design_bottom_navigation_shadow_color = 2131230788;
 			
-			// aapt resource value: 0x7f080066
-			public const int design_error = 2131230822;
+			// aapt resource value: 0x7f080067
+			public const int design_error = 2131230823;
 			
 			// aapt resource value: 0x7f080045
 			public const int design_fab_shadow_end_color = 2131230789;
@@ -1398,8 +1401,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f08004c
 			public const int design_snackbar_background_color = 2131230796;
 			
-			// aapt resource value: 0x7f080067
-			public const int design_tint_password_toggle = 2131230823;
+			// aapt resource value: 0x7f080068
+			public const int design_tint_password_toggle = 2131230824;
 			
 			// aapt resource value: 0x7f08001a
 			public const int dim_foreground_disabled_material_dark = 2131230746;
@@ -1521,11 +1524,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f08003e
 			public const int switch_thumb_disabled_material_light = 2131230782;
 			
-			// aapt resource value: 0x7f080068
-			public const int switch_thumb_material_dark = 2131230824;
-			
 			// aapt resource value: 0x7f080069
-			public const int switch_thumb_material_light = 2131230825;
+			public const int switch_thumb_material_dark = 2131230825;
+			
+			// aapt resource value: 0x7f08006a
+			public const int switch_thumb_material_light = 2131230826;
 			
 			// aapt resource value: 0x7f08003f
 			public const int switch_thumb_normal_material_dark = 2131230783;
@@ -2285,26 +2288,26 @@ namespace LetsEat
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020089
-			public const int avd_hide_password_1 = 2130837641;
+			// aapt resource value: 0x7f02008d
+			public const int avd_hide_password_1 = 2130837645;
 			
-			// aapt resource value: 0x7f02008a
-			public const int avd_hide_password_2 = 2130837642;
+			// aapt resource value: 0x7f02008e
+			public const int avd_hide_password_2 = 2130837646;
 			
-			// aapt resource value: 0x7f02008b
-			public const int avd_hide_password_3 = 2130837643;
+			// aapt resource value: 0x7f02008f
+			public const int avd_hide_password_3 = 2130837647;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f02008c
-			public const int avd_show_password_1 = 2130837644;
+			// aapt resource value: 0x7f020090
+			public const int avd_show_password_1 = 2130837648;
 			
-			// aapt resource value: 0x7f02008d
-			public const int avd_show_password_2 = 2130837645;
+			// aapt resource value: 0x7f020091
+			public const int avd_show_password_2 = 2130837649;
 			
-			// aapt resource value: 0x7f02008e
-			public const int avd_show_password_3 = 2130837646;
+			// aapt resource value: 0x7f020092
+			public const int avd_show_password_3 = 2130837650;
 			
 			// aapt resource value: 0x7f020056
 			public const int common_full_open_on_phone = 2130837590;
@@ -2403,61 +2406,73 @@ namespace LetsEat
 			public const int logout_icon = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int menu_config_icon = 2130837622;
+			public const int menu_colored_icon = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int navigation_empty_icon = 2130837623;
+			public const int menu_config_icon = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int notification_action_background = 2130837624;
+			public const int navigation_empty_icon = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int notification_bg = 2130837625;
+			public const int notification_action_background = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int notification_bg_low = 2130837626;
+			public const int notification_bg = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int notification_bg_low_normal = 2130837627;
+			public const int notification_bg_low = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int notification_bg_low_pressed = 2130837628;
+			public const int notification_bg_low_normal = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int notification_bg_normal = 2130837629;
+			public const int notification_bg_low_pressed = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int notification_bg_normal_pressed = 2130837630;
+			public const int notification_bg_normal = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int notification_icon_background = 2130837631;
-			
-			// aapt resource value: 0x7f020087
-			public const int notification_template_icon_bg = 2130837639;
-			
-			// aapt resource value: 0x7f020088
-			public const int notification_template_icon_low_bg = 2130837640;
+			public const int notification_bg_normal_pressed = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int notification_tile_bg = 2130837632;
+			public const int notification_icon_background = 2130837632;
+			
+			// aapt resource value: 0x7f02008b
+			public const int notification_template_icon_bg = 2130837643;
+			
+			// aapt resource value: 0x7f02008c
+			public const int notification_template_icon_low_bg = 2130837644;
 			
 			// aapt resource value: 0x7f020081
-			public const int notify_panel_notification_icon_bg = 2130837633;
+			public const int notification_tile_bg = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int queue_icon = 2130837634;
+			public const int notify_panel_notification_icon_bg = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int reservation_icon = 2130837635;
+			public const int queue_colored_icon = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int table_list_icon = 2130837636;
+			public const int queue_icon = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int tooltip_frame_dark = 2130837637;
+			public const int reservation_colored_icon = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int tooltip_frame_light = 2130837638;
+			public const int reservation_icon = 2130837638;
+			
+			// aapt resource value: 0x7f020087
+			public const int table_colored_icon = 2130837639;
+			
+			// aapt resource value: 0x7f020088
+			public const int table_list_icon = 2130837640;
+			
+			// aapt resource value: 0x7f020089
+			public const int tooltip_frame_dark = 2130837641;
+			
+			// aapt resource value: 0x7f02008a
+			public const int tooltip_frame_light = 2130837642;
 			
 			static Drawable()
 			{
