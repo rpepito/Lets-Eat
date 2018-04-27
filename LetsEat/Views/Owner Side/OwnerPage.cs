@@ -24,12 +24,13 @@ using LetsEat.Views.OwnerSide;
 namespace LetsEat.Views.Owner_Side
 {
     [Activity(Label = "OwnerPage", Theme = "@style/Theme.DesignDemo")]
-    public class OwnerPage : AppCompatActivity, IOnClickListener
+    public class OwnerPage : AppCompatActivity
     {
-        private Button btn_Menu, btn_Table, btn_Queue, btn_Reservation;
-        private RelativeLayout activity_main;
-        DrawerLayout drawerLayout;
-        NavigationView navigationView_user;
+        //private Button btn_Menu, btn_Table, btn_Queue, btn_Reservation;
+        //private RelativeLayout activity_main;
+        //DrawerLayout drawerLayout;
+        //NavigationView navigationView_user;
+        BottomNavigationView bottom_navigationView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -37,31 +38,45 @@ namespace LetsEat.Views.Owner_Side
 
             SetContentView(Resource.Layout.OwnerPage);
 
-
+            /*
             btn_Menu = FindViewById<Button>(Resource.Id.Menubutton);
             btn_Table = FindViewById<Button>(Resource.Id.Tablebutton);
             btn_Queue = FindViewById<Button>(Resource.Id.Queuebutton);
             btn_Reservation = FindViewById<Button>(Resource.Id.Reservationbutton);
-            activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
+            */
+
+
+            //activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
+            //SetSupportActionBar(toolbar);
 
-            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+            if(toolbar != null){
+                SetSupportActionBar(toolbar);
+                SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+                SupportActionBar.SetHomeButtonEnabled(true);
+            }
 
-            SupportActionBar.SetDisplayShowTitleEnabled(false);
-            SupportActionBar.SetHomeButtonEnabled(true);
-            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout_owner);
+            bottom_navigationView = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
+            bottom_navigationView.NavigationItemSelected += BottomNavigation_NavigationItemSelected;
 
-            setupUser_Nav();
+            LoadFragment(Resource.Id.bottom_menu_config);
+            //SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);
+            //SupportActionBar.SetDisplayHomeAsUpEnabled(true);
 
+            //SupportActionBar.SetDisplayShowTitleEnabled(false);
+            //SupportActionBar.SetHomeButtonEnabled(true);
+            //drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout_owner);
+
+            //setupUser_Nav();
+            /*
             btn_Menu.SetOnClickListener(this);
             btn_Queue.SetOnClickListener(this);
             btn_Table.SetOnClickListener(this);
             btn_Reservation.SetOnClickListener(this);
+            */
         }
-
+        /*
         public void setupUser_Nav()
         {
 
@@ -97,8 +112,13 @@ namespace LetsEat.Views.Owner_Side
             };
 
         }
+        */
 
-
+        private void BottomNavigation_NavigationItemSelected(object sender, BottomNavigationView.NavigationItemSelectedEventArgs e)
+        {
+            LoadFragment(e.Item.ItemId);
+        }
+        /*
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
@@ -112,7 +132,35 @@ namespace LetsEat.Views.Owner_Side
             }
             return base.OnOptionsItemSelected(item);
         }
+*/
+        void LoadFragment(int id)
+        {
+            Android.Support.V4.App.Fragment fragment = null;
+            switch (id)
+            {
+                case Resource.Id.bottom_menu_config:
+                    fragment = menu_config_frag.NewInstance();
+                    break;
+                case Resource.Id.bottom_queue:
+                    fragment = queue_frag.NewInstance();
+                    break;
+                case Resource.Id.bottom_tablelist:
+                    fragment = table_list_frag.NewInstance();
+                    break;
+                case Resource.Id.bottom_reservations:
+                    fragment = reservations_frag.NewInstance();
+                    break;
+            }
 
+            if (fragment == null)
+                return;
+
+            SupportFragmentManager.BeginTransaction()
+                .Replace(Resource.Id.content_frame, fragment)
+                .Commit();
+        }
+
+        /*
         public void OnClick(View v)
         {
             if (v.Id == Resource.Id.Menubutton)
@@ -135,6 +183,6 @@ namespace LetsEat.Views.Owner_Side
                 StartActivity(typeof(Reservations));
             }
         }
-
+        */
     }
 }

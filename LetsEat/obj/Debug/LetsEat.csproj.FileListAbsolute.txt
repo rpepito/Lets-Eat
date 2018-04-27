@@ -140,7 +140,6 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Xamarin.GooglePlayServices.Base.dll
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Xamarin.GooglePlayServices.Basement.dll
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Xamarin.GooglePlayServices.Tasks.dll
-/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.csprojResolveAssemblyReference.cache
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Basement.dll.stamp
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.GooglePlayServices.Tasks.dll.stamp
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/XbdMerge/Xamarin.Firebase.Common.dll.stamp
@@ -187,6 +186,11 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/menu/drawer_user.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/mainpagelayout_customer.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/mainpagelayout_owner.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/menu/bottom_nav.xml
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/reservation_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/queue_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/table_list_icon.png
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/menu_config_icon.png
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/layout/main.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/values/strings.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag

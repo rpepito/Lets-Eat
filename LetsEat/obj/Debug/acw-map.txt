@@ -62,6 +62,22 @@ LetsEat.Views.OwnerSide.AddDish, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.Add
 LetsEat.Views.OwnerSide.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
 LetsEat.Views.OwnerSide.AddDish;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
 letseat.views.ownerside.AddDish;md54d6069665a4ee24d63f2a17d1f9bbbb0.AddDish
+LetsEat.Views.OwnerSide.menu_config_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
+LetsEat.Views.OwnerSide.menu_config_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
+LetsEat.Views.OwnerSide.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
+letseat.views.ownerside.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
+LetsEat.Views.OwnerSide.queue_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.queue_frag
+LetsEat.Views.OwnerSide.queue_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.queue_frag
+LetsEat.Views.OwnerSide.queue_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.queue_frag
+letseat.views.ownerside.queue_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.queue_frag
+LetsEat.Views.OwnerSide.table_list_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.table_list_frag
+LetsEat.Views.OwnerSide.table_list_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.table_list_frag
+LetsEat.Views.OwnerSide.table_list_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.table_list_frag
+letseat.views.ownerside.table_list_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.table_list_frag
+LetsEat.Views.OwnerSide.reservations_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
+LetsEat.Views.OwnerSide.reservations_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
+LetsEat.Views.OwnerSide.reservations_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
+letseat.views.ownerside.reservations_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
 LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity

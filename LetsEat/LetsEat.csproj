@@ -147,6 +147,10 @@
     <Compile Include="Views\Customer Side\MainPage.cs" />
     <Compile Include="Views\Customer Side\MainPage_Customer.cs" />
     <Compile Include="Views\Customer Side\MainPage_Owner.cs" />
+    <Compile Include="Views\Owner Side\menu_config_frag.cs" />
+    <Compile Include="Views\Owner Side\queue_frag.cs" />
+    <Compile Include="Views\Owner Side\table_list_frag.cs" />
+    <Compile Include="Views\Owner Side\reservations_frag.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -185,6 +189,11 @@
     <AndroidResource Include="Resources\menu\drawer_user.xml" />
     <AndroidResource Include="Resources\layout\MainPageLayout_Customer.axml" />
     <AndroidResource Include="Resources\layout\MainPageLayout_Owner.axml" />
+    <AndroidResource Include="Resources\menu\bottom_nav.xml" />
+    <AndroidResource Include="Resources\drawable\reservation_icon.png" />
+    <AndroidResource Include="Resources\drawable\queue_icon.png" />
+    <AndroidResource Include="Resources\drawable\table_list_icon.png" />
+    <AndroidResource Include="Resources\drawable\menu_config_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
