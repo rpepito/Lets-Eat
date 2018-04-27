@@ -41,7 +41,7 @@ namespace LetsEat
             {
                 // move owner to a page where they can put in the name for the first person in line
                 Toast.MakeText(this, "Adding customer to queue..", ToastLength.Long).Show();
-                StartActivity(typeof(QueuePageActivity));
+                // StartActivity(typeof(QueuePageActivity)); LEAVE THIS OUT FOR NOW, changed this activity to customer side
             };
             // gotta connect both buttons with database or make a variable not sure yet 
             // not working yet

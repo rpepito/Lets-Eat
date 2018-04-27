@@ -17,5 +17,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/AddNameToQueueButton"
-        android:text="Add Name To Queue" />
+        android:text="Enter Queue" />
 </LinearLayout>

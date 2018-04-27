@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Firebase.Auth;
+using Firebase.Database;
 
 namespace LetsEat    
 {
@@ -23,6 +25,9 @@ namespace LetsEat
         TextView mhours;
         TextView mdescription;
 
+        private FirebaseAuth auth;
+        private FirebaseDatabase database;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -36,6 +41,24 @@ namespace LetsEat
             mhours = FindViewById<TextView>(Resource.Id.hoursdetail);
             mdescription = FindViewById<TextView>(Resource.Id.descriptiondetail);
 
+            //Initialize Firebase
+            auth = FirebaseAuth.GetInstance(MainActivity.app);
+            database = FirebaseDatabase.GetInstance(MainActivity.app);
+
+            Button buttonEnterQueue;
+
+            buttonEnterQueue = FindViewById<Button>(Resource.Id.queueButton);
+
+            void EnterQueue() // function that sends customer from page to a page where they can enter their name 
+            {
+                buttonEnterQueue.Click += (sender, e) =>
+                {
+                // move customer to a page where they can put in the name to enter the queue
+                Toast.MakeText(this, "Moving to new page..", ToastLength.Long).Show();
+                    StartActivity(typeof(QueuePageActivity));
+                };
+            }
+
             /*mDetail = FindViewById<TextView>(Resource.Id.description);*/
 
             mName.Text = Intent.GetStringExtra("Name");
@@ -47,6 +70,9 @@ namespace LetsEat
                 mphone.Text = "(702) 770-3325";
                 mhours.Text = "Dinner nightly, 5:30 pm to 10:15 pm";
                 mdescription.Text = "Star chef David Walzog presents his unique interpretation of the classic American steakhouse along Wynn's Lake of Dreams. As befits a top-notch chophouse, SW offers a selection of expertly charred steaks, including a succulent porterhouse-for-two, New York strip, dry-aged tomahawk chop and Walzog's signature chile-rubbed double cut rib eye. SW also offers a wide variety of seafood and poultry options, and such innovative side dishes as black truffle creamed corn and cipollini onions with charred jalapeno. SW's décor matches its steakhouse-with-a-twist cuisine brilliantly, with an opulent dining space that radiates glamour, punctuated by floor-to-ceiling windows framing postcard views of the three-acre lakefront and forested mountain. The adjoining open-air dining terrace offers prime views of the multi-media shows of sound, light, video and puppetry that unfold both on the lake and against it's 90-foot tall coursing waterfall.";
+
+                EnterQueue();
+
             }
 
             if(Intent.GetStringExtra("Name") == "Twist by Pierre Gagnaire")
@@ -55,6 +81,8 @@ namespace LetsEat
                 mphone.Text = "(702) 590-3172";
                 mhours.Text = "Dinner\nTue–Sat 6:00 pm–10:00 pm";
                 mdescription.Text = "One of the most artistic and celebrated chefs in the world today, Pierre Gagnaire opened his first and only US restaurant at the Mandarin Oriental, Las Vegas to rave reviews in 2009. The accolades continue today and most recently, Twist was named Las Vegas’ 2017 Restaurant of the Year by Desert Companion Magazine and received the coveted Forbes Five Star award for 2017.\n\nJoin us for dinner and enjoy modern French cuisine in an elegant and comfortable setting, with tables offering great views of Las Vegas and the action in our kitchen.In addition, we have a private room available for your special occasion, with 20 ft high windows and a table that can accommodate up to 12 guests.Please note that all guests must be at least 13 years of age and older to dine at Twist.\n\nTwist will be hosting 4 Champagne dinners throughout the year on April 4, June 6, August 8 & October 10.\n\nTwist will be closed for our annual summer closure from 7/1 - 7/16. Twist will reopen on Tuesday, July 17th.";
+
+                EnterQueue();
             }
 
             if(Intent.GetStringExtra("Name") == "Zuma Restaurant")
