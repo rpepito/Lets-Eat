@@ -129,7 +129,7 @@ namespace LetsEat
                 mhours.Text = "Mon-Sun: 11AM-9PM";
                 mphone.Text = "(702) 202-2180";
                 mdescription.Text = "";
-                imageView.SetImageResource(Resource.Drawable.sushi);
+
             }
         }
     }
