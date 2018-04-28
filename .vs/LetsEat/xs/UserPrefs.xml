@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Customer Side/RestaurantPage.cs">
+    <Files>
+      <File FileName="LetsEat/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Models/MasterPageItem.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Models/Tokens.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Models/User.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Models/Constants.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Owner.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/ImageManager.cs" Line="26" Column="42" />
+      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="58" Column="66" />
+      <File FileName="LetsEat/Views/Customer Side/ViewHolder.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/UserData.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/User.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MyCustomListAdapter.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

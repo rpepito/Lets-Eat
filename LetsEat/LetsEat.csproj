@@ -17,7 +17,7 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
@@ -198,6 +198,16 @@
     <AndroidResource Include="Resources\drawable\queue_colored_icon.png" />
     <AndroidResource Include="Resources\drawable\reservation_colored_icon.png" />
     <AndroidResource Include="Resources\drawable\table_colored_icon.png" />
+    <AndroidResource Include="Resources\drawable\lago.jpeg" />
+    <AndroidResource Include="Resources\drawable\steak.png" />
+    <AndroidResource Include="Resources\drawable\japanese.png" />
+    <AndroidResource Include="Resources\drawable\hawaiian.png" />
+    <AndroidResource Include="Resources\drawable\thai.png" />
+    <AndroidResource Include="Resources\drawable\italian2.png" />
+    <AndroidResource Include="Resources\drawable\french.png" />
+    <AndroidResource Include="Resources\drawable\vietnamese.png" />
+    <AndroidResource Include="Resources\drawable\sushi.png" />
+    <AndroidResource Include="Resources\drawable\mexican.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
