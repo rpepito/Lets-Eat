@@ -20,26 +20,27 @@ using Firebase.Xamarin.Database.Query;
 namespace LetsEat
 {
     [Activity(Label = "ReservePage")]
-    public class ReservePage : ListActivity
+    public class ReservePage : Activity //ListActivity
     {
         //Firebase URL
         private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
 
         EditText reservationText;
+        EditText amountText;
         Button reserveButton;
         ProgressBar circular_progress;
-        ListView listView;
+       // ListView listView;
         List<Reservation> listReservations = new List<Reservation>();
         //ArrayAdapter<string> adapter;
-        Views.CustomerSide.ListViewAdapter adapter;
-        Reservation selectedReservation;
+       // Views.CustomerSide.ListViewAdapter adapter;
+       // Reservation selectedReservation;
         //ListView reserveList;
         string reserveHolder = string.Empty;
         string errMessage = "Reservation could not be made: Empty Name";
         string confirmMessage = "Reservation successful!";
         //static readonly List<string> reserveNames = new List<string>();
 
-        protected override async void OnCreate(Bundle savedInstanceState)
+        protected override void OnCreate(Bundle savedInstanceState) //async
         {
             base.OnCreate(savedInstanceState);
 
@@ -48,15 +49,16 @@ namespace LetsEat
 
             var reserveNum = Intent.GetStringExtra("reserve_time");
             var reserveNames = Intent.Extras.GetStringArrayList("list_reservations") ?? new string[0];
-            this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
+           // this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
 
             reservationText = FindViewById<EditText>(Resource.Id.ReservationText);
+            amountText = FindViewById<EditText>(Resource.Id.AmountText);
             reserveButton = FindViewById<Button>(Resource.Id.ReservationButton);
             circular_progress = FindViewById<ProgressBar>(Resource.Id.circularProgress);
 
             //*
             //adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
-            listView = (ListView)FindViewById(Android.Resource.Id.List);
+           // listView = (ListView)FindViewById(Android.Resource.Id.List);
             //listView.Adapter = adapter;
             //
             reserveButton.Click += delegate
@@ -77,6 +79,7 @@ namespace LetsEat
                 }
 
             };
+            /*
             listView.ItemClick += (s, e) =>
             {
                 Reservation reservation = listReservations[e.Position];
@@ -85,12 +88,12 @@ namespace LetsEat
                 //input_email.Text = account.email;
             };
 
-            await LoadData();
+            //await LoadData();
 
 
             //*/
         }
-
+        /*
         private async Task LoadData()
         {
             circular_progress.Visibility = ViewStates.Visible;  
@@ -127,12 +130,12 @@ namespace LetsEat
             Reservation reservation = new Reservation();
             reservation.name = reservationText.Text;
             reservation.time = Intent.GetStringExtra("reserve_time");
-            reservation.amount = 1;
+            reservation.amount = amountText.Text;
             reservation.uid = String.Empty;
             var firebase = new FirebaseClient(FBURL);
             var item = await firebase.Child("reservations").PostAsync<Reservation>(reservation);
 
-            await LoadData();
+            //await LoadData();
         }
     }
 }
