@@ -13,44 +13,26 @@
         android:background="@color/material_grey_800"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:layout_scrollFlags="scroll|enterAlways" />
-    <Button
-        android:layout_width="153.5dp"
-        android:layout_height="50dp"
-        android:id="@+id/Menubutton"
-        android:layout_marginBottom="25.0dp"
-        android:layout_gravity="center"
-        android:text="Menu Configuration" />
-    <Button
-        android:layout_width="153.5dp"
-        android:layout_height="50dp"
-        android:id="@+id/Tablebutton"
-        android:layout_marginBottom="25.0dp"
-        android:layout_gravity="center"
-        android:text="Table List" />
-    <Button
-        android:layout_width="153.5dp"
-        android:layout_height="50dp"
-        android:id="@+id/Queuebutton"
-        android:layout_marginBottom="25.5dp"
-        android:layout_gravity="center"
-        android:text="Queue" />
-    <Button
-        android:layout_width="153.5dp"
-        android:layout_height="50dp"
-        android:id="@+id/Reservationbutton"
-        android:layout_gravity="center"
-        android:text="Reservations" />
     <android.support.v4.widget.DrawerLayout
-        android:id="@+id/drawer_layout_owner"
+        android:id="@+id/drawer_layout_customer"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
         android:layout_width="match_parent">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fastScrollEnabled="true" />
         <android.support.design.widget.NavigationView
-            android:id="@+id/nav_view_owner"
+            android:id="@+id/nav_view_customer"
             android:layout_height="match_parent"
             android:layout_width="200dp"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
-            app:menu="@menu/drawer_owner" />
+            app:menu="@menu/drawer_customer" />
     </android.support.v4.widget.DrawerLayout>
 </LinearLayout>

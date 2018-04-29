@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="app_name">LetsEat</string>
+  <string name="reservePage">Create a New Reservation</string>
+  <string-array name="user_types">
+    <item>Customer</item>
+    <item>Owner</item>
+  </string-array>
 
-    <string name="reservePage">Create a New Reservation</string>
-
-  <style name="MyTheme" parent="@android:Theme.Material.Light">
+  <style name="Mytheme" parent="@android:style/Theme.Material">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
-    <!--<item name="android:colorPrimary">#5A8622</item>-->
   </style>
 </resources>
