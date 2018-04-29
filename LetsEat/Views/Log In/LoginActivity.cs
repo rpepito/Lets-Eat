@@ -1,37 +1,34 @@
-﻿using LetsEat.Models;
-using LetsEat.Views;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System;
 
 using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Support.Design.Widget;
-using Android.Gms.Tasks;
-using Firebase;
+using gms_Task = Android.Gms.Tasks.Task;
+
 using Firebase.Auth;
 using Firebase.Database;
+using Firebase.Xamarin.Database;
+using Firebase.Xamarin.Database.Query;
+
 using static Android.Views.View;
-using LetsEat.Views.Owner_Side;
+
+using Android.Gms.Tasks;
 
 namespace LetsEat.Views.Log_In
 {
     [Activity(Label = "LoginActivity")]
-    public class LoginActivity : Activity, IOnCompleteListener, IOnClickListener
+    public class LoginActivity : Activity, IOnClickListener, IOnCompleteListener
     {
-        private Button btn_signIn,  btn_register;
+        private Button btn_signIn, btn_register;
         private EditText input_email, input_password;
         private FirebaseAuth auth;
         private RelativeLayout activity_main;
         private FirebaseDatabase database;
         private DatabaseReference user_reference;
-        private static string user_type = "nothing right now";
+
+        private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -41,6 +38,8 @@ namespace LetsEat.Views.Log_In
 
             database = FirebaseDatabase.GetInstance(MainActivity.app);
             user_reference = database.GetReference("users");
+
+
 
             //Initialize Firebase
             auth = FirebaseAuth.GetInstance(MainActivity.app);
@@ -60,32 +59,11 @@ namespace LetsEat.Views.Log_In
             homepage.Click += homepage_click;
         }
 
-        public void homepage_click(object sender, EventArgs e){
+        public void homepage_click(object sender, EventArgs e)
+        {
 
             StartActivity(typeof(Views.CustomerSide.MainPage));
             Finish();
-        }
-
-        public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
-        {
-
-            public void OnCancelled(DatabaseError error)
-            {
-                throw new NotImplementedException();
-            }
-
-            public void OnDataChange(DataSnapshot snapshot)
-            {
-                //throw new NotImplementedException();
-
-                //Grab Single Item from child name of the user branch
-
-                user_type = snapshot.Child("user_type").Value.ToString();
-
-                Console.WriteLine(user_type);
-
-            }
-
         }
 
         public void OnClick(View v)
@@ -111,35 +89,43 @@ namespace LetsEat.Views.Log_In
                 StartActivity(new Intent(this, typeof(Registration)));
             }
         }
-   
+
         private void LoginUser(string email, string password)
         {
             auth.SignInWithEmailAndPassword(email, password).AddOnCompleteListener(this);
+
         }
 
-        public void OnComplete(Task task)  //Adrian 03/28/18 TODO: Change functionality of success and failure
+        public async void OnComplete(gms_Task task)
         {
             if (task.IsSuccessful)
             {
-        
-                user_reference.Child(auth.CurrentUser.Uid).AddListenerForSingleValueEvent(new User_ValueEventListener());
-                Console.WriteLine(user_type);
-                if (user_type == "customer")
-                {
-                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
-                    StartActivity(typeof(Views.CustomerSide.MainPage_Customer));
-                    Finish();
-                }
+                var firebase = new FirebaseClient(FBURL);
+
+                var user_type = await firebase
+                    .Child("users")
+                    .Child(auth.CurrentUser.Uid)
+                    .Child("user_type")
+                    .OnceSingleAsync<String>();
 
                 if (user_type == "owner")
                 {
-                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
+                    Toast.MakeText(this, "Login Successful", ToastLength.Long).Show();
                     StartActivity(typeof(Views.Owner_Side.OwnerPage));
                     Finish();
                 }
+
+                else if (user_type == "customer")
+                {
+                    Toast.MakeText(this, "Login Successful", ToastLength.Long).Show();
+                    StartActivity(typeof(Views.CustomerSide.MainPage_Customer));
+                    Finish();
+                }
             }
+
             else
             {
+
                 Toast.MakeText(this, "Login Failed", ToastLength.Long).Show();
                 SetEditing(true);
             }
@@ -160,5 +146,6 @@ namespace LetsEat.Views.Log_In
                 btn_register.Visibility = ViewStates.Gone;
             }
         }
+
     }
 }

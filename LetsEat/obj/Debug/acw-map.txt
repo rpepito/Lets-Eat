@@ -1,8 +1,0 @@
-LetsEat.MainActivity, LetsEat;md5112e1ce544e292e139446fe091803014.MainActivity
-LetsEat.MainActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MainActivity
-LetsEat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
-letseat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
-LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-letseat.views.log_in.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
