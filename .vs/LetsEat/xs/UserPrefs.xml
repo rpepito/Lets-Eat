@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Log In/Registration.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/Dish.cs">
     <Files>
-      <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="140" Column="35" />
-      <File FileName="LetsEat/Views/Log In/Registration.cs" Line="66" Column="46" />
+      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="43" Column="13" />
+      <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="9" Column="20" />
+      <File FileName="LetsEat/Views/Owner Side/Dish.cs" Line="14" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

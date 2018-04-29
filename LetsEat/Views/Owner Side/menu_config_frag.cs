@@ -15,24 +15,21 @@ using Android.Widget;
 using Android.Support.V7.App;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
+
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
+using Firebase.Xamarin.Database;
+using Firebase.Xamarin.Database.Query;
 
 namespace LetsEat.Views.OwnerSide
 {
     public class menu_config_frag : Android.Support.V4.App.Fragment
     {
 
-        static readonly string[] dishes = new String[] {
-            "Ham & Cheese Sandwich", "Roasted Turkey Sandwich", "Chicken Sandwich", "Meatball Sandwich",
-            "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
-        };
-
         ListView menulistView;
         Toolbar toolbar;
-        FirebaseDatabase database;
-        DatabaseReference user_reference;
+        List<Owner_Side.Dish> listDishes = new List<Owner_Side.Dish>();
         private static String restaurant_name;
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -42,12 +39,10 @@ namespace LetsEat.Views.OwnerSide
             // Create your fragment here
 
             FirebaseUser user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
-            database = FirebaseDatabase.GetInstance(MainActivity.app);
-            user_reference = database.GetReference("users");
 
-            user_reference.Child(user.Uid).AddValueEventListener(new User_ValueEventListener());
+
+
         }
-
 
         public static menu_config_frag NewInstance()
         {
@@ -69,7 +64,7 @@ namespace LetsEat.Views.OwnerSide
             ((AppCompatActivity)this.Activity).SetActionBar(toolbar);
             ((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
 
-            var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, dishes);
+            var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, listDishes);
             menulistView.Adapter = ListAdapter;
 
             menulistView.TextFilterEnabled = true;
@@ -83,31 +78,6 @@ namespace LetsEat.Views.OwnerSide
 
             return view;
 
-
-        }
-
-        public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
-        {
-
-            public void OnCancelled(DatabaseError error)
-            {
-                throw new NotImplementedException();
-            }
-
-            public void OnDataChange(DataSnapshot snapshot)
-            {
-                //throw new NotImplementedException();
-
-                //Grab Single Item from child name of the user branch
-                if (snapshot == null)
-                    return;
-                else
-                    restaurant_name = snapshot.Child("name").Value.ToString();
-
-                //Console.WriteLine(resturant_name);
-
-
-            }
 
         }
 
