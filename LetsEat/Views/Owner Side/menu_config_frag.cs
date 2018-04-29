@@ -1,15 +1,9 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Threading.Tasks;
 
-using Android.Support.V4.App;
-using Android.App;
-using Android.Content;
 using Android.OS;
-using Android.Runtime;
-using Android.Util;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
@@ -30,17 +24,18 @@ namespace LetsEat.Views.OwnerSide
         ListView menulistView;
         Toolbar toolbar;
         List<Owner_Side.Dish> listDishes = new List<Owner_Side.Dish>();
+        FirebaseUser user;
         private static String restaurant_name;
+        private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
 
-        public override void OnCreate(Bundle savedInstanceState)
+        public override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your fragment here
 
-            FirebaseUser user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
-
-
+            user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            await LoadUser_Data();
 
         }
 
@@ -48,6 +43,19 @@ namespace LetsEat.Views.OwnerSide
         {
             var frag1 = new menu_config_frag { Arguments = new Bundle() };
             return frag1;
+        }
+
+        public async Task LoadUser_Data()
+        {
+            var firebase = new FirebaseClient(FBURL);
+
+            var user_name = await firebase
+                .Child("users")
+                .Child(user.Uid)
+                .Child("name")
+                .OnceSingleAsync<String>();
+
+            restaurant_name = user_name;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -64,15 +72,14 @@ namespace LetsEat.Views.OwnerSide
             ((AppCompatActivity)this.Activity).SetActionBar(toolbar);
             ((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
 
-            var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, listDishes);
-            menulistView.Adapter = ListAdapter;
+            //var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, );
+            //menulistView.Adapter = ListAdapter;
 
-            menulistView.TextFilterEnabled = true;
-            menulistView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
-            {
-                Toast.MakeText(this.Activity, ((TextView)args.View).Text, ToastLength.Short).Show();
-            };
-
+            //menulistView.TextFilterEnabled = true;
+            //menulistView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
+            //{
+            //    Toast.MakeText(this.Activity, ((TextView)args.View).Text, ToastLength.Short).Show();
+            //};
 
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
 
