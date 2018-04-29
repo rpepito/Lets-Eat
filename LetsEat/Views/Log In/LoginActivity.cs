@@ -16,7 +16,9 @@ using Android.Support.Design.Widget;
 using Android.Gms.Tasks;
 using Firebase;
 using Firebase.Auth;
+using Firebase.Database;
 using static Android.Views.View;
+using LetsEat.Views.Owner_Side;
 
 namespace LetsEat.Views.Log_In
 {
@@ -27,12 +29,18 @@ namespace LetsEat.Views.Log_In
         private EditText input_email, input_password;
         private FirebaseAuth auth;
         private RelativeLayout activity_main;
+        private FirebaseDatabase database;
+        private DatabaseReference user_reference;
+        private static string user_type = "nothing right now";
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.LoginLayout);
+
+            database = FirebaseDatabase.GetInstance(MainActivity.app);
+            user_reference = database.GetReference("users");
 
             //Initialize Firebase
             auth = FirebaseAuth.GetInstance(MainActivity.app);
@@ -45,36 +53,65 @@ namespace LetsEat.Views.Log_In
             activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
             btn_register.SetOnClickListener(this);
             btn_signIn.SetOnClickListener(this);
+            SetEditing(true);
+
+
+            TextView homepage = FindViewById<TextView>(Resource.Id.HomePage);
+            homepage.Click += homepage_click;
+        }
+
+        public void homepage_click(object sender, EventArgs e){
+
+            StartActivity(typeof(Views.CustomerSide.MainPage));
+            Finish();
+        }
+
+        public class User_ValueEventListener : Java.Lang.Object, Firebase.Database.IValueEventListener
+        {
+
+            public void OnCancelled(DatabaseError error)
+            {
+                throw new NotImplementedException();
+            }
+
+            public void OnDataChange(DataSnapshot snapshot)
+            {
+                //throw new NotImplementedException();
+
+                //Grab Single Item from child name of the user branch
+
+                user_type = snapshot.Child("user_type").Value.ToString();
+
+                Console.WriteLine(user_type);
+
+            }
+
         }
 
         public void OnClick(View v)
         {
             if (v.Id == Resource.Id.loginButton)
             {
-                LoginUser(input_email.Text, input_password.Text);
+                if (input_email.Text == "" || input_password.Text == "")
+                {
+                    Toast.MakeText(this, "Please enter your E-mail & Password", ToastLength.Long).Show();
+                }
+                else
+                {
+                    LoginUser(input_email.Text, input_password.Text);
+                    SetEditing(false);
+                }
             }
             else if (v.Id == Resource.Id.registerButton)
             {
+                if (auth.CurrentUser != null)
+                {
+                    auth.SignOut();
+                }
                 StartActivity(new Intent(this, typeof(Registration)));
-                Finish();
             }
         }
-        /*private void SignIn_Click(object sender, System.EventArgs e)
-        {
-            // Find the edit text boxes defined in LoginLayout, turn into strings
-            // EditText usrName = FindViewById<EditText>(Resource.Id.userName);
-            // EditText pwd = FindViewById<EditText>(Resource.Id.password);
-
-            //            String UsrName_Entry = usrName.Text;
-            //            String Pwd_Entry = pwd.Text;
-
-            // Pass values to User class, check info if correct
-            // using UserCheckInfo
-            //           User user = new User(UsrName_Entry, Pwd_Entry);\
-            // test
-            Toast.MakeText(this, "You clicked Login", ToastLength.Short).Show();
-
-        }*/
+   
         private void LoginUser(string email, string password)
         {
             auth.SignInWithEmailAndPassword(email, password).AddOnCompleteListener(this);
@@ -84,11 +121,43 @@ namespace LetsEat.Views.Log_In
         {
             if (task.IsSuccessful)
             {
-                Snackbar.Make(activity_main, "Login Success", Snackbar.LengthShort).Show();
+        
+                user_reference.Child(auth.CurrentUser.Uid).AddListenerForSingleValueEvent(new User_ValueEventListener());
+                Console.WriteLine(user_type);
+                if (user_type == "customer")
+                {
+                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
+                    StartActivity(typeof(Views.CustomerSide.MainPage_Customer));
+                    Finish();
+                }
+
+                if (user_type == "owner")
+                {
+                    Toast.MakeText(this, "Login Success", ToastLength.Long).Show();
+                    StartActivity(typeof(Views.Owner_Side.OwnerPage));
+                    Finish();
+                }
             }
             else
             {
-                Snackbar.Make(activity_main, "Login Failed ", Snackbar.LengthShort).Show();
+                Toast.MakeText(this, "Login Failed", ToastLength.Long).Show();
+                SetEditing(true);
+            }
+        }
+
+        private void SetEditing(bool enabled)
+        {
+            input_email.Enabled = enabled;
+            input_password.Enabled = enabled;
+            if (enabled)
+            {
+                btn_signIn.Visibility = ViewStates.Visible;
+                btn_register.Visibility = ViewStates.Visible;
+            }
+            else
+            {
+                btn_signIn.Visibility = ViewStates.Gone;
+                btn_register.Visibility = ViewStates.Gone;
             }
         }
     }
