@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Paths>
   <Jars>
-    <Jar>obj\Debug\lp\1\jl\arch-core-common.jar</Jar>
-    <Jar>obj\Debug\lp\2\jl\arch-lifecycle-common.jar</Jar>
-    <Jar>obj\Debug\lp\5\jl\support-annotations.jar</Jar>
     <Jar>C:\Users\Jon\Documents\GitHub\Lets-Eat\LetsEat\obj\Debug\lp\1\jl\arch-core-common.jar</Jar>
     <Jar>C:\Users\Jon\Documents\GitHub\Lets-Eat\LetsEat\obj\Debug\lp\10\jl\bin\classes.jar</Jar>
     <Jar>C:\Users\Jon\Documents\GitHub\Lets-Eat\LetsEat\obj\Debug\lp\11\jl\bin\classes.jar</Jar>

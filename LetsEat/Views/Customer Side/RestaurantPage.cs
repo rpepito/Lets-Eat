@@ -56,6 +56,7 @@ namespace LetsEat
                 // move customer to a page where they can put in the name to enter the queue
                 Toast.MakeText(this, "Moving to new page..", ToastLength.Long).Show();
                     StartActivity(typeof(QueuePageActivity));
+                    Finish();
                 };
             }
 
@@ -91,6 +92,8 @@ namespace LetsEat
                 mphone.Text = "(702) 698-2199";
                 mhours.Text = "Monday – Sunday DINNER 5.45PM -11.00PM\nMonday – Sunday BAR 5.00PM - 12.00AM\n\nLast orders for our kitchen are as follows:\nDinner: Monday to Saturday – last orders 10.45PM";
                 mdescription.Text = "ZUMA, contemporary Japanese restaurant from creator and co-founder Rainer Becker, arrives in Las Vegas. Inspired by the informal izakaya dining style, the international restaurant features a modern Japanese cuisine that is authentic but not traditional.";
+
+                EnterQueue();
             }
 
             if(Intent.GetStringExtra("Name") == "Lago - Bellagio")

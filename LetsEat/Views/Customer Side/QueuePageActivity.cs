@@ -26,6 +26,7 @@ namespace LetsEat
             EditText queueText = FindViewById<EditText>(Resource.Id.QueueText);
             Button addNameToQueueButton = FindViewById<Button>(Resource.Id.AddNameToQueueButton);
 
+
             string queueHolder = string.Empty;
             addNameToQueueButton.Click += (sender, e) =>
             {
@@ -38,7 +39,8 @@ namespace LetsEat
                     Toast.MakeText(this, "Successfully entered queue!", ToastLength.Long).Show();
                 }
 
-                 StartActivity(typeof(Views.CustomerSide.MainPage));
+                StartActivity(typeof(Views.CustomerSide.MainPage));
+                Finish();
             };
         }
     }
