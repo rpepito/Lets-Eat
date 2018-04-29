@@ -55,19 +55,19 @@ namespace LetsEat
             //adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
             listView = (ListView)FindViewById(Android.Resource.Id.List);
             //listView.Adapter = adapter;
-            //
 
             listView.ItemClick += (s, e) =>
             {
                 Reservation reservation = listReservations[e.Position];
-                selectedReservation = reservation;
+                //selectedReservation = reservation;
                 //reservationText.Text = reservation.name;
                 //input_email.Text = account.email;
+                //var listView = sender as ListView;
+                //Android.Widget.Toast.MakeText(this, reservation.name + "/n" + reservation.time, Android.Widget.ToastLength.Short).Show();
+                
             };
 
             await LoadData();
-
-
             //*/
         }
 
@@ -102,8 +102,12 @@ namespace LetsEat
             await firebase.Child("reservations").PutAsync(name);
             await LoadData();
         }
-        //*/
-        /*
+        private async void DeleteUser(string uid)  
+        {  
+            var firebase = new FirebaseClient(FirebaseURL);  
+            await firebase.Child("users").Child(uid).DeleteAsync();  
+            await LoadData();  
+        }  
         private async void CreateResData()
         {
             Reservation reservation = new Reservation();
