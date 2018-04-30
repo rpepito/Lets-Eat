@@ -7,14 +7,14 @@ using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.App;
-using Android.Support.V4.Widget;
-using Android.Support.Design.Widget;
+
 
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Xamarin.Database;
 using Firebase.Xamarin.Database.Query;
+using Android.Content;
 
 namespace LetsEat.Views.OwnerSide
 {
@@ -27,15 +27,19 @@ namespace LetsEat.Views.OwnerSide
         FirebaseUser user;
         private static String restaurant_name;
         private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
+        private bool data_loaded = false;
 
-        public override async void OnCreate(Bundle savedInstanceState)
+        public override void OnCreate(Bundle savedInstanceState)
         {
+            
             base.OnCreate(savedInstanceState);
-
+            Console.WriteLine("OnCreate");
             // Create your fragment here
 
             user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
-            await LoadUser_Data();
+
+            //if(data_loaded == false)
+            //    await LoadUser_Data();
 
         }
 
@@ -56,6 +60,12 @@ namespace LetsEat.Views.OwnerSide
                 .OnceSingleAsync<String>();
 
             restaurant_name = user_name;
+
+            //((AppCompatActivity)this.Activity).SetActionBar(toolbar);
+            //((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
+
+            data_loaded = true;
+
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -63,14 +73,16 @@ namespace LetsEat.Views.OwnerSide
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
+            HasOptionsMenu = true;
+
             View view = inflater.Inflate(Resource.Layout.MenuLayout, null);
 
-            toolbar = view.FindViewById<Toolbar>(Resource.Id.menutoolbar);
+            //toolbar = view.FindViewById<Toolbar>(Resource.Id.menutoolbar);
 
             menulistView = view.FindViewById<ListView>(Resource.Id.menulistView);
 
-            ((AppCompatActivity)this.Activity).SetActionBar(toolbar);
-            ((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
+            //((AppCompatActivity)this.Activity).SetActionBar(toolbar);
+            //((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
 
             //var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, );
             //menulistView.Adapter = ListAdapter;
@@ -86,6 +98,36 @@ namespace LetsEat.Views.OwnerSide
             return view;
 
 
+        }
+
+        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
+        {
+            inflater.Inflate(Resource.Menu.dishes, menu);
+            base.OnCreateOptionsMenu(menu, inflater);
+
+            var searchItem = menu.FindItem(Resource.Id.action_add);
+            searchItem.SetVisible(true);
+
+        }
+
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+
+            Intent myIntent = new Intent();
+            switch (item.ItemId)
+            {
+
+                case Resource.Id.action_add:
+                    myIntent = new Intent(this.Activity, typeof(AddDish)); 
+                    break;
+
+                default:
+                    break;
+
+            }
+
+            StartActivity(myIntent);
+            return base.OnOptionsItemSelected(item);
         }
 
     }

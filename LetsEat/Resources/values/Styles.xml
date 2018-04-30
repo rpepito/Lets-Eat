@@ -4,5 +4,6 @@
     <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.NoActionBar">  
     </style>  
 
-   <color name="Creamy_Orange">#FDE9D1</color>  
+   <color name="Creamy_Orange">#FDE9D1</color>
+    <color name="Lets_Eat_Orange">#FD9826</color>
 </resources>  

@@ -158,7 +158,6 @@
     <Compile Include="Views\Owner Side\Reservations.cs" />
     <Compile Include="Views\Owner Side\Dish.cs" />
     <Compile Include="Views\Owner Side\Menu.cs" />
-    <Compile Include="Views\Owner Side\OwnerPage.cs" />
     <Compile Include="Views\Owner Side\Queue.cs" />
     <Compile Include="Views\Owner Side\TableList.cs" />
     <Compile Include="Views\Owner Side\ReservePageActivity.cs" />
@@ -175,6 +174,7 @@
     <Compile Include="Views\Owner Side\queue_frag.cs" />
     <Compile Include="Views\Owner Side\table_list_frag.cs" />
     <Compile Include="Views\Owner Side\reservations_frag.cs" />
+    <Compile Include="Views\Owner Side\OwnerPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

@@ -316,5 +316,6 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/values/strings.xml
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/uploadflags.txt
+/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.csprojResolveAssemblyReference.cache
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb
