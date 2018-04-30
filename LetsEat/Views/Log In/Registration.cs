@@ -128,6 +128,9 @@ namespace LetsEat.Views.Log_In
                 btn_register.Visibility = ViewStates.Gone;
             }
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/Ryan-Test2
     }
 }

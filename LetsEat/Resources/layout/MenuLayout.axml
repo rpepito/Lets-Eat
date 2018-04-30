@@ -3,7 +3,10 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<<<<<<< HEAD
 <!--
+=======
+>>>>>>> origin/Ryan-Test2
     <Toolbar
         android:minHeight="?android:attr/actionBarSize"
         android:background="?android:attr/colorPrimary"
@@ -11,7 +14,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/menutoolbar" />
+<<<<<<< HEAD
         -->
+=======
+>>>>>>> origin/Ryan-Test2
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

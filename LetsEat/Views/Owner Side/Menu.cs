@@ -45,10 +45,17 @@ namespace LetsEat
             SetContentView(Resource.Layout.MenuLayout);
             // Create your application here
 
+<<<<<<< HEAD
             //toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
             menulistView = FindViewById<ListView>(Resource.Id.menulistView);
 
             //setElements();
+=======
+            toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
+            menulistView = FindViewById<ListView>(Resource.Id.menulistView);
+
+            setElements();
+>>>>>>> origin/Ryan-Test2
 
             user_reference.Child(user.Uid).AddValueEventListener(new User_ValueEventListener());
 
