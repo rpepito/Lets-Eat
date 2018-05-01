@@ -71,51 +71,6 @@ namespace LetsEat
             time1++;
             addtime(time1, timeb8);
 
-            /*if (time1 < 12)
-                AM = true;
-            else
-            {
-                AM = false;
-                temp = time1 - 12;
-            }
-            if(AM)
-                myString = time1.ToString() + ":00 AM";
-            else
-                myString = temp.ToString() + ":00 PM";
-            
-            timeb1.Text = myString;
-            time1++;
-
-            if (time1 < 12)
-                AM = true;
-            else
-                AM = false;     
-            if(AM)
-                myString = time1.ToString() + ":00 AM";
-            else
-                myString = time1.ToString() + ":00 PM";
-
-            timeb2.Text = myString;
-            time1++;
-
-            myString = time1.ToString() + ":00";
-            timeb3.Text = myString;
-            time1++;
-            myString = time1.ToString() + ":00";
-            timeb4.Text = myString;
-            time1++;
-            myString = time1.ToString() + ":00";
-            timeb5.Text = myString;
-            time1++;
-            myString = time1.ToString() + ":00";
-            timeb6.Text = myString;
-            time1++;
-            myString = time1.ToString() + ":00";
-            timeb7.Text = myString;
-            time1++;
-            myString = time1.ToString() + ":00";
-            timeb8.Text = myString;*/
-
             mName.Text = Intent.GetStringExtra("Name");
             mCuisine.Text = Intent.GetStringExtra("Cuisine");
             var imageView = FindViewById<ImageView>(Resource.Id.photoImageView);
@@ -170,7 +125,7 @@ namespace LetsEat
                 madress.Text = "4745 S Maryland Pkwy, Las Vegas, NV 89119";
                 mhours.Text = "Mon-Sun: 8AM-10PM";
                 mphone.Text = "(702) 895-9444";
-                mdescription.Text = "";
+                mdescription.Text = "Aloha Kitchen Las Vegas first opened in 1998 and the Hawaiian themed restaurant has since expanded to four locations, including one with a bar and gaming.";
                 imageView.SetImageResource(Resource.Drawable.hawaiian);
             }
 
@@ -179,7 +134,7 @@ namespace LetsEat
                 madress.Text = "131 E Tropicana Ave D, Las Vegas, NV 89119";
                 mhours.Text = "Mon-Sun: 10AM-10PM";
                 mphone.Text = "(702) 739-8703";
-                mdescription.Text = "";
+                mdescription.Text = "Located across from University of Nevada - Las Vegas, Pho Thanh Huong offers authentic Vietnamese specialties, like mouthwatering pho and tasty sandwiches!";
                 imageView.SetImageResource(Resource.Drawable.vietnamese);
             }
 
@@ -188,7 +143,7 @@ namespace LetsEat
                 madress.Text = "1545 E Flamingo Rd, Las Vegas, NV 89119";
                 mhours.Text = "Mon-Thur:11AM-10PM\nFri-Sat:11AM-11PM\nSunday: 11AM-10PM";
                 mphone.Text = "(702) 735-0082";
-                mdescription.Text = "";
+                mdescription.Text = "We're all family here. Enjoy a fresh, delicious meal every time. Olive Garden's menu features a variety of Italian specialties, including classic and filled pastas, chicken, seafood and beef. Enjoy our freshly baked garlic breadsticks and your choice of homemade soup or garden-fresh salad with any entree. All menu items are available for take -out, and our Parties To Go!menu offers generous family - sized meals for your next family gathering or office party.";
                 imageView.SetImageResource(Resource.Drawable.italian2);
             }
 
@@ -197,7 +152,7 @@ namespace LetsEat
                 madress.Text = "1220 E Harmon Ave A-2, Las Vegas, NV 89119";
                 mhours.Text = "24 Hours";
                 mphone.Text = "(702) 792-3611";
-                mdescription.Text = "";
+                mdescription.Text = "Roberto's Taco Shop was San Diego's first walk up and drive-thru taco shop, setting the standard for fresh, authentic and inexpensive Mexican food. Combining a passion for good ingredients with friendly service and a welcoming environment is what has made Roberto's a pioneer of classic Mexican food for over 50 years.";
                 imageView.SetImageResource(Resource.Drawable.mexican);
             }
 
@@ -206,7 +161,7 @@ namespace LetsEat
                 madress.Text = "4680 S Maryland Pkwy, Las Vegas, NV 89119";
                 mhours.Text = "Mon-Sun: 11AM-9PM";
                 mphone.Text = "(702) 202-2180";
-                mdescription.Text = "";
+                mdescription.Text = "Established in 2016. We started our first location in the Centennial Las Vegas area and are trying to expand throughout the Vegas area to open 5 more locations within 2017. We specialize in Hawaiian style poke bowls and Asian fusion sushi burritos. Customers can customize their own style of bowl or sushi burrito.";
                 imageView.SetImageResource(Resource.Drawable.sushi);
 
             }
@@ -223,10 +178,13 @@ namespace LetsEat
             else
                 AM = false;
 
-            if (AM)
-                myString = time.ToString() + ":00 AM";
+            if(time == 12)
+                myString = time.ToString() + ":00 PM";
             else
-                myString = temp.ToString() + ":00 PM";
+                if (AM)
+                    myString = time.ToString() + ":00 AM";
+                else
+                    myString = temp.ToString() + ":00 PM";
 
             timeb.Text = myString;
         }

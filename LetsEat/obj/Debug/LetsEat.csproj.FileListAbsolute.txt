@@ -294,6 +294,15 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/hawaiian.jpg
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/japanese.jpg
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/sushi.jpg
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/crypto.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Firebase.Xamarin.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/JWT.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Newtonsoft.Json.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/System.Reactive.Core.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/System.Reactive.Interfaces.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/System.Reactive.Linq.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/System.Reactive.PlatformServices.dll
+/Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.csprojResolveAssemblyReference.cache
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Mono.Android.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb

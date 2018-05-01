@@ -86,10 +86,6 @@ LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.
 LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
 letseat.views.log_in.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.LoginActivity/User_ValueEventListener, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity_User_ValueEventListener
-LetsEat.Views.Log_In.LoginActivity+User_ValueEventListener, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity_User_ValueEventListener
-LetsEat.Views.Log_In.LoginActivity.User_ValueEventListener;md5cce693907115afaff50af31afdc20eb5.LoginActivity_User_ValueEventListener
-letseat.views.log_in.LoginActivity_User_ValueEventListener;md5cce693907115afaff50af31afdc20eb5.LoginActivity_User_ValueEventListener
 LetsEat.Views.Log_In.Registration, LetsEat;md5cce693907115afaff50af31afdc20eb5.Registration
 LetsEat.Views.Log_In.Registration, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.Registration
 LetsEat.Views.Log_In.Registration;md5cce693907115afaff50af31afdc20eb5.Registration

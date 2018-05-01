@@ -107,6 +107,14 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "LetsEat.dll" comes first in this list. */
 		"LetsEat.dll",
+		"crypto.dll",
+		"Firebase.Xamarin.dll",
+		"JWT.dll",
+		"Newtonsoft.Json.dll",
+		"System.Reactive.Core.dll",
+		"System.Reactive.Interfaces.dll",
+		"System.Reactive.Linq.dll",
+		"System.Reactive.PlatformServices.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",
