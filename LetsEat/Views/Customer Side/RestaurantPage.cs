@@ -173,18 +173,27 @@ namespace LetsEat
             string myString;
             int temp = time - 12;
 
+            if (time > 24)
+                time = time % 24;
+
             if (time < 12)
                 AM = true;
             else
                 AM = false;
 
-            if(time == 12)
+            if (time == 12)
                 myString = time.ToString() + ":00 PM";
             else
-                if (AM)
-                    myString = time.ToString() + ":00 AM";
+                if (time == 24)
+                {
+                    
+                    myString = temp.ToString() + ":00 AM";
+                }
                 else
-                    myString = temp.ToString() + ":00 PM";
+                    if (AM)
+                        myString = time.ToString() + ":00 AM";
+                    else
+                        myString = temp.ToString() + ":00 PM";
 
             timeb.Text = myString;
         }
