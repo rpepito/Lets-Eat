@@ -259,6 +259,7 @@ namespace LetsEat
                 mdescription.Text = "";
 <<<<<<< HEAD
                 imageView.SetImageResource(Resource.Drawable.sushi);
+
             }
         }
     }
