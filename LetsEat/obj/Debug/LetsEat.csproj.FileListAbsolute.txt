@@ -14,7 +14,6 @@ C:/Users/Ryan/Documents/LetsEat/LetsEat/obj/Debug/uploadflags.txt
 C:/Users/Ryan/Documents/LetsEat/LetsEat/bin/Debug/LetsEat.dll.mdb
 C:/Users/Ryan/Documents/LetsEat/LetsEat/obj/Debug/android/assets/LetsEat.dll.mdb
 C:/Users/Ryan/Documents/LetsEat/LetsEat/obj/Debug/res/layout/loginlayout.xml
-<<<<<<< HEAD
 C:/Users/Adrian/source/repos/school/Lets-Eat/LetsEat/bin/Debug/LetsEat.dll
 C:/Users/Adrian/source/repos/school/Lets-Eat/LetsEat/bin/Debug/LetsEat.pdb
 C:/Users/Adrian/source/repos/school/Lets-Eat/LetsEat/bin/Debug/LetsEat.LetsEat.apk
@@ -320,7 +319,3 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.csprojResolveAssemblyReference.cache
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
 /Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb
-=======
-/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.dll
-/Users/Shhteeb1/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/LetsEat.pdb
->>>>>>> origin/Ryan-Test2

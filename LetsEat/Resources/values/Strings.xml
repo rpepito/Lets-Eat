@@ -2,13 +2,10 @@
 <resources>
   <string name="app_name">LetsEat</string>
   <string name="reservePage">Create a New Reservation</string>
-<<<<<<< HEAD
   <string name="menutab">Configure Menu</string>
   <string name="queuetab">Queue</string>
   <string name="tabletab">Table List</string>
   <string name="reservationtab">Reservations</string>
-=======
->>>>>>> origin/Ryan-Test2
   <string-array name="user_types">
     <item>Customer</item>
     <item>Owner</item>

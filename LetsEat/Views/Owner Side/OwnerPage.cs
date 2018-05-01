@@ -1,15 +1,4 @@
-<<<<<<< HEAD
 ﻿
-=======
-﻿using LetsEat.Models;
-using LetsEat.Views;
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
->>>>>>> origin/Ryan-Test2
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -21,7 +10,6 @@ using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
-<<<<<<< HEAD
 using System.Threading.Tasks;
 using LetsEat.Views.OwnerSide;
 
@@ -49,29 +37,11 @@ namespace LetsEat.Views.Owner_Side
         private string restaurant_name = null;
 
         protected override async void OnCreate(Bundle savedInstanceState)
-=======
-using Android.Gms.Tasks;
-using static Android.Views.View;
-using LetsEat.Views.OwnerSide;
-
-namespace LetsEat.Views.Owner_Side
-{
-    [Activity(Label = "OwnerPage", Theme = "@style/Theme.DesignDemo")]
-    public class OwnerPage : AppCompatActivity, IOnClickListener
-    {
-        private Button btn_Menu, btn_Table, btn_Queue, btn_Reservation;
-        private RelativeLayout activity_main;
-        DrawerLayout drawerLayout;
-        NavigationView navigationView_user;
-
-        protected override void OnCreate(Bundle savedInstanceState)
->>>>>>> origin/Ryan-Test2
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.OwnerPage);
 
-<<<<<<< HEAD
             user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
 
 
@@ -97,32 +67,10 @@ namespace LetsEat.Views.Owner_Side
 
             //setupUser_Nav();
             /*
-=======
-
-            btn_Menu = FindViewById<Button>(Resource.Id.Menubutton);
-            btn_Table = FindViewById<Button>(Resource.Id.Tablebutton);
-            btn_Queue = FindViewById<Button>(Resource.Id.Queuebutton);
-            btn_Reservation = FindViewById<Button>(Resource.Id.Reservationbutton);
-            activity_main = FindViewById<RelativeLayout>(Resource.Id.activity_main);
-
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-            SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-
-            SupportActionBar.SetDisplayShowTitleEnabled(false);
-            SupportActionBar.SetHomeButtonEnabled(true);
-            drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout_owner);
-
-            setupUser_Nav();
-
->>>>>>> origin/Ryan-Test2
             btn_Menu.SetOnClickListener(this);
             btn_Queue.SetOnClickListener(this);
             btn_Table.SetOnClickListener(this);
             btn_Reservation.SetOnClickListener(this);
-<<<<<<< HEAD
             */
         }
 
@@ -142,10 +90,6 @@ namespace LetsEat.Views.Owner_Side
 
         }
         /*
-=======
-        }
-
->>>>>>> origin/Ryan-Test2
         public void setupUser_Nav()
         {
 
@@ -181,7 +125,6 @@ namespace LetsEat.Views.Owner_Side
             };
 
         }
-<<<<<<< HEAD
         */
 
         private void BottomNavigation_NavigationItemSelected(object sender, BottomNavigationView.NavigationItemSelectedEventArgs e)
@@ -189,10 +132,6 @@ namespace LetsEat.Views.Owner_Side
             LoadFragment(e.Item.ItemId);
         }
         /*
-=======
-
-
->>>>>>> origin/Ryan-Test2
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
@@ -206,7 +145,6 @@ namespace LetsEat.Views.Owner_Side
             }
             return base.OnOptionsItemSelected(item);
         }
-<<<<<<< HEAD
 */
         void LoadFragment(int id)
         {
@@ -236,9 +174,6 @@ namespace LetsEat.Views.Owner_Side
         }
 
         /*
-=======
-
->>>>>>> origin/Ryan-Test2
         public void OnClick(View v)
         {
             if (v.Id == Resource.Id.Menubutton)
@@ -261,10 +196,6 @@ namespace LetsEat.Views.Owner_Side
                 StartActivity(typeof(Reservations));
             }
         }
-<<<<<<< HEAD
         */
-=======
-
->>>>>>> origin/Ryan-Test2
     }
 }

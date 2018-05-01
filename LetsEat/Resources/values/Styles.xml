@@ -1,14 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>  
 <resources>  
     <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style> 
-<<<<<<< HEAD
     <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.NoActionBar">  
     </style>  
 
    <color name="Creamy_Orange">#FDE9D1</color>
     <color name="Lets_Eat_Orange">#FD9826</color>
-=======
-    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">  
-    </style>  
->>>>>>> origin/Ryan-Test2
 </resources>  

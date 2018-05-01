@@ -22,10 +22,6 @@ namespace LetsEat
             base.OnCreate(savedInstanceState);
 
             // Create your application here
-<<<<<<< HEAD
-=======
-            /*
->>>>>>> origin/Ryan-Test2
             SetContentView(Resource.Layout.ReservePage);
 
             EditText reservationText = FindViewById<EditText>(Resource.Id.ReservationText);
@@ -44,10 +40,6 @@ namespace LetsEat
 
                 StartActivity(typeof(Reservations));
             };
-<<<<<<< HEAD
-=======
-        //*/
->>>>>>> origin/Ryan-Test2
         }
     }
 }
