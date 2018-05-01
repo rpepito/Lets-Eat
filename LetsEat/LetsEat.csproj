@@ -140,10 +140,10 @@
     <Compile Include="Views\Owner Side\ReservePageActivity.cs" />
     <Compile Include="Views\Customer Side\ImageManager.cs" />
     <Compile Include="Views\Customer Side\MyCustomListAdapter.cs" />
-    <Compile Include="Views\Customer Side\RestaurantPage.cs" />
     <Compile Include="Views\Customer Side\User.cs" />
     <Compile Include="Views\Customer Side\UserData.cs" />
     <Compile Include="Views\Customer Side\ViewHolder.cs" />
+    <Compile Include="Views\Customer Side\RestaurantPage.cs" />
     <Compile Include="Views\Customer Side\MainPage.cs" />
     <Compile Include="Views\Customer Side\MainPage_Customer.cs" />
     <Compile Include="Views\Customer Side\MainPage_Owner.cs" />

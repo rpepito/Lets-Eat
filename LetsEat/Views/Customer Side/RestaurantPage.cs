@@ -22,6 +22,14 @@ namespace LetsEat
         TextView mphone;
         TextView mhours;
         TextView mdescription;
+        Button timeb1;
+        Button timeb2;
+        Button timeb3;
+        Button timeb4;
+        Button timeb5;
+        Button timeb6;
+        Button timeb7;
+        Button timeb8;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -30,13 +38,83 @@ namespace LetsEat
             SetContentView(Resource.Layout.RestaurantPage_Layout);
             mName = FindViewById<TextView>(Resource.Id.nameTextView);
             mCuisine = FindViewById<TextView>(Resource.Id.cuisineTextView);
-            //mPhoto = FindViewById<ImageView>(Resource.Id.photoImageView);
             madress = FindViewById<TextView>(Resource.Id.addressdetail);
             mphone = FindViewById<TextView>(Resource.Id.phonedetail);
             mhours = FindViewById<TextView>(Resource.Id.hoursdetail);
             mdescription = FindViewById<TextView>(Resource.Id.descriptiondetail);
+            timeb1 = FindViewById<Button>(Resource.Id.timeButton1);
+            timeb2 = FindViewById<Button>(Resource.Id.timeButton2);
+            timeb3 = FindViewById<Button>(Resource.Id.timeButton3);
+            timeb4 = FindViewById<Button>(Resource.Id.timeButton4);
+            timeb5 = FindViewById<Button>(Resource.Id.timeButton5);
+            timeb6 = FindViewById<Button>(Resource.Id.timeButton6);
+            timeb7 = FindViewById<Button>(Resource.Id.timeButton7);
+            timeb8 = FindViewById<Button>(Resource.Id.timeButton8);
 
-            /*mDetail = FindViewById<TextView>(Resource.Id.description);*/
+            String hourMinute;
+            hourMinute = DateTime.Now.ToString("HH");
+            int time1 = Int32.Parse(hourMinute) + 1;
+
+            addtime(time1, timeb1);
+            time1++;
+            addtime(time1, timeb2);
+            time1++;
+            addtime(time1, timeb3);
+            time1++;
+            addtime(time1, timeb4);
+            time1++;
+            addtime(time1, timeb5);
+            time1++;
+            addtime(time1, timeb6);
+            time1++;
+            addtime(time1, timeb7);
+            time1++;
+            addtime(time1, timeb8);
+
+            /*if (time1 < 12)
+                AM = true;
+            else
+            {
+                AM = false;
+                temp = time1 - 12;
+            }
+            if(AM)
+                myString = time1.ToString() + ":00 AM";
+            else
+                myString = temp.ToString() + ":00 PM";
+            
+            timeb1.Text = myString;
+            time1++;
+
+            if (time1 < 12)
+                AM = true;
+            else
+                AM = false;     
+            if(AM)
+                myString = time1.ToString() + ":00 AM";
+            else
+                myString = time1.ToString() + ":00 PM";
+
+            timeb2.Text = myString;
+            time1++;
+
+            myString = time1.ToString() + ":00";
+            timeb3.Text = myString;
+            time1++;
+            myString = time1.ToString() + ":00";
+            timeb4.Text = myString;
+            time1++;
+            myString = time1.ToString() + ":00";
+            timeb5.Text = myString;
+            time1++;
+            myString = time1.ToString() + ":00";
+            timeb6.Text = myString;
+            time1++;
+            myString = time1.ToString() + ":00";
+            timeb7.Text = myString;
+            time1++;
+            myString = time1.ToString() + ":00";
+            timeb8.Text = myString;*/
 
             mName.Text = Intent.GetStringExtra("Name");
             mCuisine.Text = Intent.GetStringExtra("Cuisine");
@@ -132,6 +210,25 @@ namespace LetsEat
                 imageView.SetImageResource(Resource.Drawable.sushi);
 
             }
+        }
+
+        public void addtime(int time, Button timeb)
+        {
+            bool AM = false;
+            string myString;
+            int temp = time - 12;
+
+            if (time < 12)
+                AM = true;
+            else
+                AM = false;
+
+            if (AM)
+                myString = time.ToString() + ":00 AM";
+            else
+                myString = temp.ToString() + ":00 PM";
+
+            timeb.Text = myString;
         }
     }
 }
