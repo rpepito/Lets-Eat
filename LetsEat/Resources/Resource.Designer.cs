@@ -2568,8 +2568,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00bd
 			public const int action0 = 2131361981;
 			
-			// aapt resource value: 0x7f0a00f6
-			public const int action_add = 2131362038;
+			// aapt resource value: 0x7f0a00f9
+			public const int action_add = 2131362041;
 			
 			// aapt resource value: 0x7f0a0082
 			public const int action_bar = 2131361922;
@@ -2601,17 +2601,17 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00c1
 			public const int action_divider = 2131361985;
 			
-			// aapt resource value: 0x7f0a00f7
-			public const int action_home = 2131362039;
+			// aapt resource value: 0x7f0a00fa
+			public const int action_home = 2131362042;
 			
 			// aapt resource value: 0x7f0a00bb
 			public const int action_image = 2131361979;
 			
-			// aapt resource value: 0x7f0a00fb
-			public const int action_login = 2131362043;
+			// aapt resource value: 0x7f0a00fe
+			public const int action_login = 2131362046;
 			
-			// aapt resource value: 0x7f0a00f8
-			public const int action_logout = 2131362040;
+			// aapt resource value: 0x7f0a00fb
+			public const int action_logout = 2131362043;
 			
 			// aapt resource value: 0x7f0a0003
 			public const int action_menu_divider = 2131361795;
@@ -2628,11 +2628,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0062
 			public const int action_mode_close_button = 2131361890;
 			
-			// aapt resource value: 0x7f0a00fa
-			public const int action_ownerpage = 2131362042;
+			// aapt resource value: 0x7f0a00fd
+			public const int action_ownerpage = 2131362045;
 			
-			// aapt resource value: 0x7f0a00f9
-			public const int action_reservations = 2131362041;
+			// aapt resource value: 0x7f0a00fc
+			public const int action_reservations = 2131362044;
 			
 			// aapt resource value: 0x7f0a00bc
 			public const int action_text = 2131361980;
@@ -2652,11 +2652,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0033
 			public const int add = 2131361843;
 			
-			// aapt resource value: 0x7f0a00e7
-			public const int addressdetail = 2131362023;
+			// aapt resource value: 0x7f0a00ea
+			public const int addressdetail = 2131362026;
 			
-			// aapt resource value: 0x7f0a00e6
-			public const int addressheader = 2131362022;
+			// aapt resource value: 0x7f0a00e9
+			public const int addressheader = 2131362025;
 			
 			// aapt resource value: 0x7f0a001c
 			public const int adjust_height = 2131361820;
@@ -2688,20 +2688,26 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00f2
-			public const int bottom_menu_config = 2131362034;
+			// aapt resource value: 0x7f0a00f5
+			public const int bottom_menu_config = 2131362037;
 			
 			// aapt resource value: 0x7f0a00ce
 			public const int bottom_navigation = 2131361998;
 			
-			// aapt resource value: 0x7f0a00f4
-			public const int bottom_queue = 2131362036;
+			// aapt resource value: 0x7f0a00f7
+			public const int bottom_queue = 2131362039;
 			
-			// aapt resource value: 0x7f0a00f5
-			public const int bottom_reservations = 2131362037;
+			// aapt resource value: 0x7f0a00f8
+			public const int bottom_reservations = 2131362040;
 			
-			// aapt resource value: 0x7f0a00f3
-			public const int bottom_tablelist = 2131362035;
+			// aapt resource value: 0x7f0a00f6
+			public const int bottom_tablelist = 2131362038;
+			
+			// aapt resource value: 0x7f0a00dd
+			public const int btnNext = 2131362013;
+			
+			// aapt resource value: 0x7f0a00de
+			public const int btnPrevoius = 2131362014;
 			
 			// aapt resource value: 0x7f0a00d4
 			public const int btn_register = 2131362004;
@@ -2766,11 +2772,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0066
 			public const int default_activity_button = 2131361894;
 			
-			// aapt resource value: 0x7f0a00ed
-			public const int description = 2131362029;
+			// aapt resource value: 0x7f0a00f0
+			public const int description = 2131362032;
 			
-			// aapt resource value: 0x7f0a00ee
-			public const int descriptiondetail = 2131362030;
+			// aapt resource value: 0x7f0a00f1
+			public const int descriptiondetail = 2131362033;
 			
 			// aapt resource value: 0x7f0a00a0
 			public const int design_bottom_sheet = 2131361952;
@@ -2787,8 +2793,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00a4
 			public const int design_navigation_view = 2131361956;
 			
-			// aapt resource value: 0x7f0a00e8
-			public const int detail = 2131362024;
+			// aapt resource value: 0x7f0a00eb
+			public const int detail = 2131362027;
 			
 			// aapt resource value: 0x7f0a0028
 			public const int disableHome = 2131361832;
@@ -2853,11 +2859,14 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0029
 			public const int homeAsUp = 2131361833;
 			
-			// aapt resource value: 0x7f0a00eb
-			public const int hours = 2131362027;
+			// aapt resource value: 0x7f0a00dc
+			public const int horizontalScrollView1 = 2131362012;
 			
-			// aapt resource value: 0x7f0a00ec
-			public const int hoursdetail = 2131362028;
+			// aapt resource value: 0x7f0a00ee
+			public const int hours = 2131362030;
+			
+			// aapt resource value: 0x7f0a00ef
+			public const int hoursdetail = 2131362031;
 			
 			// aapt resource value: 0x7f0a0068
 			public const int icon = 2131361896;
@@ -2910,8 +2919,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00ad
 			public const int loginButton = 2131361965;
 			
-			// aapt resource value: 0x7f0a00f1
-			public const int masked = 2131362033;
+			// aapt resource value: 0x7f0a00f4
+			public const int masked = 2131362036;
 			
 			// aapt resource value: 0x7f0a00c0
 			public const int media_actions = 2131361984;
@@ -2922,8 +2931,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00b8
 			public const int menutoolbar = 2131361976;
 			
-			// aapt resource value: 0x7f0a00ef
-			public const int message = 2131362031;
+			// aapt resource value: 0x7f0a00f2
+			public const int message = 2131362034;
 			
 			// aapt resource value: 0x7f0a0038
 			public const int middle = 2131361848;
@@ -2979,11 +2988,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00ac
 			public const int password = 2131361964;
 			
-			// aapt resource value: 0x7f0a00e9
-			public const int phone = 2131362025;
+			// aapt resource value: 0x7f0a00ec
+			public const int phone = 2131362028;
 			
-			// aapt resource value: 0x7f0a00ea
-			public const int phonedetail = 2131362026;
+			// aapt resource value: 0x7f0a00ed
+			public const int phonedetail = 2131362029;
 			
 			// aapt resource value: 0x7f0a00aa
 			public const int photoImageView = 2131361962;
@@ -2997,11 +3006,11 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0007
 			public const int progress_horizontal = 2131361799;
 			
-			// aapt resource value: 0x7f0a00e4
-			public const int queue = 2131362020;
+			// aapt resource value: 0x7f0a00e7
+			public const int queue = 2131362023;
 			
-			// aapt resource value: 0x7f0a00e5
-			public const int queueButton = 2131362021;
+			// aapt resource value: 0x7f0a00e8
+			public const int queueButton = 2131362024;
 			
 			// aapt resource value: 0x7f0a007b
 			public const int radio = 2131361915;
@@ -3192,29 +3201,29 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a00c5
 			public const int time = 2131361989;
 			
-			// aapt resource value: 0x7f0a00dc
-			public const int timeButton1 = 2131362012;
-			
-			// aapt resource value: 0x7f0a00dd
-			public const int timeButton2 = 2131362013;
-			
-			// aapt resource value: 0x7f0a00de
-			public const int timeButton3 = 2131362014;
-			
 			// aapt resource value: 0x7f0a00df
-			public const int timeButton4 = 2131362015;
+			public const int timeButton1 = 2131362015;
 			
 			// aapt resource value: 0x7f0a00e0
-			public const int timeButton5 = 2131362016;
+			public const int timeButton2 = 2131362016;
 			
 			// aapt resource value: 0x7f0a00e1
-			public const int timeButton6 = 2131362017;
+			public const int timeButton3 = 2131362017;
 			
 			// aapt resource value: 0x7f0a00e2
-			public const int timeButton7 = 2131362018;
+			public const int timeButton4 = 2131362018;
 			
 			// aapt resource value: 0x7f0a00e3
-			public const int timeButton8 = 2131362019;
+			public const int timeButton5 = 2131362019;
+			
+			// aapt resource value: 0x7f0a00e4
+			public const int timeButton6 = 2131362020;
+			
+			// aapt resource value: 0x7f0a00e5
+			public const int timeButton7 = 2131362021;
+			
+			// aapt resource value: 0x7f0a00e6
+			public const int timeButton8 = 2131362022;
 			
 			// aapt resource value: 0x7f0a001b
 			public const int title = 2131361819;
@@ -3264,8 +3273,8 @@ namespace LetsEat
 			// aapt resource value: 0x7f0a0016
 			public const int view_offset_helper = 2131361814;
 			
-			// aapt resource value: 0x7f0a00f0
-			public const int visible = 2131362032;
+			// aapt resource value: 0x7f0a00f3
+			public const int visible = 2131362035;
 			
 			// aapt resource value: 0x7f0a0021
 			public const int wide = 2131361825;

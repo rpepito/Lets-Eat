@@ -1,18 +1,21 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Customer Side/RestaurantPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Resources/values/Styles.xml">
     <Files>
-      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="189" Column="21" />
       <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="1" Column="1" />
       <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="140" Column="13" />
       <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1360" Column="19" />
       <File FileName="LetsEat/Views/Customer Side/MainPage_Owner.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/ImageManager.cs" Line="1" Column="1" />
+      <File FileName="Source Not Available" />
+      <File FileName="LetsEat/Resources/values/Styles.xml" Line="4" Column="71" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LetsEat PreferredExecutionTarget="Android.Android_Accelerated_Nougat" />
+  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="pixel_xl" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
