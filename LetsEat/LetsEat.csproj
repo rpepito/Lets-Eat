@@ -200,14 +200,14 @@
     <AndroidResource Include="Resources\drawable\table_colored_icon.png" />
     <AndroidResource Include="Resources\drawable\lago.jpeg" />
     <AndroidResource Include="Resources\drawable\steak.png" />
-    <AndroidResource Include="Resources\drawable\japanese.png" />
-    <AndroidResource Include="Resources\drawable\hawaiian.png" />
-    <AndroidResource Include="Resources\drawable\thai.png" />
-    <AndroidResource Include="Resources\drawable\italian2.png" />
     <AndroidResource Include="Resources\drawable\french.png" />
-    <AndroidResource Include="Resources\drawable\vietnamese.png" />
-    <AndroidResource Include="Resources\drawable\sushi.png" />
-    <AndroidResource Include="Resources\drawable\mexican.png" />
+    <AndroidResource Include="Resources\drawable\thai.jpg" />
+    <AndroidResource Include="Resources\drawable\italian2.png" />
+    <AndroidResource Include="Resources\drawable\vietnamese.jpg" />
+    <AndroidResource Include="Resources\drawable\mexican.jpg" />
+    <AndroidResource Include="Resources\drawable\hawaiian.jpg" />
+    <AndroidResource Include="Resources\drawable\japanese.jpg" />
+    <AndroidResource Include="Resources\drawable\sushi.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

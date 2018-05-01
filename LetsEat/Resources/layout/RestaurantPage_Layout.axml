@@ -14,8 +14,9 @@
         android:scrollbarAlwaysDrawVerticalTrack="true">
         <ImageView
             android:id="@+id/photoImageView"
-            android:layout_width="1200dp"
+            android:layout_width="fill_parent"
             android:layout_height="140dp"
+            android:scaleType="fitXY"
             android:padding="5dp" />
         <TextView
             android:id="@+id/nameTextView"
@@ -46,58 +47,58 @@
             android:layout_centerVertical="true"
             android:paddingLeft="5dp" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton1"
             android:text="Time1"
             android:layout_below="@id/reservation" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton2"
             android:text="Time2"
             android:layout_below="@id/reservation"
             android:layout_toRightOf="@+id/timeButton1" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton3"
             android:text="Time3"
             android:layout_below="@id/reservation"
             android:layout_toRightOf="@+id/timeButton2" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton4"
             android:text="Time4"
             android:layout_below="@id/reservation"
             android:layout_toRightOf="@+id/timeButton3" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton5"
             android:text="Time5"
             android:layout_marginBottom="25.0dp"
             android:layout_below="@id/timeButton1" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton6"
             android:text="Time6"
             android:layout_below="@id/timeButton2"
             android:layout_marginBottom="25.0dp"
             android:layout_toRightOf="@+id/timeButton5" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton7"
             android:text="Time7"
             android:layout_below="@id/timeButton3"
             android:layout_marginBottom="25.0dp"
             android:layout_toRightOf="@+id/timeButton6" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/timeButton8"
             android:text="Time8"
             android:layout_below="@id/timeButton4"
@@ -113,8 +114,8 @@
             android:layout_centerVertical="true"
             android:paddingLeft="5dp" />
         <Button
-            android:layout_width="95dp"
-            android:layout_height="55dp"
+            android:layout_width="89dp"
+            android:layout_height="50dp"
             android:id="@+id/queueButton"
             android:text="Queue up"
             android:layout_marginBottom="25.0dp"
