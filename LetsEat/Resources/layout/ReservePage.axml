@@ -8,14 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView1"
-        android:text="Enter your name:" />
-    <EditText
+        android:text="Reservations"
+        android:textSize="@dimen/abc_action_bar_progress_bar_size" />
+    <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ReservationText" />
-    <Button
+        android:layout_height="28.0dp"
+        android:id="@+id/space1" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ReservationButton"
-        android:text="Submit Reservation" />
+        android:layout_height="match_parent"
+        android:id="@android:id/list" />
+    <ProgressBar
+        android:id="@+id/circularProgress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </LinearLayout>

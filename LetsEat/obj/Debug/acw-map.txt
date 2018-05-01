@@ -34,6 +34,10 @@ LetsEat.DishViewAdapter, LetsEat;md5112e1ce544e292e139446fe091803014.DishViewAda
 LetsEat.DishViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.DishViewAdapter
 LetsEat.DishViewAdapter;md5112e1ce544e292e139446fe091803014.DishViewAdapter
 letseat.DishViewAdapter;md5112e1ce544e292e139446fe091803014.DishViewAdapter
+LetsEat.ReservePage, LetsEat;md5112e1ce544e292e139446fe091803014.ReservePage
+LetsEat.ReservePage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.ReservePage
+LetsEat.ReservePage;md5112e1ce544e292e139446fe091803014.ReservePage
+letseat.ReservePage;md5112e1ce544e292e139446fe091803014.ReservePage
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
@@ -62,6 +66,10 @@ LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat;md53a37a337742bdff3602f8b1fce
 LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
 LetsEat.Views.CustomerSide.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
 letseat.views.customerside.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
+LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+LetsEat.Views.CustomerSide.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+letseat.views.customerside.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
 LetsEat.Views.Owner_Side.AddDish, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.AddDish
 LetsEat.Views.Owner_Side.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.AddDish
 LetsEat.Views.Owner_Side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish

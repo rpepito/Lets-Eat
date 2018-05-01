@@ -11,7 +11,7 @@
     <item>Owner</item>
   </string-array>
 
-  <style name="Mytheme" parent="@android:style/Theme.Material">
+  <style name="Mytheme" parent="@android:style/Theme.Material.Light">
     <item name="android:windowNoTitle">true</item>
     <item name="android:windowActionBar">false</item>
   </style>

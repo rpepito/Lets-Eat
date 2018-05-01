@@ -1,9 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<!--
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><!--
     <Toolbar
         android:minHeight="?android:attr/actionBarSize"
         android:background="?android:attr/colorPrimary"
@@ -11,18 +6,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/menutoolbar" />
-        -->
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/add_item_button"
-        android:text="Add Menu Item"
-        android:layout_marginTop="55.0dp"
-        android:background="@color/Lets_Eat_Orange" />
-    <ListView
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/menulistView" />
-</LinearLayout>
+        --><Button android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/add_item_button" android:text="Add Menu Item" android:layout_marginTop="55.0dp" android:background="@color/Lets_Eat_Orange" /><ListView android:minWidth="25px" android:minHeight="25px" android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/menulistView" /></LinearLayout>
