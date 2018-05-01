@@ -1,17 +1,17 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/OwnerPage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/menu_config_frag.cs">
     <Files>
       <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="49" Column="30" />
       <File FileName="LetsEat/Views/Owner Side/Dish.cs" Line="7" Column="41" />
       <File FileName="LetsEat/Views/Customer Side/MainPage.cs" Line="58" Column="10" />
       <File FileName="LetsEat/Resources/menu/dishes.xml" Line="9" Column="8" />
-      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="34" Column="9" />
-      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="76" Column="10" />
-      <File FileName="LetsEat/Resources/values/Styles.xml" Line="18" Column="6" />
+      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="65" Column="46" />
+      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="96" Column="15" />
+      <File FileName="LetsEat/Resources/values/Styles.xml" Line="3" Column="71" />
       <File FileName="LetsEat/Views/Owner Side/AddDish.cs" Line="74" Column="86" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Owner.cs" Line="104" Column="1" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="72" Column="25" />
-      <File FileName="LetsEat/Resources/values/Strings.xml" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Owner.cs" Line="130" Column="10" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="34" Column="47" />
+      <File FileName="LetsEat/Resources/values/Strings.xml" Line="8" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
