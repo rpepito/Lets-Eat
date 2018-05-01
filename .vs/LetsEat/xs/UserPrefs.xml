@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/menu_config_frag.cs">
     <Files>
       <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="17" Column="6" />
       <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="1" Column="1" />
@@ -13,6 +13,7 @@
       <File FileName="LetsEat/Resources/Resource.Designer.cs" Line="1" Column="1" />
       <File FileName="LetsEat/Resources/values/Styles.xml" Line="3" Column="71" />
       <File FileName="LetsEat/Resources/values/Strings.xml" Line="14" Column="68" />
+      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="96" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

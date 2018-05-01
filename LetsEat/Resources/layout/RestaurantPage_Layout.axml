@@ -48,75 +48,98 @@
             android:layout_centerVertical="true"
             android:paddingLeft="5dp"
             android:textColor="#ff000000" />
-        <Button xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton1"
-            android:text="Time1"
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@+id/btnNext"
+            android:layout_toRightOf="@+id/btnPrevoius"
             android:layout_below="@id/reservation"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton2"
-            android:text="Time2"
-            android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton1"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton3"
-            android:text="Time3"
-            android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton2"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton4"
-            android:text="Time4"
-            android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton3"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton5"
-            android:text="Time5"
-            android:layout_marginBottom="25.0dp"
-            android:layout_below="@id/timeButton1"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton6"
-            android:text="Time6"
-            android:layout_below="@id/timeButton2"
-            android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton5"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton7"
-            android:text="Time7"
-            android:layout_below="@id/timeButton3"
-            android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton6"
-            android:backgroundTint="#ffffa726" />
-        <Button
-            android:layout_width="89dp"
-            android:layout_height="50dp"
-            android:id="@+id/timeButton8"
-            android:text="Time8"
-            android:layout_below="@id/timeButton4"
-            android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton7"
-            android:backgroundTint="#ffffa726" />
+            android:scrollbars="none"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/reservation"
+                android:layout_centerInParent="true"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                android:scrollbarAlwaysDrawHorizontalTrack="true">
+                <Button xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton1"
+                    android:text="Time1"
+                    android:layout_below="@id/reservation"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton2"
+                    android:text="Time2"
+                    android:layout_below="@id/reservation"
+                    android:layout_toRightOf="@+id/timeButton1"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton3"
+                    android:text="Time3"
+                    android:layout_below="@id/reservation"
+                    android:layout_toRightOf="@+id/timeButton2"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton4"
+                    android:text="Time4"
+                    android:layout_below="@id/reservation"
+                    android:layout_toRightOf="@+id/timeButton3"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton5"
+                    android:text="Time5"
+                    android:layout_marginBottom="25.0dp"
+                    android:layout_below="@id/timeButton1"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton6"
+                    android:text="Time6"
+                    android:layout_below="@id/timeButton2"
+                    android:layout_marginBottom="25.0dp"
+                    android:layout_toRightOf="@+id/timeButton5"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton7"
+                    android:text="Time7"
+                    android:layout_below="@id/timeButton3"
+                    android:layout_marginBottom="25.0dp"
+                    android:layout_toRightOf="@+id/timeButton6"
+                    android:backgroundTint="#ffffa726" />
+                <Button
+                    android:layout_width="89dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/timeButton8"
+                    android:text="Time8"
+                    android:layout_below="@id/timeButton4"
+                    android:layout_marginBottom="25.0dp"
+                    android:layout_toRightOf="@+id/timeButton7"
+                    android:backgroundTint="#ffffa726" />
+            </LinearLayout>
+        </HorizontalScrollView>
         <TextView
+            android:layout_marginTop="60dp"
             android:id="@+id/queue"
-            android:layout_below="@id/timeButton5"
+            android:layout_below="@id/reservation"
             android:text="Same Day Queue"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_width="wrap_content"
@@ -125,7 +148,7 @@
             android:paddingLeft="5dp"
             android:textColor="#ff000000" />
         <Button
-            android:layout_width="360.0dp"
+            android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:id="@+id/queueButton"
             android:text="Queue up"
