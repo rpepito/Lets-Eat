@@ -1,45 +1,49 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
+using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V7.App;
-
 
 using Firebase;
 using Firebase.Auth;
 using Firebase.Database;
 using Firebase.Xamarin.Database;
 using Firebase.Xamarin.Database.Query;
-using Android.Content;
+using LetsEat.Views.Owner_Side;
 
 namespace LetsEat.Views.OwnerSide
 {
     public class menu_config_frag : Android.Support.V4.App.Fragment
     {
+        static readonly string[] dishes = new String[] {
+            "Ham & Cheese Sandwich", "Roasted Turkey Sandwich", "Chicken Sandwich", "Meatball Sandwich",
+            "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
+        };
 
+        Button add_item_btn;
         ListView menulistView;
-        Toolbar toolbar;
-        List<Owner_Side.Dish> listDishes = new List<Owner_Side.Dish>();
-        FirebaseUser user;
-        private static String restaurant_name;
-        private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
-        private bool data_loaded = false;
+        List<string> listDishes = new List<string>();
 
-        public override void OnCreate(Bundle savedInstanceState)
+        private FirebaseUser user;
+        private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
+
+        public override async void OnCreate(Bundle savedInstanceState)
         {
             
             base.OnCreate(savedInstanceState);
-            Console.WriteLine("OnCreate");
+            //Console.WriteLine("OnCreate");
             // Create your fragment here
 
-            user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
 
-            //if(data_loaded == false)
-            //    await LoadUser_Data();
+            user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            await LoadDish_Data();
 
         }
 
@@ -49,22 +53,29 @@ namespace LetsEat.Views.OwnerSide
             return frag1;
         }
 
-        public async Task LoadUser_Data()
+        public async Task LoadDish_Data()
         {
+            
             var firebase = new FirebaseClient(FBURL);
 
-            var user_name = await firebase
-                .Child("users")
+            var items = await firebase
+                .Child("menus")
                 .Child(user.Uid)
-                .Child("name")
-                .OnceSingleAsync<String>();
+                .OnceAsync<Dish>();
+            
+            foreach (var item in items)
+            {
+                Dish Dish_info = new Dish();
+                Dish_info.Name = item.Object.Name;
 
-            restaurant_name = user_name;
+                listDishes.Add(Dish_info.Name);
 
-            //((AppCompatActivity)this.Activity).SetActionBar(toolbar);
-            //((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
+                Console.WriteLine(Dish_info.Name);
 
-            data_loaded = true;
+            };
+
+            var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, listDishes);
+            menulistView.Adapter = ListAdapter;
 
         }
 
@@ -73,25 +84,25 @@ namespace LetsEat.Views.OwnerSide
             // Use this to return your custom view for this Fragment
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
-            HasOptionsMenu = true;
-
             View view = inflater.Inflate(Resource.Layout.MenuLayout, null);
 
-            //toolbar = view.FindViewById<Toolbar>(Resource.Id.menutoolbar);
+            add_item_btn = view.FindViewById<Button>(Resource.Id.add_item_button);
 
             menulistView = view.FindViewById<ListView>(Resource.Id.menulistView);
 
-            //((AppCompatActivity)this.Activity).SetActionBar(toolbar);
-            //((AppCompatActivity)this.Activity).ActionBar.Title = restaurant_name;
+            add_item_btn.Click += delegate {
+                Intent myIntent = new Intent();
+        
+                myIntent = new Intent(this.Activity, typeof(AddDish));
 
-            //var ListAdapter = new ArrayAdapter<string>(this.Activity, Resource.Layout.DishList, );
-            //menulistView.Adapter = ListAdapter;
+                StartActivity(myIntent);
 
-            //menulistView.TextFilterEnabled = true;
-            //menulistView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
-            //{
-            //    Toast.MakeText(this.Activity, ((TextView)args.View).Text, ToastLength.Short).Show();
-            //};
+            };
+
+            menulistView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
+            {
+                Toast.MakeText(this.Activity, ((TextView)args.View).Text, ToastLength.Short).Show();
+            };
 
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
 
@@ -99,36 +110,5 @@ namespace LetsEat.Views.OwnerSide
 
 
         }
-
-        public override void OnCreateOptionsMenu(IMenu menu, MenuInflater inflater)
-        {
-            inflater.Inflate(Resource.Menu.dishes, menu);
-            base.OnCreateOptionsMenu(menu, inflater);
-
-            var searchItem = menu.FindItem(Resource.Id.action_add);
-            searchItem.SetVisible(true);
-
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-
-            Intent myIntent = new Intent();
-            switch (item.ItemId)
-            {
-
-                case Resource.Id.action_add:
-                    myIntent = new Intent(this.Activity, typeof(AddDish)); 
-                    break;
-
-                default:
-                    break;
-
-            }
-
-            StartActivity(myIntent);
-            return base.OnOptionsItemSelected(item);
-        }
-
     }
 }
