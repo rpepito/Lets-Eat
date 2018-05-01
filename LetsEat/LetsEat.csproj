@@ -232,6 +232,7 @@
     <AndroidResource Include="Resources\drawable\hawaiian.jpg" />
     <AndroidResource Include="Resources\drawable\japanese.jpg" />
     <AndroidResource Include="Resources\drawable\sushi.jpg" />
+    <AndroidResource Include="Resources\drawable\Background_or.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

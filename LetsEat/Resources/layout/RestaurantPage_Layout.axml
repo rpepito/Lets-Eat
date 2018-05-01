@@ -9,6 +9,7 @@
         android:layout_height="fill_parent"
         android:minWidth="25px"
         android:minHeight="25px"
+        android:layout_margin="2.5dp"
         android:paddingBottom="4dp"
         android:scrollbars="vertical"
         android:scrollbarAlwaysDrawVerticalTrack="true">
@@ -45,41 +46,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:paddingLeft="5dp" />
-        <Button
+            android:paddingLeft="5dp"
+            android:textColor="#ff000000" />
+        <Button xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="89dp"
             android:layout_height="50dp"
             android:id="@+id/timeButton1"
             android:text="Time1"
-            android:layout_below="@id/reservation" />
+            android:layout_below="@id/reservation"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
             android:id="@+id/timeButton2"
             android:text="Time2"
             android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton1" />
+            android:layout_toRightOf="@+id/timeButton1"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
             android:id="@+id/timeButton3"
             android:text="Time3"
             android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton2" />
+            android:layout_toRightOf="@+id/timeButton2"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
             android:id="@+id/timeButton4"
             android:text="Time4"
             android:layout_below="@id/reservation"
-            android:layout_toRightOf="@+id/timeButton3" />
+            android:layout_toRightOf="@+id/timeButton3"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
             android:id="@+id/timeButton5"
             android:text="Time5"
             android:layout_marginBottom="25.0dp"
-            android:layout_below="@id/timeButton1" />
+            android:layout_below="@id/timeButton1"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
@@ -87,7 +94,8 @@
             android:text="Time6"
             android:layout_below="@id/timeButton2"
             android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton5" />
+            android:layout_toRightOf="@+id/timeButton5"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
@@ -95,7 +103,8 @@
             android:text="Time7"
             android:layout_below="@id/timeButton3"
             android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton6" />
+            android:layout_toRightOf="@+id/timeButton6"
+            android:backgroundTint="#ffffa726" />
         <Button
             android:layout_width="89dp"
             android:layout_height="50dp"
@@ -103,7 +112,8 @@
             android:text="Time8"
             android:layout_below="@id/timeButton4"
             android:layout_marginBottom="25.0dp"
-            android:layout_toRightOf="@+id/timeButton7" />
+            android:layout_toRightOf="@+id/timeButton7"
+            android:backgroundTint="#ffffa726" />
         <TextView
             android:id="@+id/queue"
             android:layout_below="@id/timeButton5"
@@ -112,14 +122,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:paddingLeft="5dp" />
+            android:paddingLeft="5dp"
+            android:textColor="#ff000000" />
         <Button
-            android:layout_width="89dp"
+            android:layout_width="360.0dp"
             android:layout_height="50dp"
             android:id="@+id/queueButton"
             android:text="Queue up"
             android:layout_marginBottom="25.0dp"
-            android:layout_below="@id/queue" />
+            android:layout_below="@id/queue"
+            android:backgroundTint="#ffffa726" />
         <TextView
             android:id="@+id/addressheader"
             android:layout_below="@id/queueButton"
@@ -129,7 +141,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="5dp"
-            android:layout_marginBottom="10.0dp" />
+            android:layout_marginBottom="10.0dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/addressdetail"
             android:layout_below="@id/addressheader"
@@ -139,7 +152,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="15dp"
-            android:layout_marginBottom="10.0dp" />
+            android:layout_marginBottom="10.0dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/detail"
             android:layout_below="@id/addressdetail"
@@ -149,7 +163,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:paddingLeft="5dp"
-            android:layout_marginBottom="10.0dp" />
+            android:layout_marginBottom="10.0dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/phone"
             android:layout_below="@id/detail"
@@ -159,7 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:textStyle="bold"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/phonedetail"
             android:layout_below="@id/phone"
@@ -169,7 +185,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginBottom="10.0dp"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/hours"
             android:layout_below="@id/phonedetail"
@@ -179,7 +196,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:textStyle="bold"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/hoursdetail"
             android:layout_below="@id/hours"
@@ -189,7 +207,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_marginBottom="10.0dp"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/description"
             android:layout_below="@id/hoursdetail"
@@ -199,7 +218,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:textStyle="bold"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
         <TextView
             android:id="@+id/descriptiondetail"
             android:layout_below="@id/description"
@@ -208,6 +228,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:paddingLeft="15dp" />
+            android:paddingLeft="15dp"
+            android:textColor="#ff000000" />
     </RelativeLayout>
 </ScrollView>
