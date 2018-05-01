@@ -27,7 +27,6 @@ namespace LetsEat.Views.OwnerSide
         Views.CustomerSide.ListViewAdapter adapter;
         List<Reservation> listReservations = new List<Reservation>();
         //Reservation selectedReservation;
-        bool waiting = true;
 
         public override async void OnCreate(Bundle savedInstanceState) //async
         {
