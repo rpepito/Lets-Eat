@@ -1,1 +1,1 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/action_add" android:showAsAction="ifRoom" android:title="New Dish" android:icon="@drawable/add_icon" /></menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><item android:id="@+id/action_backhome" android:showAsAction="ifRoom" android:title="Home" android:icon="@drawable/home_icon" /></menu>

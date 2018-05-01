@@ -50,10 +50,11 @@ namespace LetsEat.Views.Owner_Side
             if(toolbar != null)
             {
                 SetSupportActionBar(toolbar);
-                SupportActionBar.SetDisplayHomeAsUpEnabled(false);
-                SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.hamburger_drawer);
+                SupportActionBar.SetDisplayHomeAsUpEnabled(true);
+                SupportActionBar.SetHomeAsUpIndicator(Resource.Drawable.logout_icon);
                 SupportActionBar.SetDisplayShowTitleEnabled(true);
                 SupportActionBar.SetHomeButtonEnabled(false);
+
             }
 
             bottom_navigationView = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
@@ -89,63 +90,27 @@ namespace LetsEat.Views.Owner_Side
             SupportActionBar.Title = restaurant_name;
 
         }
-        /*
-        public void setupUser_Nav()
-        {
-
-            navigationView_user = FindViewById<NavigationView>(Resource.Id.nav_view_owner);
-
-            navigationView_user.NavigationItemSelected += (sender, e) => {
-
-                e.MenuItem.SetChecked(true);
-
-                switch (e.MenuItem.ItemId)
-                {
-                    case Resource.Id.action_logout:
-                        StartActivity(typeof(Views.CustomerSide.MainPage));
-                        Finish();
-                        Toast.MakeText(this, "Successfully Logged Out", ToastLength.Long).Show();
-
-                        break;
-
-                    case Resource.Id.action_home:
-                        StartActivity(typeof(Views.CustomerSide.MainPage_Owner));
-                        Finish();
-                        break;
-
-                    case Resource.Id.action_ownerpage:
-                        StartActivity(typeof(Views.Owner_Side.OwnerPage));
-                        Finish();
-                        break;
-
-                    default:
-                        break;
-                }
-                drawerLayout.CloseDrawers();
-            };
-
-        }
-        */
 
         private void BottomNavigation_NavigationItemSelected(object sender, BottomNavigationView.NavigationItemSelectedEventArgs e)
         {
             LoadFragment(e.Item.ItemId);
         }
-        /*
+
         public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
             {
 
                 case Android.Resource.Id.Home:
-                    drawerLayout.OpenDrawer((int)GravityFlags.Left);
-
+                    StartActivity(typeof(Views.CustomerSide.MainPage));
+                    Finish();
+                    Toast.MakeText(this, "Successfully Logged Out", ToastLength.Long).Show();
                     return true;
 
             }
             return base.OnOptionsItemSelected(item);
         }
-*/
+
         void LoadFragment(int id)
         {
             Android.Support.V4.App.Fragment fragment = null;
@@ -173,29 +138,5 @@ namespace LetsEat.Views.Owner_Side
                 .Commit();
         }
 
-        /*
-        public void OnClick(View v)
-        {
-            if (v.Id == Resource.Id.Menubutton)
-            {
-                StartActivity(typeof(Menu));
-            }
-
-            else if(v.Id == Resource.Id.Tablebutton)
-            {
-                StartActivity(typeof(TableList));
-            }
-
-            else if (v.Id == Resource.Id.Queuebutton)
-            {
-                StartActivity(typeof(Queue));
-            }
-
-            else if (v.Id == Resource.Id.Reservationbutton)
-            {
-                StartActivity(typeof(Reservations));
-            }
-        }
-        */
     }
 }

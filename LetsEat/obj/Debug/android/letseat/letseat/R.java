@@ -2635,6 +2635,20 @@ containing a value of this type.
         public static final int abc_config_showMenuShortcutsWhenKeyboardPresent=0x7f0c0004;
     }
     public static final class color {
+        /** 
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+    <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+  </style>
+    
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+  </style>
+    
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">#777777</item>
+  </style>
+  
+         */
         public static final int Creamy_Orange=0x7f08004f;
         public static final int Lets_Eat_Orange=0x7f080050;
         public static final int abc_background_cache_hint_selector_material_dark=0x7f080051;
@@ -2987,13 +3001,13 @@ containing a value of this type.
         public static final int abc_vector_test=0x7f020052;
         public static final int add_icon=0x7f020053;
         public static final int avd_hide_password=0x7f020054;
-        public static final int avd_hide_password_1=0x7f020097;
-        public static final int avd_hide_password_2=0x7f020098;
-        public static final int avd_hide_password_3=0x7f020099;
+        public static final int avd_hide_password_1=0x7f020098;
+        public static final int avd_hide_password_2=0x7f020099;
+        public static final int avd_hide_password_3=0x7f02009a;
         public static final int avd_show_password=0x7f020055;
-        public static final int avd_show_password_1=0x7f02009a;
-        public static final int avd_show_password_2=0x7f02009b;
-        public static final int avd_show_password_3=0x7f02009c;
+        public static final int avd_show_password_1=0x7f02009b;
+        public static final int avd_show_password_2=0x7f02009c;
+        public static final int avd_show_password_3=0x7f02009d;
         public static final int common_full_open_on_phone=0x7f020056;
         public static final int common_google_signin_btn_icon_dark=0x7f020057;
         public static final int common_google_signin_btn_icon_dark_focused=0x7f020058;
@@ -3026,39 +3040,40 @@ containing a value of this type.
         public static final int googleg_standard_color_18=0x7f020073;
         public static final int hamburger_drawer=0x7f020074;
         public static final int hawaiian=0x7f020075;
-        public static final int icon=0x7f020076;
-        public static final int italian2=0x7f020077;
-        public static final int japanese=0x7f020078;
-        public static final int lago=0x7f020079;
-        public static final int logout_icon=0x7f02007a;
-        public static final int menu_colored_icon=0x7f02007b;
-        public static final int menu_config_icon=0x7f02007c;
-        public static final int mexican=0x7f02007d;
-        public static final int navigation_empty_icon=0x7f02007e;
-        public static final int notification_action_background=0x7f02007f;
-        public static final int notification_bg=0x7f020080;
-        public static final int notification_bg_low=0x7f020081;
-        public static final int notification_bg_low_normal=0x7f020082;
-        public static final int notification_bg_low_pressed=0x7f020083;
-        public static final int notification_bg_normal=0x7f020084;
-        public static final int notification_bg_normal_pressed=0x7f020085;
-        public static final int notification_icon_background=0x7f020086;
-        public static final int notification_template_icon_bg=0x7f020095;
-        public static final int notification_template_icon_low_bg=0x7f020096;
-        public static final int notification_tile_bg=0x7f020087;
-        public static final int notify_panel_notification_icon_bg=0x7f020088;
-        public static final int queue_colored_icon=0x7f020089;
-        public static final int queue_icon=0x7f02008a;
-        public static final int reservation_colored_icon=0x7f02008b;
-        public static final int reservation_icon=0x7f02008c;
-        public static final int steak=0x7f02008d;
-        public static final int sushi=0x7f02008e;
-        public static final int table_colored_icon=0x7f02008f;
-        public static final int table_list_icon=0x7f020090;
-        public static final int thai=0x7f020091;
-        public static final int tooltip_frame_dark=0x7f020092;
-        public static final int tooltip_frame_light=0x7f020093;
-        public static final int vietnamese=0x7f020094;
+        public static final int home_icon=0x7f020076;
+        public static final int icon=0x7f020077;
+        public static final int italian2=0x7f020078;
+        public static final int japanese=0x7f020079;
+        public static final int lago=0x7f02007a;
+        public static final int logout_icon=0x7f02007b;
+        public static final int menu_colored_icon=0x7f02007c;
+        public static final int menu_config_icon=0x7f02007d;
+        public static final int mexican=0x7f02007e;
+        public static final int navigation_empty_icon=0x7f02007f;
+        public static final int notification_action_background=0x7f020080;
+        public static final int notification_bg=0x7f020081;
+        public static final int notification_bg_low=0x7f020082;
+        public static final int notification_bg_low_normal=0x7f020083;
+        public static final int notification_bg_low_pressed=0x7f020084;
+        public static final int notification_bg_normal=0x7f020085;
+        public static final int notification_bg_normal_pressed=0x7f020086;
+        public static final int notification_icon_background=0x7f020087;
+        public static final int notification_template_icon_bg=0x7f020096;
+        public static final int notification_template_icon_low_bg=0x7f020097;
+        public static final int notification_tile_bg=0x7f020088;
+        public static final int notify_panel_notification_icon_bg=0x7f020089;
+        public static final int queue_colored_icon=0x7f02008a;
+        public static final int queue_icon=0x7f02008b;
+        public static final int reservation_colored_icon=0x7f02008c;
+        public static final int reservation_icon=0x7f02008d;
+        public static final int steak=0x7f02008e;
+        public static final int sushi=0x7f02008f;
+        public static final int table_colored_icon=0x7f020090;
+        public static final int table_list_icon=0x7f020091;
+        public static final int thai=0x7f020092;
+        public static final int tooltip_frame_dark=0x7f020093;
+        public static final int tooltip_frame_light=0x7f020094;
+        public static final int vietnamese=0x7f020095;
     }
     public static final class id {
         public static final int ALT=0x7f0a0039;
@@ -3079,7 +3094,7 @@ containing a value of this type.
         public static final int SHIFT=0x7f0a003d;
         public static final int SYM=0x7f0a003e;
         public static final int action0=0x7f0a00bd;
-        public static final int action_add=0x7f0a00f8;
+        public static final int action_backhome=0x7f0a00f8;
         public static final int action_bar=0x7f0a0082;
         public static final int action_bar_activity_content=0x7f0a0001;
         public static final int action_bar_container=0x7f0a0081;

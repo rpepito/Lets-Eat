@@ -26,7 +26,7 @@
                 android:layout_marginBottom="8.5dp" />
             <EditText
                 android:inputType="textPersonName"
-                android:layout_width="match_parent"
+                android:layout_width="295.5dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/DishName"
                 android:background="@android:color/white"
@@ -44,7 +44,7 @@
             <EditText
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
-                android:layout_height="95.0dp"
+                android:layout_height="57.5dp"
                 android:id="@+id/Ingredients"
                 android:layout_marginBottom="13.5dp"
                 android:background="@android:color/white"
@@ -62,7 +62,7 @@
             <EditText
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
-                android:layout_height="111.5dp"
+                android:layout_height="76.5dp"
                 android:id="@+id/Description"
                 android:layout_marginBottom="6.0dp"
                 android:background="@android:color/white"
@@ -86,7 +86,7 @@
             <Button
                 android:id="@+id/savebtn"
                 android:text="Save"
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="18.5dp" />
         </TableLayout>

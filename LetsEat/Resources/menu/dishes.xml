@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/action_add"
+    <item android:id="@+id/action_backhome"
         android:showAsAction="ifRoom"
-        android:title="New Dish"
-        android:icon="@drawable/add_icon" />
+        android:title="Home"
+        android:icon="@drawable/home_icon" />
 
 </menu>

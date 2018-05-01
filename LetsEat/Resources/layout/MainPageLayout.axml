@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:minHeight="?attr/actionBarSize"
         android:background="@color/material_grey_800"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:popupTheme="@style/ThemeOverlay.AppCompat"
         app:layout_scrollFlags="scroll|enterAlways" />
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"

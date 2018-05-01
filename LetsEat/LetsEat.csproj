@@ -208,7 +208,6 @@
     <AndroidResource Include="Resources\layout\userRow.axml" />
     <AndroidResource Include="Resources\menu\drawer_customer.xml" />
     <AndroidResource Include="Resources\values\Styles.xml" />
-    <AndroidResource Include="Resources\drawable\hamburger_drawer.png" />
     <AndroidResource Include="Resources\menu\drawer_owner.xml" />
     <AndroidResource Include="Resources\menu\drawer_user.xml" />
     <AndroidResource Include="Resources\layout\MainPageLayout_Customer.axml" />
@@ -233,6 +232,8 @@
     <AndroidResource Include="Resources\drawable\sushi.png" />
     <AndroidResource Include="Resources\drawable\mexican.png" />
     <AndroidResource Include="Resources\layout\DishListItem.xml" />
+    <AndroidResource Include="Resources\drawable\hamburger_drawer.png" />
+    <AndroidResource Include="Resources\drawable\home_icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

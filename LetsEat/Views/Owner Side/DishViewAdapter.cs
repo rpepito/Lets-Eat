@@ -1,48 +1,74 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
 using Android.App;
 using Android.Content;
+using Android.Graphics;
+using Android.OS;
+using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using LetsEat.Models;
-using System.Collections.Generic;
 
-namespace LetsEat.Views.Owner_Side
+
+namespace LetsEat
 {
-    public class ListViewAdapter : BaseAdapter
+    public class DishViewAdapter : BaseAdapter<User>
     {
+        List<User> users;
 
-        Activity activity;
-        List<Dish> lstAccounts;
-        LayoutInflater inflater;
-        public ListViewAdapter(Activity activity, List<Dish> lstAccounts)
+        public DishViewAdapter(List<User> users)
         {
-            this.activity = activity;
-            this.lstAccounts = lstAccounts;
+            this.users = users;
         }
+
+        public override User this[int position]
+        {
+            get
+            {
+                return users[position];
+            }
+        }
+
         public override int Count
         {
-            get { return lstAccounts.Count; }
+            get
+            {
+                return users.Count;
+            }
         }
-        public override Java.Lang.Object GetItem(int position)
-        {
-            return position;
-        }
+
         public override long GetItemId(int position)
         {
             return position;
         }
+
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            inflater = (LayoutInflater)activity.BaseContext.GetSystemService(Context.LayoutInflaterService);
-            View itemView = inflater.Inflate(Resource.Layout.ResListItem, null);
-            var txtuser = itemView.FindViewById<TextView>(Resource.Id.ListDishName);
+            var view = convertView;
 
-            if (lstAccounts.Count > 0)
+            if (view == null)
             {
-                txtuser.Text = lstAccounts[position].Name;
+                view = LayoutInflater.From(parent.Context).Inflate(Resource.Layout.userRow, parent, false);
 
+                //var photo = view.FindViewById<ImageView>(Resource.Id.photoImageView);
+                var name = view.FindViewById<TextView>(Resource.Id.nameTextView);
+                var price = view.FindViewById<TextView>(Resource.Id.cuisineTextView);
+
+                view.Tag = new ViewHolder() {Name = name, Cuisine = price };
             }
-            return itemView;
+
+            var holder = (ViewHolder)view.Tag;
+
+            holder.Photo.SetImageDrawable(ImageManager.Get(parent.Context, users[position].ImageUrl));
+            holder.Name.Text = users[position].Name;
+            holder.Cuisine.Text = users[position].Cuisine;
+
+
+            return view;
+
         }
     }
 }

@@ -22,10 +22,6 @@ namespace LetsEat.Views.OwnerSide
 {
     public class menu_config_frag : Android.Support.V4.App.Fragment
     {
-        static readonly string[] dishes = new String[] {
-            "Ham & Cheese Sandwich", "Roasted Turkey Sandwich", "Chicken Sandwich", "Meatball Sandwich",
-            "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
-        };
 
         Button add_item_btn;
         ListView menulistView;

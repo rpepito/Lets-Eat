@@ -17,7 +17,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/add_item_button"
         android:text="Add Menu Item"
-        android:layout_marginTop="47.0dp" />
+        android:layout_marginTop="55.0dp"
+        android:background="@color/Lets_Eat_Orange" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"

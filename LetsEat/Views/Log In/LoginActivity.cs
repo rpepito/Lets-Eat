@@ -40,8 +40,6 @@ namespace LetsEat.Views.Log_In
             database =  FirebaseDatabase.GetInstance(MainActivity.app);
             user_reference = database.GetReference("users");
 
-
-
             //Initialize Firebase
             auth = FirebaseAuth.GetInstance(MainActivity.app);
 
