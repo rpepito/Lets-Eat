@@ -304,8 +304,6 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/R.cs.flag
 /Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/uploadflags.txt
 /Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/res/drawable/background_or.png
-/Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
-/Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/LetsEat.dll
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/LetsEat.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/LetsEat.LetsEat.apk
@@ -414,3 +412,5 @@ C:/Users/Adrian/source/repos/letseat/Lets-Eat/LetsEat/obj/Debug/android/assets/L
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/bin/Debug/Mono.Android.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
 /Users/pete/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb
+/Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/LetsEat.pdb
+/Users/kirubeltesema/Documents/GitHub/Lets-Eat/LetsEat/obj/Debug/linksrc/Mono.Android.pdb

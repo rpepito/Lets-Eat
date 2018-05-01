@@ -11,8 +11,7 @@
         android:minHeight="25px"
         android:layout_margin="2.5dp"
         android:paddingBottom="4dp"
-        android:scrollbars="vertical"
-        android:scrollbarAlwaysDrawVerticalTrack="true">
+        android:scrollbars="vertical">
         <ImageView
             android:id="@+id/photoImageView"
             android:layout_width="fill_parent"
@@ -66,8 +65,7 @@
                 android:layout_below="@id/reservation"
                 android:layout_centerInParent="true"
                 android:layout_margin="0dp"
-                android:orientation="horizontal"
-                android:scrollbarAlwaysDrawHorizontalTrack="true">
+                android:orientation="horizontal">
                 <Button xmlns:app="http://schemas.android.com/apk/res-auto"
                     android:layout_width="89dp"
                     android:layout_height="50dp"
