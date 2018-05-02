@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Customer Side/ReservePage.cs">
     <Files>
-      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="102" Column="15" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="146" Column="46" />
-      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="80" Column="13" />
-      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="118" Column="46" />
-      <File FileName="LetsEat/Views/Customer Side/ListViewAdapter.cs" Line="17" Column="14" />
-      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="84" Column="13" />
+      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="71" Column="42" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="133" Column="14" />
+      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="74" Column="13" />
+      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="162" Column="6" />
+      <File FileName="LetsEat/Views/Customer Side/ListViewAdapter.cs" Line="49" Column="14" />
+      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="59" Column="26" />
       <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="45" Column="37" />
       <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="145" Column="2" />
       <File FileName="LetsEat/Views/Owner Side/AddDish.cs" Line="50" Column="13" />
+      <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="3" Column="21" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

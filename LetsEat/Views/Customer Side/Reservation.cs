@@ -15,6 +15,7 @@ namespace LetsEat
         public string uid { get; set; }
         public string name { get; set; }
         public string time { get; set; }
+        public string date { get; set; }
         public string amount { get; set; }    
     }
 }

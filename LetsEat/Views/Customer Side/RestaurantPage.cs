@@ -69,8 +69,8 @@ namespace LetsEat
             var reserveIntent = new Intent(this, typeof(ReservePage));
             String hourMinute;
             hourMinute = DateTime.Now.ToString("HH");
-            int time1 = Int32.Parse(hourMinute) + 1;
 
+            int time1 = Int32.Parse(hourMinute) + 1;
 
             auth = FirebaseAuth.GetInstance(MainActivity.app);
 
@@ -218,6 +218,8 @@ namespace LetsEat
                 restaurant_uid = "RB8DoGr4egNxKrydwe6FRAOJRvh2";
                 imageView.SetImageResource(Resource.Drawable.sushi);
             }
+
+
             if (auth.CurrentUser != null)
                 Console.WriteLine("No Current User");
             reserveIntent.PutExtra("restaurant_uid", restaurant_uid);

@@ -25,9 +25,21 @@
         android:layout_height="wrap_content"
         android:id="@+id/AmountText" />
     <Button
+        android:text="Pick Date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_select_button"
+        android:background="@@color/Lets_Eat_Orange" />
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_display" />
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ReservationButton"
         android:text="Submit Reservation"
-        android:background="@@color/Lets_Eat_Orange" />
+        android:background="@@color/Lets_Eat_Orange"
+        android:layout_marginTop="27.0dp" />
 </LinearLayout>
