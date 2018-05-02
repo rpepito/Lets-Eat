@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Devices>
+  <Device id="emulator-5554">
+<<<<<<< HEAD
+    <ResultingAbi>x86_64</ResultingAbi>
+=======
+    <ResultingAbi>x86</ResultingAbi>
+>>>>>>> f310a7a3cc29726c8979d76e6ef67421f91beef1
+    <SdkVersion>25</SdkVersion>
+  </Device>
+</Devices>

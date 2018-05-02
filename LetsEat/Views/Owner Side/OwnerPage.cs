@@ -44,7 +44,6 @@ namespace LetsEat.Views.Owner_Side
 
             user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
 
-
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 
             if(toolbar != null)
