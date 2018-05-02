@@ -142,6 +142,7 @@ namespace LetsEat
             reservation.name = reservationText.Text;
             reservation.time = Intent.GetStringExtra("reserve_time");
             reservation.amount = amountText.Text;
+            //reservation.order_dishes = null;
             reservation.uid = String.Empty;
             var firebase = new FirebaseClient(FBURL);
             var item = await firebase.Child("reservations")

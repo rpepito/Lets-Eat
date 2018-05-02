@@ -10,4 +10,4 @@
     <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
     <item name="android:textColor">#777777</item>
   </style>
-  --><color name="Creamy_Orange">#FDE9D1</color><color name="Lets_Eat_Orange">#FD9826</color></resources>
+  --><color name="Creamy_Orange">#FDE9D1</color><color name="Lets_Eat_Orange">#FD9826</color><color name="background_grey">#3A383F</color></resources>

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:minWidth="25px"
-    android:minHeight="25px">
+    android:minHeight="25px"
+    android:background="@color/background_grey">
     <ScrollView
         android:minWidth="25px"
         android:minHeight="25px"
@@ -18,12 +19,11 @@
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/textView1"
-                android:layout_marginTop="9.5dp"
                 android:gravity="center"
-                android:text="Dish Name"
-                android:layout_marginBottom="8.5dp" />
+                android:background="@color/button_material_light"
+                android:text="Dish Name" />
             <EditText
                 android:inputType="textPersonName"
                 android:layout_width="295.5dp"
@@ -35,47 +35,43 @@
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/textView2"
                 android:text="Ingredients"
-                android:gravity="center"
-                android:layout_marginTop="19.5dp"
-                android:layout_marginBottom="7.0dp" />
+                android:background="@color/button_material_light"
+                android:gravity="center" />
             <EditText
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
                 android:layout_height="57.5dp"
                 android:id="@+id/Ingredients"
-                android:layout_marginBottom="13.5dp"
                 android:background="@android:color/white"
                 android:gravity="center_horizontal"
                 android:textColor="@color/material_grey_900" />
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/textView3"
-                android:layout_marginTop="2.5dp"
                 android:gravity="center"
                 android:text="Description"
-                android:layout_marginBottom="5.5dp" />
+                android:background="@color/button_material_light" />
             <EditText
                 android:inputType="textMultiLine"
                 android:layout_width="match_parent"
                 android:layout_height="76.5dp"
                 android:id="@+id/Description"
-                android:layout_marginBottom="6.0dp"
                 android:background="@android:color/white"
                 android:gravity="center_horizontal"
                 android:textColor="@color/material_grey_900" />
             <TextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:id="@+id/textView4"
                 android:gravity="center"
                 android:text="Price"
-                android:layout_marginBottom="8.5dp" />
+                android:background="@color/button_material_light" />
             <EditText
                 android:inputType="numberDecimal"
                 android:background="@android:color/white"
@@ -86,9 +82,13 @@
             <Button
                 android:id="@+id/savebtn"
                 android:text="Save"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="18.5dp" />
+                android:width="100dp"
+                android:background="@color/Lets_Eat_Orange"
+                android:layout_marginTop="18.5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="203.5dp"
+                android:layout_height="49.0dp" />
         </TableLayout>
     </ScrollView>
 </LinearLayout>

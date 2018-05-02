@@ -31,7 +31,7 @@ namespace LetsEat.Views.Owner_Side
         //DrawerLayout drawerLayout;
         //NavigationView navigationView_user;
 
-
+        private FirebaseAuth auth;
         private FirebaseUser user;
         private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
         private string restaurant_name = null;
@@ -42,8 +42,9 @@ namespace LetsEat.Views.Owner_Side
 
             SetContentView(Resource.Layout.OwnerPage);
 
-            user = FirebaseAuth.GetInstance(MainActivity.app).CurrentUser;
+            auth = FirebaseAuth.GetInstance(MainActivity.app);
 
+            user = auth.CurrentUser;
 
             var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
 
@@ -102,6 +103,7 @@ namespace LetsEat.Views.Owner_Side
             {
 
                 case Android.Resource.Id.Home:
+                    auth.SignOut();
                     StartActivity(typeof(Views.CustomerSide.MainPage));
                     Finish();
                     Toast.MakeText(this, "Successfully Logged Out", ToastLength.Long).Show();

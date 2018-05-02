@@ -26,6 +26,8 @@ namespace LetsEat
         private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
         ListView menulistView;
         List<string> listDishes = new List<string>();
+        //String selectedDish;
+
 
         protected override async void OnCreate(Bundle savedInstanceState)
         {

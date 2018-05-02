@@ -61,10 +61,9 @@ namespace LetsEat.Views.OwnerSide
             
             foreach (var item in items)
             {
+                Console.WriteLine(item.Key);
                 Dish Dish_info = new Dish();
                 Dish_info.Name = item.Object.Name;
-
-                listDishes.Add(Dish_info.Name);
 
                 Console.WriteLine(Dish_info.Name);
 
