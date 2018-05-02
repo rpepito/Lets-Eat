@@ -24,10 +24,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/AmountText" />
-    <Button
+    <Button xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ReservationButton"
         android:text="Submit Reservation"
-        android:background="@@color/Lets_Eat_Orange" />
+        android:background="@color/Lets_Eat_Orange" />
 </LinearLayout>

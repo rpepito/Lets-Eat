@@ -3,12 +3,13 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <Button
+    <Button xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ReservePageButton"
         android:text="create a reservation"
-        android:layout_marginTop="55.0dp" />
+        android:layout_marginTop="55.0dp"
+        android:backgroundTint="@color/Lets_Eat_Orange" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
