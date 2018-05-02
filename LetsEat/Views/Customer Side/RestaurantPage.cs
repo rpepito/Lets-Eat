@@ -26,6 +26,7 @@ namespace LetsEat
         TextView mdescription;
         string restaurant_uid;
         int resTrack;
+        int queueTrack;
         string resultName;
         Button mReserve1, mReserve2, mReserve3, mReserve4, mReserve5,
             mReserve6, mReserve7, mReserve8;
@@ -65,6 +66,11 @@ namespace LetsEat
             mReserve6 = FindViewById<Button>(Resource.Id.timeButton6);
             mReserve7 = FindViewById<Button>(Resource.Id.timeButton7);
             mReserve8 = FindViewById<Button>(Resource.Id.timeButton8);
+            queueTrack = 0;
+
+            Button buttonEnterQueue;
+
+            buttonEnterQueue = FindViewById<Button>(Resource.Id.queueButton);
 
             var reserveIntent = new Intent(this, typeof(ReservePage));
             String hourMinute;
@@ -104,6 +110,7 @@ namespace LetsEat
                 mdescription.Text = "Star chef David Walzog presents his unique interpretation of the classic American steakhouse along Wynn's Lake of Dreams. As befits a top-notch chophouse, SW offers a selection of expertly charred steaks, including a succulent porterhouse-for-two, New York strip, dry-aged tomahawk chop and Walzog's signature chile-rubbed double cut rib eye. SW also offers a wide variety of seafood and poultry options, and such innovative side dishes as black truffle creamed corn and cipollini onions with charred jalapeno. SW's décor matches its steakhouse-with-a-twist cuisine brilliantly, with an opulent dining space that radiates glamour, punctuated by floor-to-ceiling windows framing postcard views of the three-acre lakefront and forested mountain. The adjoining open-air dining terrace offers prime views of the multi-media shows of sound, light, video and puppetry that unfold both on the lake and against it's 90-foot tall coursing waterfall.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", swSteakReserves);
                 resTrack = 1;
+                queueTrack = 1;
                 restaurant_uid = "ETOxeKqaLScRYZO3tn9ceNwDhKf2";
                 imageView.SetImageResource(Resource.Drawable.steak);
             }
@@ -222,6 +229,14 @@ namespace LetsEat
                 Console.WriteLine("No Current User");
             reserveIntent.PutExtra("restaurant_uid", restaurant_uid);
 
+            // Queue
+            buttonEnterQueue.Click += (sender, e) =>
+            {
+                // move customer to a page where they can put in the name to enter the queue
+                Toast.MakeText(this, "Moving to new page..", ToastLength.Long).Show();
+                StartActivity(typeof(QueuePageActivity));
+            };
+
             //Reservations
             mReserve1.Click += (sender, e) =>
             {
@@ -327,6 +342,8 @@ namespace LetsEat
                 }
             }
         }
+
+
 
         public void addtime(int time, Button timeb)
         {

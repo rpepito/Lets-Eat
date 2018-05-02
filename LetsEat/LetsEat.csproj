@@ -21,7 +21,8 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <NuGetPackageImportStamp></NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>True</DebugSymbols>
@@ -152,12 +153,16 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Customer Side\QueueListViewAdapter.cs" />
+    <Compile Include="Views\Customer Side\Queuedb.cs" />
     <Compile Include="Views\Log In\LoginActivity.cs" />
     <Compile Include="Views\Log In\Registration.cs" />
     <Compile Include="Views\Owner Side\AddDish.cs" />
+    <Compile Include="Views\Owner Side\ListViewQueue.cs" />
     <Compile Include="Views\Owner Side\Reservations.cs" />
     <Compile Include="Views\Owner Side\Dish.cs" />
     <Compile Include="Views\Owner Side\Queue.cs" />
+    <Compile Include="Views\Owner Side\QueuePageActivity.cs" />
     <Compile Include="Views\Owner Side\TableList.cs" />
     <Compile Include="Views\Owner Side\ReservePageActivity.cs" />
     <Compile Include="Views\Customer Side\ImageManager.cs" />
@@ -195,7 +200,7 @@
     <AndroidResource Include="Resources\layout\DishList.axml" />
     <AndroidResource Include="Resources\layout\MenuLayout.axml" />
     <AndroidResource Include="Resources\layout\OwnerPage.axml" />
-    <AndroidResource Include="Resources\layout\QueueLayout.axml" />
+    <AndroidResource Include="Resources\layout\CustomerQueueLayout.axml" />
     <AndroidResource Include="Resources\layout\ReservationLayout.axml" />
     <AndroidResource Include="Resources\layout\TableLayout.axml" />
     <AndroidResource Include="Resources\drawable\add_icon.png" />
@@ -237,6 +242,7 @@
     <AndroidResource Include="Resources\drawable\thai.jpg" />
     <AndroidResource Include="Resources\drawable\vietnamese.jpg" />
     <AndroidResource Include="Resources\drawable\Background_or.png" />
+    <AndroidResource Include="Resources\layout\OwnerQueueLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -246,14 +252,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Database\NewFolder1\" />
-    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\mipmap-hdpi\" />
     <Folder Include="Resources\mipmap-mdpi\" />
     <Folder Include="Resources\mipmap-xhdpi\" />
     <Folder Include="Resources\mipmap-xxhdpi\" />
     <Folder Include="Resources\mipmap-xxxhdpi\" />
-    <Folder Include="Views\Customer Side\" />
-    <Folder Include="Views\Owner Side\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\images\french.png" />

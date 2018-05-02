@@ -13,6 +13,7 @@
     </activity>
     <activity android:label="Reservations" android:name="md5112e1ce544e292e139446fe091803014.Reservations" />
     <activity android:label="Queue" android:name="md5112e1ce544e292e139446fe091803014.Queue" />
+    <activity android:label="Queue" android:name="md5112e1ce544e292e139446fe091803014.QueuePageActivity" />
     <activity android:label="TableList" android:name="md5112e1ce544e292e139446fe091803014.TableList" />
     <activity android:label="@string/reservePage" android:name="md5112e1ce544e292e139446fe091803014.ReservePageActivity" />
     <activity android:label="Restaurant's Info" android:theme="@style/Theme.DesignDemo" android:name="md5112e1ce544e292e139446fe091803014.RestaurantPage" />
