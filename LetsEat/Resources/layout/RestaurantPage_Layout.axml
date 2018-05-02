@@ -14,7 +14,7 @@
         android:scrollbars="vertical">
         <ImageView
             android:id="@+id/photoImageView"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="140dp"
             android:scaleType="fitXY"
             android:padding="5dp" />
@@ -153,24 +153,14 @@
             android:layout_marginBottom="25.0dp"
             android:layout_below="@id/queue"
             android:backgroundTint="#ffffa726" />
-        <TextView
-            android:layout_marginTop="130dp"
-            android:id="@+id/menu"
-            android:layout_below="@id/reservation"
-            android:text="View Menu"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:paddingLeft="5dp"
-            android:textColor="#ff000000" />
         <Button
+            android:layout_marginTop="130dp"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:id="@+id/menuButton"
-            android:text="Menu"
+            android:text="View Menu"
             android:layout_marginBottom="25.0dp"
-            android:layout_below="@id/menu"
+            android:layout_below="@id/reservation"
             android:backgroundTint="#ffffa726" />
         <TextView
             android:id="@+id/addressheader"
