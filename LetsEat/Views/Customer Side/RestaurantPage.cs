@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
+using Firebase.Auth;
+
 namespace LetsEat
 {
     [Activity(Label = "Restaurant's Info", Theme = "@style/Theme.DesignDemo")]
@@ -22,6 +24,7 @@ namespace LetsEat
         TextView mphone;
         TextView mhours;
         TextView mdescription;
+        string restaurant_uid;
         int resTrack;
         string resultName;
         Button mReserve1, mReserve2, mReserve3, mReserve4, mReserve5,
@@ -39,6 +42,7 @@ namespace LetsEat
         public List<string> twistReserves = new List<string>();
         public List<string> zumaReserves = new List<string>();
 
+        FirebaseAuth auth;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -66,6 +70,9 @@ namespace LetsEat
             String hourMinute;
             hourMinute = DateTime.Now.ToString("HH");
             int time1 = Int32.Parse(hourMinute) + 1;
+
+
+            auth = FirebaseAuth.GetInstance(MainActivity.app);
 
             /*mDetail = FindViewById<TextView>(Resource.Id.description);*/
 
@@ -97,6 +104,7 @@ namespace LetsEat
                 mdescription.Text = "Star chef David Walzog presents his unique interpretation of the classic American steakhouse along Wynn's Lake of Dreams. As befits a top-notch chophouse, SW offers a selection of expertly charred steaks, including a succulent porterhouse-for-two, New York strip, dry-aged tomahawk chop and Walzog's signature chile-rubbed double cut rib eye. SW also offers a wide variety of seafood and poultry options, and such innovative side dishes as black truffle creamed corn and cipollini onions with charred jalapeno. SW's décor matches its steakhouse-with-a-twist cuisine brilliantly, with an opulent dining space that radiates glamour, punctuated by floor-to-ceiling windows framing postcard views of the three-acre lakefront and forested mountain. The adjoining open-air dining terrace offers prime views of the multi-media shows of sound, light, video and puppetry that unfold both on the lake and against it's 90-foot tall coursing waterfall.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", swSteakReserves);
                 resTrack = 1;
+                restaurant_uid = "ETOxeKqaLScRYZO3tn9ceNwDhKf2";
                 imageView.SetImageResource(Resource.Drawable.steak);
             }
 
@@ -108,6 +116,7 @@ namespace LetsEat
                 mdescription.Text = "One of the most artistic and celebrated chefs in the world today, Pierre Gagnaire opened his first and only US restaurant at the Mandarin Oriental, Las Vegas to rave reviews in 2009. The accolades continue today and most recently, Twist was named Las Vegas’ 2017 Restaurant of the Year by Desert Companion Magazine and received the coveted Forbes Five Star award for 2017.\n\nJoin us for dinner and enjoy modern French cuisine in an elegant and comfortable setting, with tables offering great views of Las Vegas and the action in our kitchen.In addition, we have a private room available for your special occasion, with 20 ft high windows and a table that can accommodate up to 12 guests.Please note that all guests must be at least 13 years of age and older to dine at Twist.\n\nTwist will be hosting 4 Champagne dinners throughout the year on April 4, June 6, August 8 & October 10.\n\nTwist will be closed for our annual summer closure from 7/1 - 7/16. Twist will reopen on Tuesday, July 17th.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", twistReserves);
                 imageView.SetImageResource(Resource.Drawable.french);
+                restaurant_uid = "YU5sdpZKDGO9HWp8lnyIY1QLJ1A2";
                 resTrack = 2;
             }
 
@@ -119,6 +128,7 @@ namespace LetsEat
                 mdescription.Text = "ZUMA, contemporary Japanese restaurant from creator and co-founder Rainer Becker, arrives in Las Vegas. Inspired by the informal izakaya dining style, the international restaurant features a modern Japanese cuisine that is authentic but not traditional.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", zumaReserves);
                 resTrack = 3;
+                restaurant_uid = "uNQgmloFozcrK3aQfWPbjBb00AD3";
                 imageView.SetImageResource(Resource.Drawable.japanese);
 
             }
@@ -131,6 +141,7 @@ namespace LetsEat
                 mdescription.Text = "NOW OPEN FOR LUNCH!!\n\nTour Italy from your table with a wave of Italian small plates at Lago by Julian Serrano.\n\nJames Beard Award - winning chef Julian Serrano sets the evening in motion with his stunning interpretation of innovative Italian small plates, each packed with distinct flavors from all the regions of Italy.\n\nEncompassing 6,650 square feet of prime Las Vegas real estate overlooking the legendary Fountains of Bellagio, Lago by Julian Serrano will bring a truly cutting-edge dining experience to Bellagio and Las Vegas.\n\nLago’s design takes its cues from Italian Futurism, rejecting the past to focus on forward-thinking dynamism and experimentation.\n\nSee, taste, and socialize at Lago.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", lagoReserves);
                 resTrack = 4;
+                restaurant_uid = "LW0qjySp4zNmWBWhW6ossLfm02A2";
                 imageView.SetImageResource(Resource.Drawable.lago);
             }
 
@@ -142,6 +153,7 @@ namespace LetsEat
                 mdescription.Text = "Serving a modern interpretation of Thai cuisine, Lemongrass offers a wide variety of authentic dishes filled with flavor. Our Satay Bar offers charcoal-grilled beef, poultry, pork and seafood skewers served with a variety of sauces and seasonings. Or enjoy inspired Asian cocktails at the expanded bar and lounge located near the entrance. The casual, modern atmosphere also offers two private dining rooms for a more exclusive ";
                 reserveIntent.PutStringArrayListExtra("list_reservations", lemonReserves);
                 imageView.SetImageResource(Resource.Drawable.thai);
+                restaurant_uid = "lRVlzuJJoeUspJCspiwMxG1DhcV2";
                 resTrack = 5;
             }
 
@@ -153,6 +165,7 @@ namespace LetsEat
                 mdescription.Text = "Located across from University of Nevada - Las Vegas, Pho Thanh Huong offers authentic Vietnamese specialties, like mouthwatering pho and tasty sandwiches!";
                 alohaReserves.Add("Joe Rivers");
                 reserveIntent.PutStringArrayListExtra("list_reservations", alohaReserves);
+                restaurant_uid = "CYFwpiHOhDPOH8TRz4t88MJikxL2";
                 resTrack = 6;
                 imageView.SetImageResource(Resource.Drawable.vietnamese);
 
@@ -165,6 +178,7 @@ namespace LetsEat
                 mphone.Text = "(702) 739-8703";
                 mdescription.Text = "Located across from University of Nevada - Las Vegas, Pho Thanh Huong offers authentic Vietnamese specialties, like mouthwatering pho and tasty sandwiches!";
                 reserveIntent.PutStringArrayListExtra("list_reservations", phoReserves);
+                restaurant_uid = "24yWznqwwddLYOsHa4dMjuZpSfg1";
                 resTrack = 7;
             }
 
@@ -176,6 +190,7 @@ namespace LetsEat
                 mdescription.Text = "We're all family here. Enjoy a fresh, delicious meal every time. Olive Garden's menu features a variety of Italian specialties, including classic and filled pastas, chicken, seafood and beef. Enjoy our freshly baked garlic breadsticks and your choice of homemade soup or garden-fresh salad with any entree. All menu items are available for take -out, and our Parties To Go!menu offers generous family - sized meals for your next family gathering or office party.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", oliveReserves);
                 resTrack = 8;
+                restaurant_uid = "HqdBdfusTZMxShz7PWAq21BJ52N2";
                 imageView.SetImageResource(Resource.Drawable.italian2);
 
             }
@@ -188,6 +203,7 @@ namespace LetsEat
                 mdescription.Text = "Roberto's Taco Shop was San Diego's first walk up and drive-thru taco shop, setting the standard for fresh, authentic and inexpensive Mexican food. Combining a passion for good ingredients with friendly service and a welcoming environment is what has made Roberto's a pioneer of classic Mexican food for over 50 years.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", robertoReserves);
                 resTrack = 9;
+                restaurant_uid = "NNikzcyGspPHRk7u2rA3RZk1sCz2";
                 imageView.SetImageResource(Resource.Drawable.mexican);
             }
 
@@ -199,8 +215,12 @@ namespace LetsEat
                 mdescription.Text = "Established in 2016. We started our first location in the Centennial Las Vegas area and are trying to expand throughout the Vegas area to open 5 more locations within 2017. We specialize in Hawaiian style poke bowls and Asian fusion sushi burritos. Customers can customize their own style of bowl or sushi burrito.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", sweetReserves);
                 resTrack = 10;
+                restaurant_uid = "RB8DoGr4egNxKrydwe6FRAOJRvh2";
                 imageView.SetImageResource(Resource.Drawable.sushi);
             }
+            if (auth.CurrentUser != null)
+                Console.WriteLine("No Current User");
+            reserveIntent.PutExtra("restaurant_uid", restaurant_uid);
 
             //Reservations
             mReserve1.Click += (sender, e) =>

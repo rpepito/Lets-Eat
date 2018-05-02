@@ -39,6 +39,7 @@ namespace LetsEat
         string errMessage = "Reservation could not be made: Empty Name";
         string confirmMessage = "Reservation successful!";
         //static readonly List<string> reserveNames = new List<string>();
+        string restaurant_uid;
 
         protected override void OnCreate(Bundle savedInstanceState) //async
         {
@@ -47,6 +48,7 @@ namespace LetsEat
             // Create your application here
             SetContentView(Resource.Layout.ReservePageLayout);
 
+            restaurant_uid = Intent.GetStringExtra("restaurant_uid");
             var reserveNum = Intent.GetStringExtra("reserve_time");
             var reserveNames = Intent.Extras.GetStringArrayList("list_reservations") ?? new string[0];
            // this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
@@ -133,7 +135,9 @@ namespace LetsEat
             reservation.amount = amountText.Text;
             reservation.uid = String.Empty;
             var firebase = new FirebaseClient(FBURL);
-            var item = await firebase.Child("reservations").PostAsync<Reservation>(reservation);
+            var item = await firebase.Child("reservations")
+                                     .Child(restaurant_uid)
+                                     .PostAsync<Reservation>(reservation);
 
             //await LoadData();
         }
