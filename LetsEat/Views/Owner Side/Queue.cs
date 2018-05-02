@@ -22,7 +22,7 @@ namespace LetsEat
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.OwnerQueueLayout);
+            SetContentView(Resource.Layout.CustomerQueueLayout);
 
             // Create your application here
 
@@ -30,10 +30,11 @@ namespace LetsEat
             ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.ResListItem, queueNames);
             queueList.Adapter = ListAdapter;
 
-            Button removeFromQueueButton = FindViewById<Button>(Resource.Id.removeFromQueueButton);
-            removeFromQueueButton.Click += (sender, e) =>
+            Button addToQueueButton = FindViewById<Button>(Resource.Id.AddNameToQueueButton);
+            addToQueueButton.Click += (sender, e) =>
             {
-                Toast.MakeText(this, "Removed customer from queue", ToastLength.Long).Show();
+                Toast.MakeText(this, "Adding name to queue", ToastLength.Short).Show();
+                StartActivity(typeof(QueuePageActivity));
             };
 
 

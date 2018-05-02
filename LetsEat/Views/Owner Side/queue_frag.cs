@@ -20,9 +20,7 @@ namespace LetsEat.Views.OwnerSide
     public class queue_frag : Android.Support.V4.App.Fragment
     {
         private const string FBURL = "https://fir-database-ec02e.firebaseio.com/";
-        EditText queueText;
-        EditText amountText;
-        Button queuebutton;
+      
 
         // List<Views.OwnerSide.Queuedb> listQueue = new List<Views.OwnerSide.Queuedb>();
 
@@ -31,9 +29,6 @@ namespace LetsEat.Views.OwnerSide
         Views.OwnerSide.QueueListViewAdapter adapter;
         List<Views.OwnerSide.Queuedb> listQueue = new List<Views.OwnerSide.Queuedb>();
 
-        string queueHolder = string.Empty;
-        string errmesg = "Could not queue.";
-        string confirmmsg = "Success!";
 
         FirebaseUser user;
 
@@ -94,7 +89,7 @@ namespace LetsEat.Views.OwnerSide
             Button removeFromQueueBtn = view.FindViewById<Button>(Resource.Id.removeFromQueueButton);
 
             removeFromQueueBtn.Click += delegate {
-                Toast.MakeText(this.Activity, "Remove from queue", ToastLength.Short).Show();
+                Toast.MakeText(this.Activity, "Removing from queue", ToastLength.Short).Show();
             };
            
             listView = (ListView)view.FindViewById(Android.Resource.Id.List);

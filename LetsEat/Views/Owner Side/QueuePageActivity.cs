@@ -39,8 +39,8 @@ namespace LetsEat
                     Toast.MakeText(this, "Successfully entered queue!", ToastLength.Long).Show();
                 }
 
-                StartActivity(typeof(Views.CustomerSide.MainPage));
-                Finish();
+                StartActivity(typeof(Queue));
+       
             };
         }
     }

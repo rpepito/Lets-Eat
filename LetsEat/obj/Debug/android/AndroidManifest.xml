@@ -11,6 +11,7 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="QueuePage" android:name="md5112e1ce544e292e139446fe091803014.QueuePage" />
     <activity android:label="Reservations" android:name="md5112e1ce544e292e139446fe091803014.Reservations" />
     <activity android:label="Queue" android:name="md5112e1ce544e292e139446fe091803014.Queue" />
     <activity android:label="Queue" android:name="md5112e1ce544e292e139446fe091803014.QueuePageActivity" />

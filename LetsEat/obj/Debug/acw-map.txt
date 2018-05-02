@@ -2,6 +2,10 @@ LetsEat.MainActivity, LetsEat;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MainActivity
 LetsEat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
 letseat.MainActivity;md5112e1ce544e292e139446fe091803014.MainActivity
+LetsEat.QueuePage, LetsEat;md5112e1ce544e292e139446fe091803014.QueuePage
+LetsEat.QueuePage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.QueuePage
+LetsEat.QueuePage;md5112e1ce544e292e139446fe091803014.QueuePage
+letseat.QueuePage;md5112e1ce544e292e139446fe091803014.QueuePage
 LetsEat.Reservations, LetsEat;md5112e1ce544e292e139446fe091803014.Reservations
 LetsEat.Reservations, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.Reservations
 LetsEat.Reservations;md5112e1ce544e292e139446fe091803014.Reservations

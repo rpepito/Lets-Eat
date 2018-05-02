@@ -43,6 +43,17 @@ namespace LetsEat
         public List<string> twistReserves = new List<string>();
         public List<string> zumaReserves = new List<string>();
 
+        public List<string> alohaQueue = new List<string>();
+        public List<string> lagoQueue = new List<string>();
+        public List<string> lemonQueue = new List<string>();
+        public List<string> oliveQueue = new List<string>();
+        public List<string> phoQueue = new List<string>();
+        public List<string> robertoQueue = new List<string>();
+        public List<string> swSteakQueue = new List<string>();
+        public List<string> sweetQueue = new List<string>();
+        public List<string> twistQueue = new List<string>();
+        public List<string> zumaQueue = new List<string>();
+
         FirebaseAuth auth;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -73,6 +84,9 @@ namespace LetsEat
             buttonEnterQueue = FindViewById<Button>(Resource.Id.queueButton);
 
             var reserveIntent = new Intent(this, typeof(ReservePage));
+
+            var queueIntent = new Intent(this, typeof(QueuePage));
+
             String hourMinute;
             hourMinute = DateTime.Now.ToString("HH");
             int time1 = Int32.Parse(hourMinute) + 1;
@@ -109,6 +123,7 @@ namespace LetsEat
                 mhours.Text = "Dinner nightly, 5:30 pm to 10:15 pm";
                 mdescription.Text = "Star chef David Walzog presents his unique interpretation of the classic American steakhouse along Wynn's Lake of Dreams. As befits a top-notch chophouse, SW offers a selection of expertly charred steaks, including a succulent porterhouse-for-two, New York strip, dry-aged tomahawk chop and Walzog's signature chile-rubbed double cut rib eye. SW also offers a wide variety of seafood and poultry options, and such innovative side dishes as black truffle creamed corn and cipollini onions with charred jalapeno. SW's décor matches its steakhouse-with-a-twist cuisine brilliantly, with an opulent dining space that radiates glamour, punctuated by floor-to-ceiling windows framing postcard views of the three-acre lakefront and forested mountain. The adjoining open-air dining terrace offers prime views of the multi-media shows of sound, light, video and puppetry that unfold both on the lake and against it's 90-foot tall coursing waterfall.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", swSteakReserves);
+                queueIntent.PutStringArrayListExtra("list_queue", swSteakQueue);
                 resTrack = 1;
                 queueTrack = 1;
                 restaurant_uid = "ETOxeKqaLScRYZO3tn9ceNwDhKf2";
@@ -125,6 +140,7 @@ namespace LetsEat
                 imageView.SetImageResource(Resource.Drawable.french);
                 restaurant_uid = "YU5sdpZKDGO9HWp8lnyIY1QLJ1A2";
                 resTrack = 2;
+                queueTrack = 2;
             }
 
             else if (Intent.GetStringExtra("Name") == "Zuma Restaurant")
@@ -135,6 +151,7 @@ namespace LetsEat
                 mdescription.Text = "ZUMA, contemporary Japanese restaurant from creator and co-founder Rainer Becker, arrives in Las Vegas. Inspired by the informal izakaya dining style, the international restaurant features a modern Japanese cuisine that is authentic but not traditional.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", zumaReserves);
                 resTrack = 3;
+                queueTrack = 3;
                 restaurant_uid = "uNQgmloFozcrK3aQfWPbjBb00AD3";
                 imageView.SetImageResource(Resource.Drawable.japanese);
 
@@ -234,7 +251,7 @@ namespace LetsEat
             {
                 // move customer to a page where they can put in the name to enter the queue
                 Toast.MakeText(this, "Moving to new page..", ToastLength.Long).Show();
-                StartActivity(typeof(QueuePageActivity));
+                StartActivity(queueIntent);
             };
 
             //Reservations
@@ -292,10 +309,12 @@ namespace LetsEat
                 if (resTrack == 1)
                 {
                     swSteakReserves.Add(resultName);
+                    swSteakQueue.Add(resultName); // shouldn't work
                 }
                 else if (resTrack == 2)
                 {
                     twistReserves.Add(resultName);
+                    twistQueue.Add(resultName); // shouldn't work
 
                 }
                 else if (resTrack == 3)
@@ -340,6 +359,21 @@ namespace LetsEat
                     sweetReserves.Add(resultName);
 
                 }
+               /* else if (queueTrack == 1)
+                {
+                    swSteakQueue.Add(resultName);
+                }
+                else if (queueTrack == 2)
+                {
+                    twistQueue.Add(resultName);
+
+                }
+                else if (queueTrack == 3)
+                {
+                    zumaQueue.Add(resultName);
+
+                }
+                */
             }
         }
 

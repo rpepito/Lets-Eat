@@ -354,6 +354,7 @@ C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\bin\Debug\Xamarin.Fireba
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\bin\Debug\Xamarin.GooglePlayServices.Base.dll
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\bin\Debug\Xamarin.GooglePlayServices.Tasks.dll
+C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\obj\Debug\LetsEat.csprojResolveAssemblyReference.cache
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Basement.dll.stamp
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\Xamarin.GooglePlayServices.Tasks.dll.stamp
 C:\Users\Jon\Documents\GitHub\Lets-Eat\Lets-Eat\LetsEat\obj\Debug\XbdMerge\Xamarin.Firebase.Common.dll.stamp
