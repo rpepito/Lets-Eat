@@ -138,6 +138,7 @@ namespace LetsEat
                 mdescription.Text = "One of the most artistic and celebrated chefs in the world today, Pierre Gagnaire opened his first and only US restaurant at the Mandarin Oriental, Las Vegas to rave reviews in 2009. The accolades continue today and most recently, Twist was named Las Vegas’ 2017 Restaurant of the Year by Desert Companion Magazine and received the coveted Forbes Five Star award for 2017.\n\nJoin us for dinner and enjoy modern French cuisine in an elegant and comfortable setting, with tables offering great views of Las Vegas and the action in our kitchen.In addition, we have a private room available for your special occasion, with 20 ft high windows and a table that can accommodate up to 12 guests.Please note that all guests must be at least 13 years of age and older to dine at Twist.\n\nTwist will be hosting 4 Champagne dinners throughout the year on April 4, June 6, August 8 & October 10.\n\nTwist will be closed for our annual summer closure from 7/1 - 7/16. Twist will reopen on Tuesday, July 17th.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", twistReserves);
                 imageView.SetImageResource(Resource.Drawable.french);
+                queueIntent.PutStringArrayListExtra("list_queue", twistQueue);
                 restaurant_uid = "YU5sdpZKDGO9HWp8lnyIY1QLJ1A2";
                 resTrack = 2;
                 queueTrack = 2;
@@ -150,6 +151,7 @@ namespace LetsEat
                 mhours.Text = "Monday – Sunday DINNER 5.45PM -11.00PM\nMonday – Sunday BAR 5.00PM - 12.00AM\n\nLast orders for our kitchen are as follows:\nDinner: Monday to Saturday – last orders 10.45PM";
                 mdescription.Text = "ZUMA, contemporary Japanese restaurant from creator and co-founder Rainer Becker, arrives in Las Vegas. Inspired by the informal izakaya dining style, the international restaurant features a modern Japanese cuisine that is authentic but not traditional.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", zumaReserves);
+                queueIntent.PutStringArrayListExtra("list_queue", zumaQueue);
                 resTrack = 3;
                 queueTrack = 3;
                 restaurant_uid = "uNQgmloFozcrK3aQfWPbjBb00AD3";
@@ -245,6 +247,8 @@ namespace LetsEat
             if (auth.CurrentUser != null)
                 Console.WriteLine("No Current User");
             reserveIntent.PutExtra("restaurant_uid", restaurant_uid);
+
+            queueIntent.PutExtra("uid_restaurant1", restaurant_uid);
 
             // Queue
             buttonEnterQueue.Click += (sender, e) =>

@@ -37,14 +37,14 @@ namespace LetsEat.Views.OwnerSide
             //inflater = (LayoutInflater)fragment.getActivity().GetSystemService(Context.LayoutInflaterService);
             //inflater = getActivity().getLayoutInflater();
             inflater = Application.Context.GetSystemService(Context.LayoutInflaterService) as LayoutInflater;
-            View itemView = inflater.Inflate(Resource.Layout.ResListItem, null);
+            View itemView = inflater.Inflate(Resource.Layout.QueueListItem, null);
 
-            var txtuser = itemView.FindViewById<TextView>(Resource.Id.ListName);
+            var userText = itemView.FindViewById<TextView>(Resource.Id.QueueListName);
             
 
             if (queueListAccounts.Count > 0)
             {
-                txtuser.Text = queueListAccounts[position].name;
+                userText.Text = queueListAccounts[position].name;
                 
             }
             return itemView;

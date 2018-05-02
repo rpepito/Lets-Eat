@@ -47,7 +47,7 @@ namespace LetsEat
             // Create your application here
             SetContentView(Resource.Layout.CustomerQueueLayout);
 
-            restaurant_uid = Intent.GetStringExtra("restaurant_uid");
+            restaurant_uid = Intent.GetStringExtra("uid_restaurant1");
            
             var queueNames = Intent.Extras.GetStringArrayList("list_queue") ?? new string[0];
 
