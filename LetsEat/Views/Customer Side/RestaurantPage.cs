@@ -30,7 +30,8 @@ namespace LetsEat
         Button mReserve1, mReserve2, mReserve3, mReserve4, mReserve5,
             mReserve6, mReserve7, mReserve8;
         //static readonly List<string> resultNames = new List<string>();
-         
+        Button Menu;
+
         public List<string> alohaReserves = new List<string>();
         public List<string> lagoReserves = new List<string>();
         public List<string> lemonReserves = new List<string>();
@@ -66,6 +67,7 @@ namespace LetsEat
             mReserve7 = FindViewById<Button>(Resource.Id.timeButton7);
             mReserve8 = FindViewById<Button>(Resource.Id.timeButton8);
 
+            Menu = FindViewById<Button>(Resource.Id.menuButton);
             var reserveIntent = new Intent(this, typeof(ReservePage));
             String hourMinute;
             hourMinute = DateTime.Now.ToString("HH");
@@ -79,6 +81,7 @@ namespace LetsEat
             mName.Text = Intent.GetStringExtra("Name");
             mCuisine.Text = Intent.GetStringExtra("Cuisine");
             var imageView = FindViewById<ImageView>(Resource.Id.photoImageView);
+            var menuIntent = new Intent(this, typeof(MenuPage));
 
             addtime(time1, mReserve1);
             time1++;
@@ -224,6 +227,12 @@ namespace LetsEat
                 Console.WriteLine("No Current User");
             reserveIntent.PutExtra("restaurant_uid", restaurant_uid);
 
+            Menu.Click += (sender, e) =>
+            {
+                menuIntent.PutExtra("uid", restaurant_uid);
+                StartActivity(menuIntent);
+
+            };
             //Reservations
             mReserve1.Click += (sender, e) =>
             {

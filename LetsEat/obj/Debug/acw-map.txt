@@ -42,6 +42,10 @@ LetsEat.DatePickerFragment, LetsEat;md5112e1ce544e292e139446fe091803014.DatePick
 LetsEat.DatePickerFragment, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.DatePickerFragment
 LetsEat.DatePickerFragment;md5112e1ce544e292e139446fe091803014.DatePickerFragment
 letseat.DatePickerFragment;md5112e1ce544e292e139446fe091803014.DatePickerFragment
+LetsEat.MenuPage, LetsEat;md5112e1ce544e292e139446fe091803014.MenuPage
+LetsEat.MenuPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MenuPage
+LetsEat.MenuPage;md5112e1ce544e292e139446fe091803014.MenuPage
+letseat.MenuPage;md5112e1ce544e292e139446fe091803014.MenuPage
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag

@@ -178,6 +178,7 @@
     <Compile Include="Views\Customer Side\ListViewAdapter.cs" />
     <Compile Include="Views\Customer Side\Reservation.cs" />
     <Compile Include="Views\Customer Side\ReservePage.cs" />
+    <Compile Include="Views\Customer Side\MenuPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -237,6 +238,7 @@
     <AndroidResource Include="Resources\drawable\thai.jpg" />
     <AndroidResource Include="Resources\drawable\vietnamese.jpg" />
     <AndroidResource Include="Resources\drawable\Background_or.png" />
+    <AndroidResource Include="Resources\layout\MenuList.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

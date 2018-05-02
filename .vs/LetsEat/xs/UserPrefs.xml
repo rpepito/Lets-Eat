@@ -1,23 +1,33 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Customer Side/ReservePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Customer Side/MenuPage.cs">
     <Files>
-      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="71" Column="42" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="133" Column="14" />
-      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="74" Column="13" />
-      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="162" Column="6" />
-      <File FileName="LetsEat/Views/Customer Side/ListViewAdapter.cs" Line="49" Column="14" />
-      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="59" Column="26" />
-      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="45" Column="37" />
-      <File FileName="LetsEat/Views/Log In/LoginActivity.cs" Line="145" Column="2" />
-      <File FileName="LetsEat/Views/Owner Side/AddDish.cs" Line="50" Column="13" />
-      <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="3" Column="21" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1368" Column="12" />
+      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="81" Column="27" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="72" Column="23" />
+      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="31" Column="21" />
+      <File FileName="LetsEat/Views/Owner Side/Reservations.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/ReservePageActivity.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/Dish.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/Dishes.cs" Line="13" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/Queue.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Owner Side/DishViewAdapter.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/ListViewAdapter.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/DishViewAdapters.cs" Line="67" Column="11" />
+      <File FileName="LetsEat/Views/Customer Side/ViewHolder.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Owner.cs" Line="1" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="48" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.mypixel" AndroidDesignerPreferredTheme="Mytheme" />
+  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
