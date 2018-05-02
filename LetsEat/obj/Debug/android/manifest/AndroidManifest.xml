@@ -17,6 +17,7 @@
     <activity android:label="@string/reservePage" android:name="md5112e1ce544e292e139446fe091803014.ReservePageActivity" />
     <activity android:label="Restaurant's Info" android:theme="@style/Theme.DesignDemo" android:name="md5112e1ce544e292e139446fe091803014.RestaurantPage" />
     <activity android:label="ReservePage" android:name="md5112e1ce544e292e139446fe091803014.ReservePage" />
+    <activity android:label="MenuPage" android:name="md5112e1ce544e292e139446fe091803014.MenuPage" />
     <activity android:label="MainPage" android:theme="@style/Theme.DesignDemo" android:name="md53a37a337742bdff3602f8b1fcefff30b.MainPage" />
     <activity android:label="MainPage" android:theme="@style/Theme.DesignDemo" android:name="md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer" />
     <activity android:label="MainPage" android:theme="@style/Theme.DesignDemo" android:name="md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner" />

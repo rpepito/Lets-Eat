@@ -1,11 +1,10 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-<<<<<<< HEAD
   <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
     <Files>
-      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1164" Column="2" />
-      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="275" Column="10" />
-      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="83" Column="13" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="122" Column="13" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.Android.framework/Versions/8.2.0-16/lib/xamarin.android/xbuild/Xamarin/Android/Xamarin.Android.Common.targets" Line="1368" Column="12" />
+      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="232" Column="17" />
+      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="60" Column="15" />
+      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="72" Column="23" />
       <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="53" Column="13" />
       <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="32" Column="15" />
       <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="31" Column="21" />
@@ -25,18 +24,11 @@
       <File FileName="Source Not Available" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-=======
-  <MonoDevelop.Ide.Workbench />
->>>>>>> f310a7a3cc29726c8979d76e6ef67421f91beef1
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-<<<<<<< HEAD
   <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
-=======
-  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 5" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
->>>>>>> f310a7a3cc29726c8979d76e6ef67421f91beef1
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
