@@ -65,6 +65,7 @@ namespace LetsEat.Views.OwnerSide
                 Dish Dish_info = new Dish();
                 Dish_info.Name = item.Object.Name;
 
+                listDishes.Add(Dish_info.Name);
                 Console.WriteLine(Dish_info.Name);
 
             };

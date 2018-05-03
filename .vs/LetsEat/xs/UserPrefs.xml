@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/reservations_frag.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
     <Files>
       <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="345" Column="21" />
       <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="86" Column="25" />
@@ -12,15 +12,16 @@
       <File FileName="LetsEat/Views/Owner Side/Dish.cs" Line="10" Column="42" />
       <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="15" Column="4" />
       <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="147" Column="6" />
-      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="39" Column="9" />
+      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="39" Column="13" />
       <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="82" Column="28" />
+      <File FileName="Source Not Available" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.mypixel" AndroidDesignerPreferredTheme="Mytheme" />
+  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

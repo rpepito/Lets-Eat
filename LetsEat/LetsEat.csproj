@@ -179,6 +179,8 @@
     <Compile Include="Views\Customer Side\Reservation.cs" />
     <Compile Include="Views\Customer Side\ReservePage.cs" />
     <Compile Include="Views\Customer Side\MenuPage.cs" />
+    <Compile Include="Views\Owner Side\TableListClass.cs" />
+    <Compile Include="Views\Owner Side\AddTable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -239,6 +241,8 @@
     <AndroidResource Include="Resources\drawable\vietnamese.jpg" />
     <AndroidResource Include="Resources\drawable\Background_or.png" />
     <AndroidResource Include="Resources\layout\MenuList.axml" />
+    <AndroidResource Include="Resources\layout\TableList.axml" />
+    <AndroidResource Include="Resources\layout\AddTableLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

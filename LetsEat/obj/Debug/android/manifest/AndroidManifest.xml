@@ -23,6 +23,7 @@
     <activity android:label="MainPage" android:theme="@style/Theme.DesignDemo" android:name="md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner" />
     <activity android:label="AddDish" android:name="md5069bc4214247c4a2843b4ba7547c8517.AddDish" />
     <activity android:label="OwnerPage" android:theme="@style/Theme.DesignDemo" android:name="md5069bc4214247c4a2843b4ba7547c8517.OwnerPage" />
+    <activity android:label="AddTable" android:name="md5069bc4214247c4a2843b4ba7547c8517.AddTable" />
     <activity android:label="LoginActivity" android:name="md5cce693907115afaff50af31afdc20eb5.LoginActivity" />
     <activity android:label="Registration" android:name="md5cce693907115afaff50af31afdc20eb5.Registration" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LetsEat.LetsEat.mono.MonoRuntimeProvider.__mono_init__" />
