@@ -7,13 +7,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/ReservePageButton"
-        android:text="create a reservation" />
+        android:text="create a reservation"
+        android:layout_marginTop="55.0dp" />
     <ListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/ReserveList" />
+        android:id="@+id/ReserveList"
+        android:layout_marginTop="18.0dp" />
     <ListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"

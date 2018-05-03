@@ -80,6 +80,7 @@ namespace LetsEat.Views.CustomerSide
 
                     default:
                         break;
+
                 }
                 drawerLayout.CloseDrawers();
             };

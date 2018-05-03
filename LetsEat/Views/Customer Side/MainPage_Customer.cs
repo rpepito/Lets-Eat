@@ -27,7 +27,7 @@ namespace LetsEat.Views.CustomerSide
         ListView myList;
         DrawerLayout drawerLayout;
         NavigationView navigationView_user;
-
+        FirebaseAuth auth;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -44,6 +44,9 @@ namespace LetsEat.Views.CustomerSide
             SupportActionBar.SetDisplayShowTitleEnabled(false);
             SupportActionBar.SetHomeButtonEnabled(true);
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout_customer);
+
+            auth = FirebaseAuth.GetInstance(MainActivity.app);
+
 
             setupUser_Nav();
 
@@ -69,6 +72,7 @@ namespace LetsEat.Views.CustomerSide
                 switch (e.MenuItem.ItemId)
                 {
                     case Resource.Id.action_logout:
+                        auth.SignOut();
                         StartActivity(typeof(Views.CustomerSide.MainPage));
                         Finish();
                         Toast.MakeText(this, "Successfully Logged Out", ToastLength.Long).Show();

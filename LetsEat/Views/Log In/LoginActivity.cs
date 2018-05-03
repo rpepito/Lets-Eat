@@ -15,13 +15,14 @@ using Firebase.Xamarin.Database.Query;
 using static Android.Views.View;
 
 using Android.Gms.Tasks;
+using LetsEat.Views.OwnerSide;
 
 namespace LetsEat.Views.Log_In
 {
     [Activity(Label = "LoginActivity")]
     public class LoginActivity : Activity, IOnClickListener, IOnCompleteListener
     {
-        private Button btn_signIn, btn_register;
+        private Button btn_signIn,  btn_register;
         private EditText input_email, input_password;
         private FirebaseAuth auth;
         private RelativeLayout activity_main;
@@ -36,10 +37,8 @@ namespace LetsEat.Views.Log_In
 
             SetContentView(Resource.Layout.LoginLayout);
 
-            database = FirebaseDatabase.GetInstance(MainActivity.app);
+            database =  FirebaseDatabase.GetInstance(MainActivity.app);
             user_reference = database.GetReference("users");
-
-
 
             //Initialize Firebase
             auth = FirebaseAuth.GetInstance(MainActivity.app);
@@ -59,10 +58,9 @@ namespace LetsEat.Views.Log_In
             homepage.Click += homepage_click;
         }
 
-        public void homepage_click(object sender, EventArgs e)
-        {
+        public void homepage_click(object sender, EventArgs e){
 
-            StartActivity(typeof(Views.CustomerSide.MainPage));
+            StartActivity(typeof(Views.Owner_Side.OwnerPage));
             Finish();
         }
 
@@ -89,17 +87,15 @@ namespace LetsEat.Views.Log_In
                 StartActivity(new Intent(this, typeof(Registration)));
             }
         }
-
+   
         private void LoginUser(string email, string password)
         {
             auth.SignInWithEmailAndPassword(email, password).AddOnCompleteListener(this);
 
         }
 
-        public async void OnComplete(gms_Task task)
-        {
-            if (task.IsSuccessful)
-            {
+        public async void OnComplete(gms_Task task){
+            if(task.IsSuccessful){
                 var firebase = new FirebaseClient(FBURL);
 
                 var user_type = await firebase
@@ -108,15 +104,13 @@ namespace LetsEat.Views.Log_In
                     .Child("user_type")
                     .OnceSingleAsync<String>();
 
-                if (user_type == "owner")
-                {
+                if(user_type == "owner"){
                     Toast.MakeText(this, "Login Successful", ToastLength.Long).Show();
                     StartActivity(typeof(Views.Owner_Side.OwnerPage));
                     Finish();
                 }
 
-                else if (user_type == "customer")
-                {
+                else if(user_type == "customer"){
                     Toast.MakeText(this, "Login Successful", ToastLength.Long).Show();
                     StartActivity(typeof(Views.CustomerSide.MainPage_Customer));
                     Finish();
@@ -125,7 +119,7 @@ namespace LetsEat.Views.Log_In
 
             else
             {
-
+                
                 Toast.MakeText(this, "Login Failed", ToastLength.Long).Show();
                 SetEditing(true);
             }

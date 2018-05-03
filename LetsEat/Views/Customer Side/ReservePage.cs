@@ -28,6 +28,7 @@ namespace LetsEat
         EditText reservationText;
         EditText amountText;
         Button reserveButton;
+
         ProgressBar circular_progress;
        // ListView listView;
         List<Reservation> listReservations = new List<Reservation>();
@@ -39,6 +40,10 @@ namespace LetsEat
         string errMessage = "Reservation could not be made: Empty Name";
         string confirmMessage = "Reservation successful!";
         //static readonly List<string> reserveNames = new List<string>();
+        string restaurant_uid;
+
+        TextView _dateDisplay;
+        Button _dateSelectButton;
 
         protected override void OnCreate(Bundle savedInstanceState) //async
         {
@@ -46,7 +51,12 @@ namespace LetsEat
 
             // Create your application here
             SetContentView(Resource.Layout.ReservePageLayout);
+             
+            _dateDisplay = FindViewById <TextView> (Resource.Id.date_display);  
+            _dateSelectButton = FindViewById <Button> (Resource.Id.date_select_button);  
+            _dateSelectButton.Click += DateSelect_OnClick; 
 
+            restaurant_uid = Intent.GetStringExtra("restaurant_uid");
             var reserveNum = Intent.GetStringExtra("reserve_time");
             var reserveNames = Intent.Extras.GetStringArrayList("list_reservations") ?? new string[0];
            // this.ListAdapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, reserveNames);
@@ -61,6 +71,7 @@ namespace LetsEat
            // listView = (ListView)FindViewById(Android.Resource.Id.List);
             //listView.Adapter = adapter;
             //
+
             reserveButton.Click += delegate
             {
                 reserveHolder = reservationText.Text;
@@ -131,11 +142,54 @@ namespace LetsEat
             reservation.name = reservationText.Text;
             reservation.time = Intent.GetStringExtra("reserve_time");
             reservation.amount = amountText.Text;
+            //reservation.order_dishes = null;
             reservation.uid = String.Empty;
             var firebase = new FirebaseClient(FBURL);
-            var item = await firebase.Child("reservations").PostAsync<Reservation>(reservation);
+            var item = await firebase.Child("reservations")
+                                     .Child(restaurant_uid)
+                                     .PostAsync<Reservation>(reservation);
 
             //await LoadData();
         }
+
+        void DateSelect_OnClick(object sender, EventArgs eventArgs) 
+        {
+            /*
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time) 
+
+            {  
+              _dateDisplay.Text = time.ToLongDateString();  
+            }); 
+
+            frag.Show(FragmentManager, DatePickerFragment.TAG);  
+
+            Console.WriteLine("Wow");
+            */
+        } 
+
     }
+
+    public class DatePickerFragment: DialogFragment,  
+    DatePickerDialog.IOnDateSetListener {  
+          
+        public static readonly string TAG = "X:" + typeof(DatePickerFragment).Name.ToUpper();  
+         
+        Action <DateTime> _dateSelectedHandler = delegate {};  
+        public static DatePickerFragment NewInstance(Action < DateTime > onDateSelected) {  
+            DatePickerFragment frag = new DatePickerFragment();  
+            frag._dateSelectedHandler = onDateSelected;  
+            return frag;  
+        }  
+        public override Dialog OnCreateDialog(Bundle savedInstanceState) {  
+            DateTime currently = DateTime.Now;  
+            DatePickerDialog dialog = new DatePickerDialog(Activity, this, currently.Year, currently.Month, currently.Day);  
+            return dialog;  
+        }  
+        public void OnDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {  
+            
+            DateTime selectedDate = new DateTime(year, monthOfYear + 1, dayOfMonth);  
+             
+            _dateSelectedHandler(selectedDate);  
+        }  
+    } 
 }

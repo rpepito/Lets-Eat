@@ -27,7 +27,7 @@ namespace LetsEat
             "Coldcut Sandwich", "Pulled Pork Sandwich", "Breakfast Sandwich", "Peanut Butter & Jelly Sandwich"
         };
 
-        private static Toolbar toolbar;
+        //private static Toolbar toolbar;
         private static ListView menulistView;
         private static String resturant_name;            //Global Variable for restaurant name
 
@@ -45,10 +45,10 @@ namespace LetsEat
             SetContentView(Resource.Layout.MenuLayout);
             // Create your application here
 
-            toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
+            //toolbar = FindViewById<Toolbar>(Resource.Id.menutoolbar);
             menulistView = FindViewById<ListView>(Resource.Id.menulistView);
 
-            setElements();
+            //setElements();
 
             user_reference.Child(user.Uid).AddValueEventListener(new User_ValueEventListener());
 
@@ -156,7 +156,7 @@ namespace LetsEat
         {
 
             if (item.ItemId == Resource.Id.action_add){
-                StartActivity(typeof(AddDish));
+                StartActivity(typeof(Views.Owner_Side.AddDish));
             }
 
             return base.OnOptionsItemSelected(item);
