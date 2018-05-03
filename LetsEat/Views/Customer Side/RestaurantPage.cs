@@ -43,6 +43,7 @@ namespace LetsEat
         public List<string> twistReserves = new List<string>();
         public List<string> zumaReserves = new List<string>();
 
+
         FirebaseAuth auth;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -67,8 +68,13 @@ namespace LetsEat
             mReserve7 = FindViewById<Button>(Resource.Id.timeButton7);
             mReserve8 = FindViewById<Button>(Resource.Id.timeButton8);
 
+            Button buttonEnterQueue;
+
+            buttonEnterQueue = FindViewById<Button>(Resource.Id.queueButton);
+
             Menu = FindViewById<Button>(Resource.Id.menuButton);
             var reserveIntent = new Intent(this, typeof(ReservePage));
+            var queueIntent = new Intent(this, typeof(QueuePage));
             String hourMinute;
             hourMinute = DateTime.Now.ToString("HH");
 
@@ -233,6 +239,15 @@ namespace LetsEat
                 StartActivity(menuIntent);
 
             };
+
+            // Queue
+            buttonEnterQueue.Click += (sender, e) =>
+            {
+                // move customer to a page where they can put in the name to enter the queue
+                Toast.MakeText(this, "Moving to new page..", ToastLength.Long).Show();
+                StartActivity(queueIntent);
+            };
+
             //Reservations
             mReserve1.Click += (sender, e) =>
             {
