@@ -62,17 +62,22 @@ namespace LetsEat.Views.OwnerSide
             adapter = null;
 
             
-            /*foreach (var item in items)
+            foreach (var item in items)
             {
-               // Console.WriteLine("Loading items...");                  // ERROR SOMEWHERE IN THIS FUNCTION 5/2
-               // Console.WriteLine(item.Object.name);
-               // Queuedb queuedb = new Queuedb();            // FUNCTION + LINES = ERROR??? NULLEXCEPTION CRASH ERROR DUNNO FIX
-              //  queuedb.uid = item.Key;
-              //  queuedb.name = item.Object.name;
-              //  listQueue.Add(queuedb);
-                
+                Console.WriteLine("Loading items...");                  // ERROR SOMEWHERE IN THIS FUNCTION 5/2
+                Console.WriteLine(item.Object.name);
+                Queuedb queuedb = new Queuedb();            // FUNCTION + LINES = ERROR??? NULLEXCEPTION CRASH ERROR DUNNO FIX
+                Console.WriteLine("Check1");
+                queuedb.uid = item.Key;
+                Console.WriteLine("Check2");
+                queuedb.name = item.Object.name;
+                Console.WriteLine("Check3");
+                listQueue.Add(queuedb);
+                Console.WriteLine("Check4");
+
             }
-            */
+            
+            
 
             Console.WriteLine("Updating adapter...");
             adapter = new Views.CustomerSide.QueueListViewAdapter(this, listQueue);
