@@ -32,7 +32,7 @@ namespace LetsEat
         //ProgressBar circular_progress;
 
 
-        List<Views.OwnerSide.Queuedb> listQueue = new List<Views.OwnerSide.Queuedb>();
+        List<Queuedb> listQueue = new List<Queuedb>();
 
         string queueHolder = string.Empty;
         string errorMessage = "Could not queue.";
@@ -78,14 +78,14 @@ namespace LetsEat
 
         private async void CreateResData()
         {
-            Views.OwnerSide.Queuedb queuedb = new Views.OwnerSide.Queuedb();
+            Queuedb queuedb = new Queuedb();
             queuedb.name = queueText.Text;
             queuedb.amount = amountText.Text;
             queuedb.uid = String.Empty;
             var firebase = new FirebaseClient(FBURL);
             var item = await firebase.Child("queues")
                                                       .Child(restaurant_uid)  
-                                                      .PostAsync<Views.OwnerSide.Queuedb>(queuedb);
+                                                      .PostAsync<Queuedb>(queuedb);
                                                         
         }
     }

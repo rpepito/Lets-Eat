@@ -46,46 +46,6 @@ LetsEat.ReservePage, LetsEat;md5112e1ce544e292e139446fe091803014.ReservePage
 LetsEat.ReservePage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.ReservePage
 LetsEat.ReservePage;md5112e1ce544e292e139446fe091803014.ReservePage
 letseat.ReservePage;md5112e1ce544e292e139446fe091803014.ReservePage
-LetsEat.Views.CustomerSide.MainPage, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage
-LetsEat.Views.CustomerSide.MainPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage
-LetsEat.Views.CustomerSide.MainPage;md53a37a337742bdff3602f8b1fcefff30b.MainPage
-letseat.views.customerside.MainPage;md53a37a337742bdff3602f8b1fcefff30b.MainPage
-LetsEat.Views.CustomerSide.MainPage_Customer, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
-LetsEat.Views.CustomerSide.MainPage_Customer, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
-LetsEat.Views.CustomerSide.MainPage_Customer;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
-letseat.views.customerside.MainPage_Customer;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
-LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
-LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
-LetsEat.Views.CustomerSide.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
-letseat.views.customerside.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
-LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
-LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
-LetsEat.Views.CustomerSide.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
-letseat.views.customerside.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
-LetsEat.Views.Owner_Side.AddDish, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.AddDish
-LetsEat.Views.Owner_Side.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.AddDish
-LetsEat.Views.Owner_Side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish
-letseat.views.owner_side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish
-LetsEat.Views.Owner_Side.OwnerPage, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
-LetsEat.Views.Owner_Side.OwnerPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
-LetsEat.Views.Owner_Side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
-letseat.views.owner_side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
-LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-letseat.views.log_in.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
-LetsEat.Views.Log_In.Registration, LetsEat;md5cce693907115afaff50af31afdc20eb5.Registration
-LetsEat.Views.Log_In.Registration, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.Registration
-LetsEat.Views.Log_In.Registration;md5cce693907115afaff50af31afdc20eb5.Registration
-letseat.views.log_in.Registration;md5cce693907115afaff50af31afdc20eb5.Registration
-LetsEat.Views.OwnerSide.QueueListViewAdapter, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.QueueListViewAdapter
-LetsEat.Views.OwnerSide.QueueListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.QueueListViewAdapter
-LetsEat.Views.OwnerSide.QueueListViewAdapter;md54d6069665a4ee24d63f2a17d1f9bbbb0.QueueListViewAdapter
-letseat.views.ownerside.QueueListViewAdapter;md54d6069665a4ee24d63f2a17d1f9bbbb0.QueueListViewAdapter
-LetsEat.Views.OwnerSide.ListViewQueue, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.ListViewQueue
-LetsEat.Views.OwnerSide.ListViewQueue, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.ListViewQueue
-LetsEat.Views.OwnerSide.ListViewQueue;md54d6069665a4ee24d63f2a17d1f9bbbb0.ListViewQueue
-letseat.views.ownerside.ListViewQueue;md54d6069665a4ee24d63f2a17d1f9bbbb0.ListViewQueue
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
@@ -102,6 +62,42 @@ LetsEat.Views.OwnerSide.reservations_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f
 LetsEat.Views.OwnerSide.reservations_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
 LetsEat.Views.OwnerSide.reservations_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
 letseat.views.ownerside.reservations_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.reservations_frag
+LetsEat.Views.Owner_Side.AddDish, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.AddDish
+LetsEat.Views.Owner_Side.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.AddDish
+LetsEat.Views.Owner_Side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish
+letseat.views.owner_side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish
+LetsEat.Views.Owner_Side.OwnerPage, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.Owner_Side.OwnerPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.Owner_Side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+letseat.views.owner_side.OwnerPage;md5069bc4214247c4a2843b4ba7547c8517.OwnerPage
+LetsEat.Views.Log_In.LoginActivity, LetsEat;md5cce693907115afaff50af31afdc20eb5.LoginActivity
+LetsEat.Views.Log_In.LoginActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.LoginActivity
+LetsEat.Views.Log_In.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
+letseat.views.log_in.LoginActivity;md5cce693907115afaff50af31afdc20eb5.LoginActivity
+LetsEat.Views.Log_In.Registration, LetsEat;md5cce693907115afaff50af31afdc20eb5.Registration
+LetsEat.Views.Log_In.Registration, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5cce693907115afaff50af31afdc20eb5.Registration
+LetsEat.Views.Log_In.Registration;md5cce693907115afaff50af31afdc20eb5.Registration
+letseat.views.log_in.Registration;md5cce693907115afaff50af31afdc20eb5.Registration
+LetsEat.Views.CustomerSide.QueueListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+LetsEat.Views.CustomerSide.QueueListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+LetsEat.Views.CustomerSide.QueueListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+letseat.views.customerside.QueueListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+LetsEat.Views.CustomerSide.MainPage, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage
+LetsEat.Views.CustomerSide.MainPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage
+LetsEat.Views.CustomerSide.MainPage;md53a37a337742bdff3602f8b1fcefff30b.MainPage
+letseat.views.customerside.MainPage;md53a37a337742bdff3602f8b1fcefff30b.MainPage
+LetsEat.Views.CustomerSide.MainPage_Customer, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
+LetsEat.Views.CustomerSide.MainPage_Customer, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
+LetsEat.Views.CustomerSide.MainPage_Customer;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
+letseat.views.customerside.MainPage_Customer;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Customer
+LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
+LetsEat.Views.CustomerSide.MainPage_Owner, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
+LetsEat.Views.CustomerSide.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
+letseat.views.customerside.MainPage_Owner;md53a37a337742bdff3602f8b1fcefff30b.MainPage_Owner
+LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+LetsEat.Views.CustomerSide.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+letseat.views.customerside.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
 Android.Support.V4.Widget.SearchViewCompat/IOnCloseListenerImplementor, Xamarin.Android.Support.Compat;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat+IOnCloseListenerImplementor, Xamarin.Android.Support.Compat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor
 Android.Support.V4.Widget.SearchViewCompat.IOnCloseListenerImplementor;mono.android.support.v4.widget.SearchViewCompat_OnCloseListenerImplementor

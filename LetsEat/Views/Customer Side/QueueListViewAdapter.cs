@@ -6,7 +6,7 @@ using Android.Widget;
 using LetsEat.Models;
 using System.Collections.Generic;
 
-namespace LetsEat.Views.OwnerSide
+namespace LetsEat.Views.CustomerSide
 {
     public class QueueListViewAdapter : BaseAdapter
     {
@@ -34,8 +34,7 @@ namespace LetsEat.Views.OwnerSide
         }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            //inflater = (LayoutInflater)fragment.getActivity().GetSystemService(Context.LayoutInflaterService);
-            //inflater = getActivity().getLayoutInflater();
+     
             inflater = Application.Context.GetSystemService(Context.LayoutInflaterService) as LayoutInflater;
             View itemView = inflater.Inflate(Resource.Layout.QueueListItem, null);
 

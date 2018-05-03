@@ -12,9 +12,9 @@ namespace LetsEat.Views.OwnerSide
     {
 
         Activity activity;
-        List<OwnerSide.Queuedb> lstAccounts;
+        List<Queuedb> lstAccounts;
         LayoutInflater inflater;
-        public ListViewQueue(Activity activity, List<OwnerSide.Queuedb> lstAccounts)
+        public ListViewQueue(Activity activity, List<Queuedb> lstAccounts)
         {
             this.activity = activity;
             this.lstAccounts = lstAccounts;

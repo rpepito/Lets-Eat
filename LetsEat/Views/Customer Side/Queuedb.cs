@@ -8,7 +8,7 @@ using Android.OS;
 using Android.Runtime;  
 using Android.Views;  
 using Android.Widget;
-namespace LetsEat.Views.OwnerSide
+namespace LetsEat
 {
     public class Queuedb
     {

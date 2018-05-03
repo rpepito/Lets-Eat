@@ -27,7 +27,7 @@ namespace LetsEat
             // Create your application here
 
             ListView queueList = FindViewById<ListView>(Resource.Id.QueueList);
-            ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.ResListItem, queueNames);
+            ListAdapter = new ArrayAdapter<string>(this, Resource.Layout.QueueListItem, queueNames);
             queueList.Adapter = ListAdapter;
 
             Button addToQueueButton = FindViewById<Button>(Resource.Id.AddNameToQueueButton);

@@ -26,8 +26,8 @@ namespace LetsEat.Views.OwnerSide
 
         ListView listView;
 
-        Views.OwnerSide.QueueListViewAdapter adapter;
-        List<Views.OwnerSide.Queuedb> listQueue = new List<Views.OwnerSide.Queuedb>();
+        Views.CustomerSide.QueueListViewAdapter adapter;
+        List<Queuedb> listQueue = new List<Queuedb>();
 
 
         FirebaseUser user;
@@ -51,7 +51,7 @@ namespace LetsEat.Views.OwnerSide
 
         private async Task LoadData()
         {
-            
+            Console.WriteLine("Loading database...");
             var firebase = new FirebaseClient(FBURL);
             
             var items = await firebase
@@ -60,22 +60,25 @@ namespace LetsEat.Views.OwnerSide
                 .OnceAsync<Queuedb>();
             
             adapter = null;
-            foreach (var item in items)
+
+            
+            /*foreach (var item in items)
             {
-                Console.WriteLine("Loading items...");
-                Console.WriteLine(item.Object.name);
-                Queuedb queuedb = new Queuedb();
-                queuedb.uid = item.Key;
-                queuedb.name = item.Object.name;
-                listQueue.Add(queuedb);
+               // Console.WriteLine("Loading items...");                  // ERROR SOMEWHERE IN THIS FUNCTION 5/2
+               // Console.WriteLine(item.Object.name);
+               // Queuedb queuedb = new Queuedb();            // FUNCTION + LINES = ERROR??? NULLEXCEPTION CRASH ERROR DUNNO FIX
+              //  queuedb.uid = item.Key;
+              //  queuedb.name = item.Object.name;
+              //  listQueue.Add(queuedb);
+                
             }
+            */
 
             Console.WriteLine("Updating adapter...");
-            adapter = new Views.OwnerSide.QueueListViewAdapter(this, listQueue);
+            adapter = new Views.CustomerSide.QueueListViewAdapter(this, listQueue);
             adapter.NotifyDataSetChanged();
             listView.Adapter = adapter;
             listView.TextFilterEnabled = true;
-
            
         }
 
@@ -89,11 +92,11 @@ namespace LetsEat.Views.OwnerSide
             Button removeFromQueueBtn = view.FindViewById<Button>(Resource.Id.removeFromQueueButton);
 
             removeFromQueueBtn.Click += delegate {
-                Toast.MakeText(this.Activity, "Removing from queue", ToastLength.Short).Show();
+               Toast.MakeText(this.Activity, "Removing from queue", ToastLength.Short).Show();
             };
            
             listView = (ListView)view.FindViewById(Android.Resource.Id.List);
-            adapter = new Views.OwnerSide.QueueListViewAdapter(this, listQueue);
+            adapter = new CustomerSide.QueueListViewAdapter(this, listQueue);
             adapter.NotifyDataSetChanged();
             listView.Adapter = adapter;
             listView.TextFilterEnabled = true;
@@ -102,6 +105,7 @@ namespace LetsEat.Views.OwnerSide
 
             return view;
         }
+        
     }
     
 }

@@ -123,7 +123,6 @@ namespace LetsEat
                 mhours.Text = "Dinner nightly, 5:30 pm to 10:15 pm";
                 mdescription.Text = "Star chef David Walzog presents his unique interpretation of the classic American steakhouse along Wynn's Lake of Dreams. As befits a top-notch chophouse, SW offers a selection of expertly charred steaks, including a succulent porterhouse-for-two, New York strip, dry-aged tomahawk chop and Walzog's signature chile-rubbed double cut rib eye. SW also offers a wide variety of seafood and poultry options, and such innovative side dishes as black truffle creamed corn and cipollini onions with charred jalapeno. SW's décor matches its steakhouse-with-a-twist cuisine brilliantly, with an opulent dining space that radiates glamour, punctuated by floor-to-ceiling windows framing postcard views of the three-acre lakefront and forested mountain. The adjoining open-air dining terrace offers prime views of the multi-media shows of sound, light, video and puppetry that unfold both on the lake and against it's 90-foot tall coursing waterfall.";
                 reserveIntent.PutStringArrayListExtra("list_reservations", swSteakReserves);
-                queueIntent.PutStringArrayListExtra("list_queue", swSteakQueue);
                 resTrack = 1;
                 queueTrack = 1;
                 restaurant_uid = "ETOxeKqaLScRYZO3tn9ceNwDhKf2";
@@ -313,7 +312,7 @@ namespace LetsEat
                 if (resTrack == 1)
                 {
                     swSteakReserves.Add(resultName);
-                    swSteakQueue.Add(resultName); // shouldn't work
+                   
                 }
                 else if (resTrack == 2)
                 {

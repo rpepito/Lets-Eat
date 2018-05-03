@@ -159,7 +159,6 @@
     <Compile Include="Views\Log In\LoginActivity.cs" />
     <Compile Include="Views\Log In\Registration.cs" />
     <Compile Include="Views\Owner Side\AddDish.cs" />
-    <Compile Include="Views\Owner Side\ListViewQueue.cs" />
     <Compile Include="Views\Owner Side\Reservations.cs" />
     <Compile Include="Views\Owner Side\Dish.cs" />
     <Compile Include="Views\Owner Side\Queue.cs" />
