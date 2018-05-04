@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.Support.V7.App;
 using Android.Support.V4.Widget;
 using Android.Support.Design.Widget;
+using Android.Content;
 
 using Firebase;
 using Firebase.Auth;
@@ -28,6 +29,7 @@ namespace LetsEat.Views.OwnerSide
 
         Views.CustomerSide.QueueListViewAdapter adapter;
         List<Queuedb> listQueue = new List<Queuedb>();
+
 
 
         FirebaseUser user;
@@ -93,14 +95,21 @@ namespace LetsEat.Views.OwnerSide
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
             View view = inflater.Inflate(Resource.Layout.OwnerQueueLayout, null);
-
+            Button manualAddtoQueueBtn = view.FindViewById<Button>(Resource.Id.manualAddToQueueButton);
             Button removeFromQueueBtn = view.FindViewById<Button>(Resource.Id.removeFromQueueButton);
+
+           // var queueIntent = new Intent(this, typeof(QueuePage));
 
             removeFromQueueBtn.Click += delegate {
                Toast.MakeText(this.Activity, "Removing from queue", ToastLength.Short).Show();
             };
-           
-            listView = (ListView)view.FindViewById(Android.Resource.Id.List);
+
+            manualAddtoQueueBtn.Click += delegate
+            {
+                Toast.MakeText(this.Activity, "Navigating to queue page...", ToastLength.Short).Show();
+                //StartActivity(queueIntent);
+            };
+                listView = (ListView)view.FindViewById(Android.Resource.Id.List);
             adapter = new CustomerSide.QueueListViewAdapter(this, listQueue);
             adapter.NotifyDataSetChanged();
             listView.Adapter = adapter;
