@@ -62,7 +62,7 @@ namespace LetsEat
                 queueHolder = queueText.Text;
                 if (!(string.IsNullOrWhiteSpace(queueHolder)))
                 {
-                    CreateResData();
+                    CreateQueueData();
                     Toast.MakeText(ApplicationContext, confirmMsg, ToastLength.Long).Show();
                     Finish();
                 }
@@ -76,17 +76,23 @@ namespace LetsEat
            
         }
 
-        private async void CreateResData()
-        {
-            Queuedb queuedb = new Queuedb();
+        private async void CreateQueueData()         // <--- need this function for writing to queue but I broke it somehow 5/3
+        {   
+           Queuedb queuedb = new Queuedb();
             queuedb.name = queueText.Text;
+            Console.WriteLine("Check1");
             queuedb.amount = amountText.Text;
+            Console.WriteLine("Check2");    
             queuedb.uid = String.Empty;
+           Console.WriteLine("Check3");
             var firebase = new FirebaseClient(FBURL);
             var item = await firebase.Child("queues")
-                                                      .Child(restaurant_uid)  
-                                                      .PostAsync<Queuedb>(queuedb);
+                                    .Child(restaurant_uid)  
+                                     .PostAsync<Queuedb>(queuedb);
                                                         
         }
+
+        
+        
     }
 }
