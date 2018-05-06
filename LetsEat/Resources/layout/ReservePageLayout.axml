@@ -12,6 +12,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:id="@+id/ReservationText" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -23,6 +24,7 @@
         android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:id="@+id/AmountText" />
     <Button
         android:text="Pick Date"

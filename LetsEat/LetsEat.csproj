@@ -181,6 +181,10 @@
     <Compile Include="Views\Customer Side\MenuPage.cs" />
     <Compile Include="Views\Owner Side\TableListClass.cs" />
     <Compile Include="Views\Owner Side\AddTable.cs" />
+    <Compile Include="Views\Customer Side\Queuedb.cs" />
+    <Compile Include="Views\Customer Side\QueueListViewAdapter.cs" />
+    <Compile Include="Views\Customer Side\QueuePageActivity.cs" />
+    <Compile Include="Views\Customer Side\QueuePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -243,6 +247,9 @@
     <AndroidResource Include="Resources\layout\MenuList.axml" />
     <AndroidResource Include="Resources\layout\TableList.axml" />
     <AndroidResource Include="Resources\layout\AddTableLayout.axml" />
+    <AndroidResource Include="Resources\layout\CustomerQueueLayout.axml" />
+    <AndroidResource Include="Resources\layout\OwnerQueueLayout.axml" />
+    <AndroidResource Include="Resources\layout\QueueListItem.xml" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">

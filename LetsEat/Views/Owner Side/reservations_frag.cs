@@ -73,6 +73,7 @@ namespace LetsEat.Views.OwnerSide
                 reservation.uid = item.Key;
                 reservation.name = item.Object.name;
                 reservation.time = item.Object.time;
+                reservation.date = item.Object.date;
                 //reservation.email = item.Object.email;  
                 listReservations.Add(reservation);
             }

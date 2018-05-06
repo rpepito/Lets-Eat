@@ -46,6 +46,14 @@ LetsEat.MenuPage, LetsEat;md5112e1ce544e292e139446fe091803014.MenuPage
 LetsEat.MenuPage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.MenuPage
 LetsEat.MenuPage;md5112e1ce544e292e139446fe091803014.MenuPage
 letseat.MenuPage;md5112e1ce544e292e139446fe091803014.MenuPage
+LetsEat.QueuePageActivity, LetsEat;md5112e1ce544e292e139446fe091803014.QueuePageActivity
+LetsEat.QueuePageActivity, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.QueuePageActivity
+LetsEat.QueuePageActivity;md5112e1ce544e292e139446fe091803014.QueuePageActivity
+letseat.QueuePageActivity;md5112e1ce544e292e139446fe091803014.QueuePageActivity
+LetsEat.QueuePage, LetsEat;md5112e1ce544e292e139446fe091803014.QueuePage
+LetsEat.QueuePage, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5112e1ce544e292e139446fe091803014.QueuePage
+LetsEat.QueuePage;md5112e1ce544e292e139446fe091803014.QueuePage
+letseat.QueuePage;md5112e1ce544e292e139446fe091803014.QueuePage
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
 LetsEat.Views.OwnerSide.menu_config_frag;md54d6069665a4ee24d63f2a17d1f9bbbb0.menu_config_frag
@@ -78,6 +86,10 @@ LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fc
 LetsEat.Views.CustomerSide.ListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
 LetsEat.Views.CustomerSide.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
 letseat.views.customerside.ListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.ListViewAdapter
+LetsEat.Views.CustomerSide.QueueListViewAdapter, LetsEat;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+LetsEat.Views.CustomerSide.QueueListViewAdapter, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+LetsEat.Views.CustomerSide.QueueListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
+letseat.views.customerside.QueueListViewAdapter;md53a37a337742bdff3602f8b1fcefff30b.QueueListViewAdapter
 LetsEat.Views.Owner_Side.AddDish, LetsEat;md5069bc4214247c4a2843b4ba7547c8517.AddDish
 LetsEat.Views.Owner_Side.AddDish, LetsEat, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5069bc4214247c4a2843b4ba7547c8517.AddDish
 LetsEat.Views.Owner_Side.AddDish;md5069bc4214247c4a2843b4ba7547c8517.AddDish

@@ -1,27 +1,18 @@
 ﻿<Properties StartupConfiguration="{2871C34A-C32B-4A9E-B526-B75FDDEE9000}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LetsEat/Views/Owner Side/reservations_frag.cs">
     <Files>
-      <File FileName="LetsEat/Views/Customer Side/RestaurantPage.cs" Line="345" Column="21" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage_Customer.cs" Line="86" Column="25" />
-      <File FileName="LetsEat/Views/Owner Side/queue_frag.cs" Line="1" Column="1" />
-      <File FileName="LetsEat/Views/Owner Side/AddDish.cs" Line="1" Column="1" />
-      <File FileName="LetsEat/Views/Owner Side/OwnerPage.cs" Line="137" Column="13" />
-      <File FileName="LetsEat/MainActivity.cs" Line="56" Column="13" />
-      <File FileName="LetsEat/Views/Owner Side/menu_config_frag.cs" Line="53" Column="10" />
-      <File FileName="LetsEat/Views/Customer Side/MainPage.cs" Line="53" Column="13" />
-      <File FileName="LetsEat/Views/Owner Side/Dish.cs" Line="10" Column="42" />
-      <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="15" Column="4" />
-      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="147" Column="6" />
-      <File FileName="LetsEat/Views/Customer Side/MenuPage.cs" Line="39" Column="13" />
-      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="82" Column="28" />
-      <File FileName="Source Not Available" />
+      <File FileName="LetsEat/Views/Customer Side/QueuePage.cs" Line="99" Column="1" />
+      <File FileName="LetsEat/Views/Customer Side/ReservePage.cs" Line="136" Column="65" />
+      <File FileName="LetsEat/Views/Customer Side/Reservation.cs" Line="18" Column="51" />
+      <File FileName="LetsEat/Views/Owner Side/reservations_frag.cs" Line="124" Column="2" />
+      <File FileName="LetsEat/Views/Customer Side/ListViewAdapter.cs" Line="51" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Mytheme" />
+  <MonoDevelop.Ide.ItemProperties.LetsEat AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.mypixel" AndroidDesignerPreferredTheme="Mytheme" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

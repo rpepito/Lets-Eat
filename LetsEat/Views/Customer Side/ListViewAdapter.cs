@@ -41,11 +41,13 @@ namespace LetsEat.Views.CustomerSide
 
             var txtuser = itemView.FindViewById<TextView>(Resource.Id.ListName);
             var txttime = itemView.FindViewById<TextView>(Resource.Id.ListTime);
+            var txtdate = itemView.FindViewById<TextView>(Resource.Id.ListDate);
 
             if (lstAccounts.Count > 0)
             {
                 txtuser.Text = lstAccounts[position].name;
                 txttime.Text = lstAccounts[position].time;
+                txtdate.Text = lstAccounts[position].date;
             }
             return itemView;
         }
