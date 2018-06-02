@@ -10,6 +10,13 @@
         android:layout_centerInParent="true"
         android:layout_margin="10dp"
         android:orientation="vertical">
+      <EditText
+            android:hint="Enter your Name"
+            android:id="@+id/register_name"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
         <EditText
             android:hint="Enter your Email"
             android:id="@+id/register_email"

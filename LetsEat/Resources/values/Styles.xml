@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style> 
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.Light.NoActionBar">  
+    </style>  
+    <!--
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+    <item name="android:actionBarStyle">@style/MyTheme.ActionBarStyle</item>
+  </style>
+    
+    <style name="MyTheme.ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar">
+    <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+  </style>
+    
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">#777777</item>
+  </style>
+  -->
+   <color name="Creamy_Orange">#FDE9D1</color>
+    <color name="Lets_Eat_Orange">#FD9826</color>
+    <color name="background_grey">#3A383F</color>
+</resources>  

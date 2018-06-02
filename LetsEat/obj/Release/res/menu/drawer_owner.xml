@@ -1,0 +1,1 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"><group android:checkableBehavior="single"><item android:id="@+id/action_home" android:title="Home" /><item android:id="@+id/action_logout" android:title="Logout" /><item android:id="@+id/action_ownerpage" android:title="Owner" /></group></menu>
