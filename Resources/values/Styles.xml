@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>  
+<resources>  
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo"></style> 
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.NoActionBar">  
+    </style>  
+
+   <color name="Creamy_Orange">#FDE9D1</color>  
+</resources>  
